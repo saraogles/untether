@@ -53,18 +53,18 @@ icon: OfficeBuildingIcon },
 
 const dedicated = [
 {
-name: 'To supporting your business',
+name: '. . . about your business',
 href: 'https://www.thatssoart.com',
 button: 'Learn More',
-description: 'We believe in Product Minded Development, which means your needs come first. We thrive on building integrations that connect disparate systems and automating tedious manual tasks, making your worklife better.',
+description: 'We are as dedicated to your dreams as we are our own. We get excited about entrepreneurship and watching small businesses grow and would love to be part of your story. We are here to help you find, develop and integrate technical efficiencies and automations so you can keep dreaming big.',
 icon: CursorClickIcon,
 imageUrl: 'aimee.png',
 },
 {
-name: "To training educators in technology",
+name: ". . . about training educators in techology",
 href: '#',
 button: 'Learn More',
-description: "With 50 years of collective experience, we are committed to designing a solution to fit your specific business model. We have worked in both commercial and government spaces, manufacturing plants to showroom floors, landing page websites and online storefronts.",
+description: "Integrating technology in the classroom doesn't have to be daunting. We're here to help you take these new tools and add efficiency and easier access to knowledge in your classrooms everyday. Whether you're intimidated by the techology itself or the endless list of options, we are with you until technology makes your day better, not worse.",
 icon: CogIcon,
 imageUrl: 'aimee.png',
 },
@@ -259,7 +259,7 @@ return (
 
         <div className="relative z-10 bg-bluegray-900 shadow">
 
-          <div className="max-w-7xl px-4 py-6 sm:px-6 lg:px-8 flex justify-between">
+          <div className="px-4 py-6 sm:px-6 lg:px-8 flex justify-between">
             <div>
               <a href="#" className="flex">
                 <span className="uppercase font-sans text-lg tracking-widest text-bluegray-200 ">Untether</span>
@@ -269,7 +269,7 @@ return (
             <Popover.Button
               className={classNames(
                 open ? 'text-yellow-400' : 'text-bluegray-200',
-                'uppercase group inline-flex items-center text-sm font-medium hover:text-yellow-400 focus:outline-none focus:ring-none '
+                'uppercase group inline-flex items-center text-sm font-medium hover:text-yellow-400 focus:outline-none focus:ring-none'
               )}
             >
               <span>Explore Our Solutions</span>
@@ -388,89 +388,76 @@ return (
     </div>
 
 
-    <div className="mx-auto sm:pt-36 sm:pb-16 text-left sm:inline-flex">
-
+    <div className="sm:pt-36 sm:pb-16 sm:inline-flex m-auto">
       <div className="sm:hidden">
         <img className="flex justify-items-end max-w-full" src="untetherballoon.png" alt="" />
-
       </div>
-
-
-
-      <div className="z-40 px-4 lg:w-1/2 sm:px-8 xl:w-1/2 xl:pr-16">
+      <div className="z-40 px-4 sm:w-1/2 sm:px-8 m-auto max-w-2xl">
         <h1 className="font-extrabold text-5xl sm:text-4xl md:text-5xl lg:text-7xl mb-12 tracking-wide">
-
-          <span className="block text-bluegray-200 leading-tight">Your business deserves the</span>{' '}
-
-          <span className="block text-yellow-400 inline py-2 pl-16 -ml-16 border-b-8 border-yellow-400 leading-tight whitespace-nowrap">right </span>
-          <span className="text-bluegray-200 inline ">solution</span>
-
+          <span className="block text-bluegray-200 leading-tight">Your business</span>{' '}
+          <span className="block text-bluegray-200 leading-tight">deserves the</span>{' '}
+          <span className="block text-yellow-400 inline py-2 pl-16 -ml-16 border-b-8 border-yellow-400 leading-tight whitespace-nowrap 2xl:pl-0 2xl:ml-0">right</span>
+          <span className="text-bluegray-200 inline whitespace-nowrap"> solution</span>
         </h1>
-        <p className="font-serif mt-16 max-w-md mx-auto text-xl text-bluegray-300 tracking-wide">
+        <p className="font-serif mt-16 ml-8 max-w-md text-xl text-bluegray-300 tracking-wide">
           Sometimes you need something that is tailored to your specific business needs.
         </p>
-        <p className="font-serif mt-4 max-w-md mx-auto text-xl text-bluegray-300 tracking-wide">
+        <p className="font-serif mt-4 ml-8 max-w-md text-xl text-bluegray-300 tracking-wide">
           That's where we come in.
         </p>
-        <div className="mt-10 justify-start w-64">
+        <div className="mt-10 w-64">
           <div className="rounded-full">
             <a href="#"
               className="flex items-center justify-center ml-16 p-4 w-48 border-2 border-yellow-400 text-sm font-normal tracking-wider uppercase rounded-full text-bluegray-800 bg-yellow-400 hover:bg-bluegray-800 hover:text-yellow-400 hover:font-bold">
               Let's Get Started
             </a>
           </div>
-
         </div>
       </div>
-      <div className="z-40 hidden sm:flex sm:-mt-4 md:-mt-16 w-full h-64 sm:h-72 md:h-96 lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
-        <img className="flex justify-items-end object-cover" src="untetherballoon.png" alt="" />
-
+        <div className="z-40 hidden sm:flex sm:-mt-4 md:-mt-16 w-full h-64 sm:h-72 md:h-96 lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+          <img className="flex justify-items-end object-cover" src="untetherballoon.png" alt="" />
+        </div>
       </div>
-
+        <div className="absolute -left-32 mt-16 sm:-left-8 sm:mt-24">
+          <div className="w-96 h-96 bg-bluegray-900 rounded-full opacity-50 2xl:ml-48">
+        </div>
     </div>
 
 
 
 
+    <div className="py-16 lg:py-24 ">
+      <div className="relative lg:max-w-full">
 
-
-    <div className="absolute -left-32 mt-16 sm:-left-8 sm:mt-24">
-      <div className="w-96 h-96 bg-bluegray-900 rounded-full opacity-50">
-      </div>
-    </div>
-
+<div className="flex justify-center">
 
 
 
-    <div className="py-16 lg:py-24">
-      <div className="relative max-w-xl ml-16 lg:max-w-7xl">
+        <div className="relative mt-12 lg:mt-24 md:flex items-center max-w-7xl ml-16 mr-16">
 
-        <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8">
-          <div className="relative mr-16">
-            <h3 className="whitespace-nowrap text-4xl sm:text-5xl font-extrabold text-bluegray-200 tracking-wide pb-2 border-b-8 border-yellow-400 -ml-16 pl-16 w-4/5 mb-16 max-w-xs">
+
+          <div className="relative px-16">
+            <h3 className="whitespace-nowrap text-4xl sm:text-5xl font-extrabold text-bluegray-200 tracking-wide pb-2 border-b-8 border-yellow-400 mb-16 max-w-xs ">
               Who We Are</h3>
-            <p className="font-serif mt-3 text-lg text-bluegray-300">
+            <p className="font-serif mt-3 text-lg text-bluegray-300 max-w-xl">
               Untether is a small, boutique firm located in beautiful, historic Athens, Alabama. Founded in 2013 and built on southern charm, we strive to build relationships before roadmaps.
             </p>
-            <p className="mt-3 text-lg text-bluegray-300 font-serif mb-8">
+            <p className="mt-3 text-lg text-bluegray-300 font-serif mb-8 max-w-xl">
               We are passionate about understanding your business needs and helping you solve them, just like we would our own.
             </p>
-
             <div className="mt-10 w-64">
               <div className="">
                 <a href="#" className="flex items-center justify-center ml-4 p-4 w-48 border-2 border-yellow-400 text-sm font-normal tracking-wider uppercase rounded-full text-yellow-400 bg-transparent hover:bg-yellow-400 hover:text-bluegray-800 hover:font-bold">
                   More About Us
                 </a>
               </div>
-
             </div>
-
           </div>
 
           <div className="mt-20 -mx-4 relative lg:mt-0" aria-hidden="true">
 
             <div className="absolute -right-36 mt-36">
-              <div className="w-56 h-56 bg-bluegray-900 rounded-full opacity-50">
+              <div className="w-56 h-56 bg-bluegray-900 rounded-full opacity-50 2xl:mr-32">
               </div>
             </div>
 
@@ -484,16 +471,16 @@ return (
               </div>
             </div>
 
-
-            <img className="relative rounded-full max-h-5/6 max-w-5/6" width={490} src="/courthouse.jpg" alt="" />
-
-
+            <img className="m-auto relative rounded-full max-h-5/6 max-w-5/6" width={490} src="/courthouse.jpg" alt="" />
 
           </div>
 
 
-
         </div>
+
+</div>
+
+
 
         <div className="absolute -left-16">
           <div className="w-130 h-130 mt-8 bg-bluegray-900 rounded-full opacity-50">
@@ -540,29 +527,30 @@ return (
     </div>
 
     <div className="bg-bluegray-900 w-full">
-          <div className="max-w-7xl py-16 px-8 sm:px-24">
+          <div className="max-w-7xl py-16 px-8 sm:px-24 m-auto">
             <h2 className="text-3xl font-extrabold text-bluegray-50">We've worked with companies from all over the country</h2>
             <div className="flow-root mt-8 lg:mt-10">
               <div className="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4">
                 <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
-                  <img className="h-12" src="https://tailwindui.com/img/logos/tuple-logo-indigo-300.svg" alt="Carrier" />
+                  <img className="h-36" src="bellavita.png" alt="OHS" />
                 </div>
                 <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
-                  <img className="h-12" src="https://tailwindui.com/img/logos/mirage-logo-indigo-300.svg" alt="Southwest Indiana Chamber" />
+                  <img className="h-36" src="linex.png" alt="Bella Vita" />
                 </div>
                 <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
                   <img
-                    className="h-12"
-                    src="https://tailwindui.com/img/logos/statickit-logo-indigo-300.svg"
+                    className="h-36"
+                    src="logobrands.png"
                     alt="StaticKit"
                   />
                 </div>
                 <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
                   <img
-                    className="h-12"
-                    src="https://tailwindui.com/img/logos/transistor-logo-indigo-300.svg"
+                    className="h-36"
+                    src="OHS.png"
                     alt="Transistor"
                   />
+
                 </div>
                 <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
                   <img
@@ -579,12 +567,14 @@ return (
 
 
 
-        <div className="relative py-16 sm:py-24 lg:py-32">
-          <div className="">
-            <h3 className="max-w-md whitespace-nowrap text-4xl sm:text-5xl font-extrabold text-bluegray-200 tracking-wide pb-2 border-b-8 border-yellow-400 pl-16 w-4/5 mb-16">
-              We Are Dedicated</h3>
+        <div className="relative py-16 sm:py-24 lg:py-32 max-w-7xl m-auto">
+          <div className="grid justify-items-center">
+            <h3 className=" max-w-md whitespace-nowrap text-4xl sm:text-5xl font-extrabold text-bluegray-200 tracking-wide pb-2 border-b-8 border-yellow-400 ">
+              We Are Passionate</h3>
 
-            <div className="grid justify-items-center m-20">
+            <div className="grid justify-items-center mt-32 mx-16">
+
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl text-center">
                 {dedicated.map((feature) => (
                 <div key={feature.name} className="pt-6">
@@ -597,7 +587,7 @@ return (
                       </div>
                       <div className="flex flex-wrap justify-center place-content-evenly h-130">
                         <h3 className="italic text-xl font-serif text-bluegray-50 tracking-tight">{feature.name}</h3>
-                        <p className="text-sm text-bluegray-300 font-serif">
+                        <p className="text-md text-bluegray-300 font-serif">
                           {feature.description}
                         </p>
                         <button className="shadow p-4 mb-4 -mt-4 text-xs tracking-wider uppercase text-yellow-400 bg-transparent border-2 border-yellow-400 rounded-full hover:bg-yellow-400 hover:text-bluegray-800">{feature.button}</button>
@@ -618,7 +608,7 @@ return (
                <div className="lg:grid lg:grid-cols-12">
                  <div className="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent">
                    <div className="absolute inset-x-0 h-1/2 bg-bluegray-300 lg:hidden" aria-hidden="true" />
-                   <div className="max-w-md mx-auto px-4 sm:max-w-3xl sm:px-6 lg:max-w-none lg:p-0">
+                   <div className="max-w-md mx-auto px-8 sm:max-w-3xl sm:px-8 lg:max-w-none lg:p-0">
                      <div className="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
                        <img
                          className="object-cover object-center rounded-3xl shadow-2xl mt-4"
@@ -631,7 +621,7 @@ return (
 
                  <div className="relative bg-bluegray-900 lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center">
 
-                   <div className="relative max-w-md mx-auto py-12 px-4 space-y-6 sm:max-w-3xl sm:py-16 sm:px-6 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6">
+                   <div className="relative max-w-md mx-auto py-12 px-8 space-y-6 sm:max-w-3xl sm:py-16 sm:px-8 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6">
                      <h2 className="text-3xl font-extrabold text-bluegray-200" id="join-heading">
                        Ready to get started?
                      </h2>
