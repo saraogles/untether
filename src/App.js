@@ -259,7 +259,7 @@ return (
 
         <div className="relative z-10 bg-bluegray-900 shadow">
 
-          <div className="px-4 py-6 sm:px-6 lg:px-8 flex justify-between">
+          <div className="px-4 py-6 sm:px-6 lg:px-24 flex justify-between">
             <div>
               <a href="#" className="flex">
                 <span className="uppercase font-sans text-lg tracking-widest text-bluegray-200 ">Untether</span>
@@ -382,27 +382,39 @@ return (
       </div>
     </div>
 
+    <div className="invisible sm:visible absolute -left-16 mt-112">
+      <div className="w-112 md:h-112 bg-bluegray-900 rounded-full opacity-50">
+      </div>
+    </div>
+
+    <div className="invisible sm:visible absolute -left-16 mt-80">
+      <div className="w-60 md:h-60 bg-bluegray-900 rounded-full opacity-50">
+      </div>
+    </div>
+
     <div className="invisible sm:visible absolute -right-32 mt-130">
       <div className="w-96 h-96 bg-bluegray-900 rounded-full opacity-50">
       </div>
     </div>
 
 
-    <div className="sm:pt-36 sm:pb-16 sm:inline-flex m-auto">
+    <div className="sm:pt-24 sm:pb-16 sm:inline-flex justify-center">
+
       <div className="sm:hidden">
         <img className="flex justify-items-end max-w-full" src="untetherballoon.png" alt="" />
       </div>
-      <div className="z-40 px-4 sm:w-1/2 sm:px-8 m-auto max-w-2xl">
-        <h1 className="font-extrabold text-5xl sm:text-4xl md:text-5xl lg:text-7xl mb-12 tracking-wide">
+
+      <div className="z-40 px-4 sm:w-3/4 sm:px-16 max-w-2xl mx-auto">
+        <h1 className="font-bold text-5xl sm:text-4xl md:text-5xl lg:text-7xl mb-12 tracking-wide">
           <span className="block text-bluegray-200 leading-tight">Your business</span>{' '}
           <span className="block text-bluegray-200 leading-tight">deserves the</span>{' '}
-          <span className="block text-yellow-400 inline py-2 pl-16 -ml-16 border-b-8 border-yellow-400 leading-tight whitespace-nowrap 2xl:pl-0 2xl:ml-0">right</span>
-          <span className="text-bluegray-200 inline whitespace-nowrap"> solution</span>
+          <span className="block font-extrabold text-yellow-400 inline py-2 pl-16 -ml-16 border-b-8 border-yellow-400 leading-tight whitespace-nowrap 2xl:pl-0 2xl:ml-0">right</span>
+          <span className="text-bluegray-200 inline whitespace-nowrap"> solution.</span>
         </h1>
-        <p className="font-serif mt-16 ml-8 max-w-md text-xl text-bluegray-300 tracking-wide">
+        <p className="font-serif mt-16 ml-8 max-w-md text-2xl text-bluegray-200 tracking-wide">
           Sometimes you need something that is tailored to your specific business needs.
         </p>
-        <p className="font-serif mt-4 ml-8 max-w-md text-xl text-bluegray-300 tracking-wide">
+        <p className="font-serif mt-4 ml-8 max-w-md text-2xl text-bluegray-200 tracking-wide">
           That's where we come in.
         </p>
         <div className="mt-10 w-64">
@@ -419,10 +431,13 @@ return (
         </div>
       </div>
         <div className="absolute -left-32 mt-16 sm:-left-8 sm:mt-24">
-          <div className="w-96 h-96 bg-bluegray-900 rounded-full opacity-50 2xl:ml-48">
+          <div className="w-80 h-80 bg-bluegray-900 rounded-full opacity-50 2xl:ml-48">
+          </div>
         </div>
-    </div>
-
+        <div className="absolute -left-32 mt-16 sm:-left-8 sm:mt-24">
+          <div className="w-72 h-72 bg-bluegray-900 rounded-full opacity-50 2xl:ml-12 mt-48">
+          </div>
+        </div>
 
 
 
@@ -437,7 +452,7 @@ return (
 
 
           <div className="relative px-16">
-            <h3 className="whitespace-nowrap text-4xl sm:text-5xl font-extrabold text-bluegray-200 tracking-wide pb-2 border-b-8 border-yellow-400 mb-16 max-w-xs ">
+            <h3 className="whitespace-nowrap text-4xl sm:text-6xl font-bold text-bluegray-200 tracking-wide pb-2 border-b-8 border-yellow-400 mb-16 max-w-xs ">
               Who We Are</h3>
             <p className="font-serif mt-3 text-lg text-bluegray-300 max-w-xl">
               Untether is a small, boutique firm located in beautiful, historic Athens, Alabama. Founded in 2013 and built on southern charm, we strive to build relationships before roadmaps.
@@ -456,8 +471,8 @@ return (
 
           <div className="mt-20 -mx-4 relative lg:mt-0" aria-hidden="true">
 
-            <div className="absolute -right-36 mt-36">
-              <div className="w-56 h-56 bg-bluegray-900 rounded-full opacity-50 2xl:mr-32">
+            <div className="absolute -right-24 mt-48">
+              <div className="w-44 h-44 bg-bluegray-900 rounded-full opacity-50">
               </div>
             </div>
 
@@ -466,8 +481,8 @@ return (
               </div>
             </div>
 
-            <div className="absolute right-4 mt-130">
-              <div className="w-48 h-48 bg-bluegray-900 rounded-full opacity-50">
+            <div className="absolute right-10 mt-120">
+              <div className="w-44 h-44 bg-bluegray-900 rounded-full opacity-50">
               </div>
             </div>
 
@@ -486,17 +501,28 @@ return (
           <div className="w-130 h-130 mt-8 bg-bluegray-900 rounded-full opacity-50">
           </div>
         </div>
+        <div className="absolute left-16">
+          <div className="w-72 h-72 bg-bluegray-900 rounded-full opacity-50 mt-112">
+          </div>
+        </div>
       </div>
-
+      <div className="absolute right-8">
+        <div className="w-72 h-72 bg-bluegray-900 rounded-full opacity-50 mt-96">
+        </div>
+      </div>
+      <div className="absolute right-32">
+        <div className="w-48 h-48 bg-bluegray-900 rounded-full opacity-50 mt-160">
+        </div>
+      </div>
     </div>
 
     <div className="relative py-16 sm:py-24 lg:py-32">
       <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-        <h2 className="text-base font-semibold tracking-wider text-yellow-400 uppercase">we're here for you</h2>
-        <p className="mt-2 text-3xl font-extrabold text-bluegray-50 tracking-tight sm:text-4xl">
+        <h2 className="text-xl font-semibold tracking-wider text-yellow-400 uppercase py-4">we're here for you</h2>
+        <p className="mt-2 text-3xl font-bold text-bluegray-50 tracking-tight sm:text-5xl">
           What can we do to make your day better?
         </p>
-        <p className="mt-5 max-w-prose mx-auto text-md text-bluegray-400 font-serif">
+        <p className="mt-5 max-w-prose mx-auto text-lg text-bluegray-400 font-serif py-4">
           Whether you already know exactly what you need or you need us to pull up a whiteboard and brainstorm solutions with you, we're here for it.
         </p>
         <div className="mt-12">
@@ -523,6 +549,8 @@ return (
             ))}
           </div>
         </div>
+
+
       </div>
     </div>
 
@@ -569,13 +597,13 @@ return (
 
         <div className="relative py-16 sm:py-24 lg:py-32 max-w-7xl m-auto">
           <div className="grid justify-items-center">
-            <h3 className=" max-w-md whitespace-nowrap text-4xl sm:text-5xl font-extrabold text-bluegray-200 tracking-wide pb-2 border-b-8 border-yellow-400 ">
+            <h3 className=" max-w-xl whitespace-nowrap text-4xl sm:text-6xl font-bold text-bluegray-200 tracking-wide pb-2 border-b-8 border-yellow-400 ">
               We Are Passionate</h3>
 
             <div className="grid justify-items-center mt-32 mx-16">
 
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl text-center">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-4xl text-center">
                 {dedicated.map((feature) => (
                 <div key={feature.name} className="pt-6">
                   <div className="shadow-md flow-root bg-bluegray-900 rounded-sm px-6 pb-8">
