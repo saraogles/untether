@@ -51,9 +51,9 @@ description: "We handle everything from backend database development to the fron
 icon: OfficeBuildingIcon },
 ]
 
-const dedicated = [
+const passionate = [
 {
-name: '. . . about your business',
+name: '". . . about your growing business"',
 href: 'https://www.thatssoart.com',
 button: 'Learn More',
 description: 'We are as dedicated to your dreams as we are our own. We get excited about entrepreneurship and watching small businesses grow and would love to be part of your story. We are here to help you find, develop and integrate technical efficiencies and automations so you can keep dreaming big.',
@@ -61,7 +61,7 @@ icon: CursorClickIcon,
 imageUrl: 'aimee.png',
 },
 {
-name: ". . . about training educators in techology",
+name: '". . . about training educators in techology"',
 href: '#',
 button: 'Learn More',
 description: "Integrating technology in the classroom doesn't have to be daunting. We're here to help you take these new tools and add efficiency and easier access to knowledge in your classrooms everyday. Whether you're intimidated by the techology itself or the endless list of options, we are with you until technology makes your day better, not worse.",
@@ -378,22 +378,22 @@ return (
   <main className="lg:relative overflow-hidden">
 
     <div className="invisible sm:visible absolute -right-56 -mt-48">
-      <div className="w-240 md:h-240 bg-bluegray-900 rounded-full opacity-50">
+      <div className="w-160 h-160 lg:w-240 lg:h-240 bg-bluegray-900 rounded-full opacity-50">
       </div>
     </div>
 
     <div className="invisible sm:visible absolute -left-16 mt-112">
-      <div className="w-112 md:h-112 bg-bluegray-900 rounded-full opacity-50">
+      <div className="w-80 h-80 lg:w-112 lg:h-112 bg-bluegray-900 rounded-full opacity-50">
       </div>
     </div>
 
     <div className="invisible sm:visible absolute -left-16 mt-80">
-      <div className="w-60 md:h-60 bg-bluegray-900 rounded-full opacity-50">
+      <div className="w-48 h-48 lg:w-60 lg:h-60 bg-bluegray-900 rounded-full opacity-50">
       </div>
     </div>
 
     <div className="invisible sm:visible absolute -right-32 mt-130">
-      <div className="w-96 h-96 bg-bluegray-900 rounded-full opacity-50">
+      <div className="lg:w-96 lg:h-96 bg-bluegray-900 rounded-full opacity-50">
       </div>
     </div>
 
@@ -411,16 +411,16 @@ return (
           <span className="block font-extrabold text-yellow-400 inline py-2 pl-16 -ml-16 border-b-8 border-yellow-400 leading-tight whitespace-nowrap 2xl:pl-0 2xl:ml-0">right</span>
           <span className="text-bluegray-200 inline whitespace-nowrap"> solution.</span>
         </h1>
-        <p className="font-serif mt-16 ml-8 max-w-md text-2xl text-bluegray-200 tracking-wide">
+        <p className="font-serif mt-16 ml-0 md:ml-8 max-w-md text-xl lg:text-2xl text-bluegray-200 tracking-wide">
           Sometimes you need something that is tailored to your specific business needs.
         </p>
-        <p className="font-serif mt-4 ml-8 max-w-md text-2xl text-bluegray-200 tracking-wide">
+        <p className="font-serif mt-4 ml-0 md:ml-8 max-w-md text-xl lg:text-2xl text-bluegray-200 tracking-wide">
           That's where we come in.
         </p>
         <div className="mt-10 w-64">
           <div className="rounded-full">
             <a href="#"
-              className="flex items-center justify-center ml-16 p-4 w-48 border-2 border-yellow-400 text-sm font-normal tracking-wider uppercase rounded-full text-bluegray-800 bg-yellow-400 hover:bg-bluegray-800 hover:text-yellow-400 hover:font-bold">
+              className="flex items-center justify-center ml-16 p-4 w-48 border-2 border-yellow-400 text-sm font-normal tracking-wider uppercase rounded-full text-bluegray-800 bg-yellow-400 hover:bg-transparent hover:text-yellow-400 hover:font-bold">
               Let's Get Started
             </a>
           </div>
@@ -431,11 +431,11 @@ return (
         </div>
       </div>
         <div className="absolute -left-32 mt-16 sm:-left-8 sm:mt-24">
-          <div className="w-80 h-80 bg-bluegray-900 rounded-full opacity-50 2xl:ml-48">
+          <div className="lg:w-80 lg:h-80 bg-bluegray-900 rounded-full opacity-50 2xl:ml-48">
           </div>
         </div>
         <div className="absolute -left-32 mt-16 sm:-left-8 sm:mt-24">
-          <div className="w-72 h-72 bg-bluegray-900 rounded-full opacity-50 2xl:ml-12 mt-48">
+          <div className="lg:w-56 lg:h-56 bg-bluegray-900 rounded-full opacity-50 -ml-12 2xl:ml-12 mt-48">
           </div>
         </div>
 
@@ -451,7 +451,7 @@ return (
         <div className="relative mt-12 lg:mt-24 md:flex items-center max-w-7xl ml-16 mr-16">
 
 
-          <div className="relative px-16">
+          <div className="relative px-4 sm:px-16">
             <h3 className="whitespace-nowrap text-4xl sm:text-6xl font-bold text-bluegray-200 tracking-wide pb-2 border-b-8 border-yellow-400 mb-16 max-w-xs ">
               Who We Are</h3>
             <p className="font-serif mt-3 text-lg text-bluegray-300 max-w-xl">
@@ -472,17 +472,17 @@ return (
           <div className="mt-20 -mx-4 relative lg:mt-0" aria-hidden="true">
 
             <div className="absolute -right-24 mt-48">
-              <div className="w-44 h-44 bg-bluegray-900 rounded-full opacity-50">
+              <div className="lg:w-44 lg:h-44 bg-bluegray-900 rounded-full opacity-50">
               </div>
             </div>
 
             <div className="absolute -right-32 mt-80">
-              <div className="w-72 h-72 bg-bluegray-900 rounded-full opacity-50">
+              <div className="lg:w-72 lg:h-72 bg-bluegray-900 rounded-full opacity-50">
               </div>
             </div>
 
             <div className="absolute right-10 mt-120">
-              <div className="w-44 h-44 bg-bluegray-900 rounded-full opacity-50">
+              <div className="lg:w-44 lg:h-44 bg-bluegray-900 rounded-full opacity-50">
               </div>
             </div>
 
@@ -498,20 +498,20 @@ return (
 
 
         <div className="absolute -left-16">
-          <div className="w-130 h-130 mt-8 bg-bluegray-900 rounded-full opacity-50">
+          <div className="lg:w-130 lg:h-130 mt-8 bg-bluegray-900 rounded-full opacity-50">
           </div>
         </div>
         <div className="absolute left-16">
-          <div className="w-72 h-72 bg-bluegray-900 rounded-full opacity-50 mt-112">
+          <div className="lg:w-72 lg:h-72 bg-bluegray-900 rounded-full opacity-50 mt-112">
           </div>
         </div>
       </div>
       <div className="absolute right-8">
-        <div className="w-72 h-72 bg-bluegray-900 rounded-full opacity-50 mt-96">
+        <div className="lg:w-72 lg:h-72 bg-bluegray-900 rounded-full opacity-50 mt-96">
         </div>
       </div>
       <div className="absolute right-32">
-        <div className="w-48 h-48 bg-bluegray-900 rounded-full opacity-50 mt-160">
+        <div className="lg:w-48 lg:h-48 bg-bluegray-900 rounded-full opacity-50 mt-160">
         </div>
       </div>
     </div>
@@ -541,7 +541,7 @@ return (
                     <p className="text-sm text-bluegray-700 font-serif">
                       {feature.description}
                     </p>
-                    <button className="shadow p-4 mb-4 -mt-4 text-xs tracking-wider uppercase text-bluegray-800 bg-yellow-400 border-2 border-yellow-400 rounded-full hover:border-yellow-500 hover:bg-bluegray-200 hover:text-bluegray-900">{feature.button}</button>
+                    <button className="shadow p-4 mb-4 sm:-mt-2 text-xs tracking-wider uppercase text-bluegray-800 bg-yellow-400 border-2 border-yellow-400 rounded-full hover:border-yellow-500 hover:bg-bluegray-200 hover:text-bluegray-900">{feature.button}</button>
                   </div>
                 </div>
               </div>
@@ -556,7 +556,7 @@ return (
 
     <div className="bg-bluegray-900 w-full">
           <div className="max-w-7xl py-16 px-8 sm:px-24 m-auto">
-            <h2 className="text-3xl font-extrabold text-bluegray-50">We've worked with companies from all over the country</h2>
+            <h2 className="sm:-ml-16 text-3xl font-extrabold text-bluegray-50">We've worked with companies from all over the country</h2>
             <div className="flow-root mt-8 lg:mt-10">
               <div className="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4">
                 <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
@@ -593,9 +593,57 @@ return (
         </div>
 
 
+        <div className="absolute -left-16">
+          <div className="lg:w-96 lg:h-96 bg-bluegray-900 rounded-full opacity-60 -mt-8">
+          </div>
+        </div>
 
+        <div className="absolute left-16">
+          <div className="lg:w-112 lg:h-112 bg-bluegray-900 rounded-full opacity-60 mt-52">
+          </div>
+        </div>
+
+        <div className="absolute left-4">
+          <div className="lg:w-72 lg:h-72 bg-bluegray-900 rounded-full opacity-60 mt-130">
+          </div>
+        </div>
+
+        <div className="absolute left-36">
+          <div className="lg:w-56 lg:h-56 bg-bluegray-900 rounded-full opacity-60 mt-192">
+          </div>
+        </div>
+
+
+
+        <div className="absolute -right-16">
+          <div className="lg:w-112 lg:h-112 bg-bluegray-900 rounded-full opacity-50 -mt-36">
+          </div>
+        </div>
+
+        <div className="absolute right-32">
+          <div className="lg:w-72 lg:h-72 bg-bluegray-900 rounded-full opacity-50 mt-56">
+          </div>
+        </div>
+
+        <div className="absolute -right-4">
+          <div className="lg:w-56 lg:h-56 bg-bluegray-900 rounded-full opacity-50 mt-96">
+          </div>
+        </div>
+
+        <div className="absolute -right-48">
+          <div className="lg:w-112 lg:h-112 bg-bluegray-900 rounded-full opacity-50 mt-192">
+          </div>
+        </div>
+
+        <div className="absolute right-36">
+          <div className="lg:w-96 lg:h-96 bg-bluegray-900 rounded-full opacity-50 mt-240">
+          </div>
+        </div>
 
         <div className="relative py-16 sm:py-24 lg:py-32 max-w-7xl m-auto">
+
+
+
           <div className="grid justify-items-center">
             <h3 className=" max-w-xl whitespace-nowrap text-4xl sm:text-6xl font-bold text-bluegray-200 tracking-wide pb-2 border-b-8 border-yellow-400 ">
               We Are Passionate</h3>
@@ -604,21 +652,21 @@ return (
 
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-4xl text-center">
-                {dedicated.map((feature) => (
+                {passionate.map((feature) => (
                 <div key={feature.name} className="pt-6">
-                  <div className="shadow-md flow-root bg-bluegray-900 rounded-sm px-6 pb-8">
+                  <div className="shadow-md flow-root bg-bluegray-200 rounded-sm px-6">
                     <div className="-mt-6 h-auto">
                       <div>
                         <span className="inline-flex items-center justify-center p-3 -mt-8">
                           <img className="h-32 w-32 md:h-56 md:w-56 flex-shrink-0" src={feature.imageUrl} alt=""/>
                         </span>
                       </div>
-                      <div className="flex flex-wrap justify-center place-content-evenly h-130">
-                        <h3 className="italic text-xl font-serif text-bluegray-50 tracking-tight">{feature.name}</h3>
-                        <p className="text-md text-bluegray-300 font-serif">
+                      <div className="flex flex-wrap justify-center place-content-evenly h-120 m-4">
+                        <h3 className="italic text-xl font-sans text-bluegray-900 tracking-tight">{feature.name}</h3>
+                        <p className="text-md text-bluegray-500 font-serif">
                           {feature.description}
                         </p>
-                        <button className="shadow p-4 mb-4 -mt-4 text-xs tracking-wider uppercase text-yellow-400 bg-transparent border-2 border-yellow-400 rounded-full hover:bg-yellow-400 hover:text-bluegray-800">{feature.button}</button>
+                        <button className="shadow p-4 mb-4 -mt-4 text-xs tracking-wider uppercase text-bluegray-900 bg-yellow-400 border-2 border-yellow-400 rounded-full hover:bg-transparent hover:text-bluegray-800">{feature.button}</button>
                       </div>
                     </div>
                   </div>
@@ -650,7 +698,7 @@ return (
                  <div className="relative bg-bluegray-900 lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center">
 
                    <div className="relative max-w-md mx-auto py-12 px-8 space-y-6 sm:max-w-3xl sm:py-16 sm:px-8 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6">
-                     <h2 className="text-3xl font-extrabold text-bluegray-200" id="join-heading">
+                     <h2 className="text-3xl font-bold text-bluegray-200" id="join-heading">
                        Ready to get started?
                      </h2>
                      <p className="text-lg text-bluegray-200">
