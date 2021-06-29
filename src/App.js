@@ -452,7 +452,7 @@ return (
 
 
           <div className="relative px-4 sm:px-16">
-            <h3 className="whitespace-nowrap text-4xl sm:text-6xl font-bold text-bluegray-200 tracking-wide pb-2 border-b-8 border-yellow-400 mb-16 max-w-xs ">
+            <h3 className="whitespace-nowrap text-4xl sm:text-6xl font-bold text-bluegray-200 tracking-wide pb-2 border-b-8 border-yellow-400 mb-16 max-w-sm ">
               Who We Are</h3>
             <p className="font-serif mt-3 text-lg text-bluegray-300 max-w-xl">
               Untether is a small, boutique firm located in beautiful, historic Athens, Alabama. Founded in 2013 and built on southern charm, we strive to build relationships before roadmaps.
@@ -525,10 +525,10 @@ return (
         <p className="mt-5 max-w-prose mx-auto text-lg text-bluegray-400 font-serif py-4">
           Whether you already know exactly what you need or you need us to pull up a whiteboard and brainstorm solutions with you, we're here for it.
         </p>
-        <div className="mt-12">
+        <div className="">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             {features.map((feature) => (
-            <div key={feature.name} className="pt-6">
+            <div key={feature.name} className="pt-6 mt-12">
               <div className="shadow-md flow-root bg-bluegray-200 rounded-sm px-6 pb-8">
                 <div className="-mt-6 h-80">
                   <div>
@@ -560,31 +560,38 @@ return (
             <div className="flow-root mt-8 lg:mt-10">
               <div className="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4">
                 <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
-                  <img className="h-36" src="bellavita.png" alt="OHS" />
+                  <img className="h-36" src="/bellavita.png" alt="Bella Vita" />
                 </div>
                 <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
-                  <img className="h-36" src="linex.png" alt="Bella Vita" />
+                  <img className="h-36" src="/linex.png" alt="Line-X" />
                 </div>
                 <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
                   <img
                     className="h-36"
-                    src="logobrands.png"
-                    alt="StaticKit"
+                    src="/logobrands.png"
+                    alt="Logo Brands"
                   />
                 </div>
                 <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
                   <img
                     className="h-36"
-                    src="OHS.png"
-                    alt="Transistor"
+                    src="/OHS.png"
+                    alt="OHS"
                   />
 
                 </div>
                 <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
                   <img
-                    className="h-12"
-                    src="https://tailwindui.com/img/logos/workcation-logo-indigo-300.svg"
-                    alt="Workcation"
+                    className="h-36"
+                    src="/blount.png"
+                    alt="Blount County Schools"
+                  />
+                </div>
+                <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
+                  <img
+                    className="h-36"
+                    src="/caspari.png"
+                    alt="Caspari"
                   />
                 </div>
               </div>
@@ -594,7 +601,7 @@ return (
 
 
         <div className="absolute -left-16">
-          <div className="lg:w-96 lg:h-96 bg-bluegray-900 rounded-full opacity-60 -mt-8">
+          <div className="lg:w-56 lg:h-56 bg-bluegray-900 rounded-full opacity-60 mt-36">
           </div>
         </div>
 
@@ -616,7 +623,7 @@ return (
 
 
         <div className="absolute -right-16">
-          <div className="lg:w-112 lg:h-112 bg-bluegray-900 rounded-full opacity-50 -mt-36">
+          <div className="lg:w-72 lg:h-72 bg-bluegray-900 rounded-full opacity-50 mt-20">
           </div>
         </div>
 
@@ -663,7 +670,7 @@ return (
                       </div>
                       <div className="flex flex-wrap justify-center place-content-evenly h-120 m-4">
                         <h3 className="italic text-xl font-sans text-bluegray-900 tracking-tight">{feature.name}</h3>
-                        <p className="text-md text-bluegray-500 font-serif">
+                        <p className="text-md text-bluegray-600 font-serif">
                           {feature.description}
                         </p>
                         <button className="shadow p-4 mb-4 -mt-4 text-xs tracking-wider uppercase text-bluegray-900 bg-yellow-400 border-2 border-yellow-400 rounded-full hover:bg-transparent hover:text-bluegray-800">{feature.button}</button>
