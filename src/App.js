@@ -57,7 +57,7 @@ icon: CogIcon,
 name: "If a solution exists, we'll find it, and if it doesn't, we'll build it.",
 href: '/technicalexpertise',
 button: 'Our Technical Expertise',
-description: "We handle everything from backend database development to the frontend UI layer, committing to a solid user experience for everyone involved. We are proficient in C#, Ruby and Perl and have a special love for web and mobile applications.",
+description: "We handle everything from backend database development to the frontend UI layer, committing to a solid user experience for everyone involved. We are proficient in C#, Javascript and Ruby and have a special love for web and mobile applications.",
 icon: OfficeBuildingIcon },
 ]
 
