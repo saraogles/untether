@@ -19,6 +19,7 @@ module.exports = {
       indigo: colors.indigo,
       emerald: colors.emerald,
       green: colors.green,
+      'bg': '#14273d', 
     },
     fontFamily: {
       'sans':['Lato', 'ui-sans-serif'],

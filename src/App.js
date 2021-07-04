@@ -32,9 +32,15 @@ CogIcon,
  InformationCircleIcon,
  NewspaperIcon,
  UserGroupIcon,
+ MailOpenIcon,
+ UsersIcon,
 } from '@heroicons/react/outline'
 import {
-  ChevronDownIcon
+  ChevronDownIcon,
+  ArrowSmDownIcon,
+  ArrowSmUpIcon,
+  MailIcon,
+  PhoneIcon,
 } from '@heroicons/react/solid'
 
 //homepage
@@ -109,7 +115,7 @@ const enterprise = [
   { name: 'Case Studies', href: '/casestudies', icon: InformationCircleIcon },
   { name: 'Technical Expertise', href: '/technicalexpertise', icon: OfficeBuildingIcon },
   { name: 'Integrations', href: '/integrations', icon: NewspaperIcon },
-  { name: 'Meet the Team', href: '/team', icon: BriefcaseIcon },
+  { name: 'Meet Our Team', href: '/team', icon: BriefcaseIcon },
   { name: 'Business Portal', href: '#', icon: ShieldCheckIcon },
 ]
 const education = [
@@ -148,7 +154,7 @@ const navigation = {
     { name: 'Case Studies', href: '/casestudies' },
     { name: 'Technical Expertise', href: '/technicalexpertise' },
     { name: 'Integrations', href: '/integrations' },
-    { name: 'Meet The Team', href: '/team' },
+    { name: 'Meet Our Team', href: '/team' },
     { name: 'Business Portal', href: '#' },
 
   ],
@@ -207,33 +213,52 @@ const navigation = {
 //homepage
 
 //team
-const people = [
-  {
-    name: 'Whitney Francis',
-    role: 'Copywriter',
-    imageUrl:
-      'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
-  {
-    name: 'Whitney Francis',
-    role: 'Copywriter',
-    imageUrl:
-      'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
-  {
-    name: 'Whitney Francis',
-    role: 'Copywriter',
-    imageUrl:
-      'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
 
 
+const stats = [
+  { id: 1, name: 'Cups of Coffee', stat: '14,600', icon: UsersIcon },
+  { id: 2, name: 'Lines of Code', stat: '77,000', icon: MailOpenIcon},
+  { id: 3, name: 'Happy Clients', stat: '37', icon: CursorClickIcon},
+  { id: 1, name: 'Cups of Coffee', stat: '14,600', icon: UsersIcon },
+  { id: 2, name: 'Lines of Code', stat: '77,000', icon: MailOpenIcon},
+  { id: 3, name: 'Happy Clients', stat: '37', icon: CursorClickIcon},
+]
+
+
+const peoples = [
+  {
+    name: 'Jane Cooper',
+    title: 'Paradigm Representative',
+    role: 'Founder & CEO',
+    email: 'janecooper@example.com',
+    imageUrl:
+      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
+  },
+  {
+    name: 'Jane Cooper',
+    title: 'Paradigm Representative',
+    role: 'Director of Technology',
+    email: 'janecooper@example.com',
+    imageUrl:
+      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
+  },
+  {
+    name: 'Jane Cooper',
+    title: 'Paradigm Representative',
+    role: 'UX Designer & Product Manager',
+    email: 'janecooper@example.com',
+    imageUrl:
+      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
+  },
+  {
+    name: 'Jane Cooper',
+    title: 'Paradigm Representative',
+    role: 'Senior Engineer',
+    email: 'janecooper@example.com',
+    imageUrl:
+      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
+  },
+  // More people...
 ]
 //team
 
@@ -250,7 +275,7 @@ export default function BasicExample() {
           {({ open }) => (
             <>
 
-              <div className="relative z-10 shadow">
+              <div className="relative z-10 shadow-md">
 
                 <div className="px-4 py-6 sm:px-6 lg:px-24 flex justify-between">
                   <div>
@@ -506,7 +531,7 @@ function Home() {
         </div>
 
 
-        <div className="sm:pt-24 sm:pb-16 sm:inline-flex justify-center">
+        <div className="relative sm:pt-24 sm:pb-16 sm:inline-flex justify-center">
 
           <div className="sm:hidden">
             <img className="flex justify-items-end max-w-full" src="untetherballoon.png" alt="" />
@@ -570,7 +595,7 @@ function Home() {
                 </p>
                 <div className="mt-10 w-64">
                   <div className="">
-                    <a href="#" className="flex items-center justify-center ml-4 p-4 w-48 border-2 border-yellow-400 text-sm font-normal tracking-wider uppercase rounded-full text-yellow-400 bg-transparent hover:bg-yellow-400 hover:text-bluegray-800 hover:font-bold">
+                    <a href="team" className="flex items-center justify-center ml-4 p-4 w-48 border-2 border-yellow-400 text-sm font-normal tracking-wider uppercase rounded-full text-yellow-400 bg-transparent hover:bg-yellow-400 hover:text-bluegray-800 hover:font-bold">
                       More About Us
                     </a>
                   </div>
@@ -843,78 +868,130 @@ function Team() {
 
     <div className="">
 
-    <div className="">
+          <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+            <div className="text-center">
+              <h2 className="text-base font-semibold text-yellow-400 tracking-wide uppercase p-4">Meet Our Team</h2>
+              <p className="mt-1 text-4xl font-extrabold text-bluegray-50 sm:text-5xl sm:tracking-tight lg:text-6xl mb-12">
+                If you need us, we'll be in the Cloud.
+              </p>
+              <p className="max-w-xl mt-5 mx-auto text-xl text-bluegray-300 font-serif">
+                "Don't tell me the sky's the limit when there are footprints on the moon."
+              </p>
+              <p className="italic text-bluegray-500 font-serif">- Paul Brandt</p>
 
-      <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:flex lg:justify-between">
+            </div>
+          </div>
 
-        <div className="max-w-xl">
 
-          <h2 className="text-4xl font-extrabold text-yellow-400 sm:text-5xl sm:tracking-wide lg:text-6xl pb-4">
-            The Team
-          </h2>
-          <p className="mt-2 text-xl text-bluegray-300">
-            Meet the people who make Untether a better place to be.
-          </p>
+
+      <div className="mt-6 bg-bluegray-200 relative shadow max-w-screen mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-16">
+
+      <h2 className=" text-3xl font-normal uppercase text-lightblue-900 sm:tracking-wide  -mt-16 sm:-mt-20 lg:-mt-24 bg-bluegray-50 shadow rounded-full p-4 max-w-md m-auto">
+      Our Aeronauts
+      </h2>
+
+        <div className="space-y-20 my-16">
+
+
+
+
+          <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+               {peoples.map((person) => (
+                 <li
+                   key={person.email}
+                   className="col-span-1 flex flex-col text-center bg-bluegray-50 rounded-lg shadow divide-y divide-bluegray-200"
+                 >
+                   <div className="flex-1 flex flex-col p-8">
+                     <img className="w-32 h-32 flex-shrink-0 mx-auto bg-bluegray-900 rounded-full" src={person.imageUrl} alt="" />
+                     <h3 className="mt-6 text-bluegray-900 text-sm font-medium">{person.name}</h3>
+                     <dl className="mt-1 flex-grow flex flex-col justify-between">
+                       <dt className="sr-only">Title</dt>
+                       <dd className="text-gray-500 text-sm">{person.title}</dd>
+                       <dt className="sr-only">Role</dt>
+                       <dd className="mt-3">
+                         <span className="px-2 py-1 text-bluegray-800 text-xs font-medium bg-yellow-400 rounded-full">
+                           {person.role}
+                         </span>
+                       </dd>
+                     </dl>
+                   </div>
+                   <div>
+                     <div className="-mt-px flex divide-x divide-gray-200">
+                       <div className="w-0 flex-1 flex hover:bg-yellow-400 rounded-b-lg">
+                         <a
+                           href={`mailto:${person.email}`}
+                           className="relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-bg font-medium border border-transparent rounded-bl-lg "
+                         >
+                           <MailIcon className="w-5 h-5 text-bg " aria-hidden="true" />
+                           <span className="ml-3">Email</span>
+                         </a>
+                       </div>
+
+                     </div>
+                   </div>
+                 </li>
+               ))}
+             </ul>
+
+
+
+
+
+
         </div>
+
       </div>
-    </div>
 
-      <div className="border-t-2 border-bluegray-500 border-b-2 border-bluegray-500 max-w-7xl mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-16">
-        <div className="space-y-24">
 
-        <div className="invisible sm:visible absolute -right-56 -mt-48">
-          <div className="w-160 h-160 lg:w-240 lg:h-240 bg-red-900 rounded-full opacity-50">
+      <div className="mt-16 p-8 max-w-7xl m-auto">
+
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {stats.map((item)=>(
+
+        <div key={item.id} className="">
+          <div className="bg-bluegray-200 rounded-full w-56 h-56 text-center">
+            <div className="bg-red-400 h-12 w-12 rounded-full p-6">
+              <item.icon className="h-6 w-6 text-bluegray-50 flex justify-center" />
+            </div>
+            <p className="font-medium"> {item.name}</p>
+            <p className="font-medium"> {item.stat}</p>
           </div>
         </div>
 
-          <div className="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
-            <p className="text-xl text-bluegray-200">
-              "Great things in business are never done by one person. They're done by a team of people."
-            </p>
-            <p className="italic text-bluegray-400">- Steve Jobs</p>
-          </div>
+        ))}
 
-          <ul className="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:grid-cols-3 lg:max-w-5xl">
+      </div>
 
-            {people.map((person) => (
-              <li key={person.name}>
-                <div className="space-y-6">
-                  <img className="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56" src={person.imageUrl} alt="" />
-                  <div className="space-y-2">
-                    <div className="text-lg leading-6 font-medium space-y-1">
-                      <h3 className="text-bluegray-100">{person.name}</h3>
-                      <p className="p-2 text-yellow-400">{person.role}</p>
-                    </div>
-                    <ul className="p-2 flex justify-center space-x-5">
-                      <li>
-                        <a href={person.twitterUrl} className="text-bluegray-400 hover:text-yellow-400">
-                          <span className="sr-only">Twitter</span>
-                          <svg className="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
-                          </svg>
-                        </a>
-                      </li>
-                      <li>
-                        <a href={person.linkedinUrl} className="text-bluegray-400 hover:text-yellow-400">
-                          <span className="sr-only">LinkedIn</span>
-                          <svg className="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                              fillRule="evenodd"
-                              d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
-                              clipRule="evenodd"
-                            />
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+        <dl className=" grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+
+          {stats.map((item) => (
+
+            <div
+              key={item.id}
+              className=" bg-bluegray-50 pt-5 px-6 h-48 w-48 shadow rounded-full overflow-hidden">
+              <dt>
+                <div className="absolute bg-yellow-400 rounded-md p-3">
+                  <item.icon className="h-6 w-6 text-bluegray-50" aria-hidden="true" />
                 </div>
-              </li>
-            ))}
-          </ul>
-        </div>
+                <p className="ml-16 text-sm font-medium text-lightblue-900 truncate">{item.name}</p>
+              </dt>
+              <dd className="ml-16 pb-6 flex items-baseline sm:pb-7">
+                <p className="text-2xl font-semibold text-bluegray-500">{item.stat}</p>
+
+
+              </dd>
+            </div>
+
+          ))}
+
+        </dl>
       </div>
+
+
+
     </div>
+
+
 
   );
 }
