@@ -41,6 +41,7 @@ import {
   ArrowSmUpIcon,
   MailIcon,
   PhoneIcon,
+  CheckIcon,
 } from '@heroicons/react/solid'
 
 //homepage
@@ -260,6 +261,21 @@ const peoples = [
   },
   // More people...
 ]
+
+const culture = [
+  {
+    name: "Balance is important to us",
+    description: "Don't cringe when you hear worklife balance at Untether, because we mean it. We balance our work by putting life first.",
+  },
+  { name: "We're always craving more", description: "Just because we work around life doesn't mean we are indifferent when we work. We are never complacent, always craving to be better, to do better in all aspects of life." },
+  {
+    name: "We never stop learning",
+    description: "We don't know it all and won't pretend to. We are always learning, researching and reading to make ourselves better.",
+  },
+  { name: 'Integrity is imperative', description: "We actively commit to operating with integrity, in every interaction, in every project, inside and outside of the office." },
+  { name: "Aeronauts in practice but not reality", description: "We don't actually fly hot air balloons, but we do strive to elevate and uplift everyone around us, in every interaction. If we ask about your family, it's because we mean it." },
+  { name: 'Sometimes we work different hours', description: "We don't hold office hours from 9-5 everyday, because life doesn't always work around work." },
+]
 //team
 
 function classNames(...classes) {
@@ -460,7 +476,7 @@ export default function BasicExample() {
 
                 <div className="grid grid-cols-2 md:gap-8 items-start justify-items-center sm:justify-items-end">
                   <div>
-                    <h3 className="text-sm font-semibold text-yellow-400 tracking-wider uppercase">Education</h3>
+                    <h3 className="text-sm font-semibold text-yellow-300 tracking-wider uppercase">Education</h3>
                     <ul className="mt-4 space-y-4">
                       {navigation.education.map((item) => (
                         <li key={item.name}>
@@ -473,7 +489,7 @@ export default function BasicExample() {
                   </div>
 
                   <div className="">
-                    <h3 className="text-sm font-semibold text-yellow-400 tracking-wider uppercase">Enterprise</h3>
+                    <h3 className="text-sm font-semibold text-yellow-300 tracking-wider uppercase">Enterprise</h3>
                     <ul className="mt-4 space-y-4">
                       {navigation.enterprise.map((item) => (
                         <li key={item.name}>
@@ -595,7 +611,7 @@ function Home() {
                 </p>
                 <div className="mt-10 w-64">
                   <div className="">
-                    <a href="team" className="flex items-center justify-center ml-4 p-4 w-48 border-2 border-yellow-400 text-sm font-normal tracking-wider uppercase rounded-full text-yellow-400 bg-transparent hover:bg-yellow-400 hover:text-bluegray-800 hover:font-bold">
+                    <a href="team" className="flex items-center justify-center ml-16 p-4 w-48 border-2 border-yellow-400 text-sm font-normal tracking-wider uppercase rounded-full text-bluegray-800 bg-yellow-400 hover:bg-transparent hover:text-yellow-400 hover:font-bold">
                       More About Us
                     </a>
                   </div>
@@ -906,10 +922,10 @@ function Team() {
                      <h3 className="mt-6 text-bluegray-900 text-sm font-medium">{person.name}</h3>
                      <dl className="mt-1 flex-grow flex flex-col justify-between">
                        <dt className="sr-only">Title</dt>
-                       <dd className="text-gray-500 text-sm">{person.title}</dd>
+                       <dd className="text-bluegray-500 text-sm">{person.title}</dd>
                        <dt className="sr-only">Role</dt>
                        <dd className="mt-3">
-                         <span className="px-2 py-1 text-bluegray-800 text-xs font-medium bg-yellow-400 rounded-full">
+                         <span className="px-2 py-1 text-bluegray-800 text-xs font-medium bg-yellow-300 rounded-full">
                            {person.role}
                          </span>
                        </dd>
@@ -943,18 +959,18 @@ function Team() {
       </div>
 
 
-      <div className="mt-16 p-8 max-w-7xl m-auto">
+      <div className=" mt-8 mb-8 p-8 max-w-7xl m-auto">
 
-      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 justify-items-center">
         {stats.map((item)=>(
 
-        <div key={item.id} className="">
-          <div className="bg-bluegray-200 rounded-full w-56 h-56 text-center">
-            <div className="bg-red-400 h-12 w-12 rounded-full p-6">
-              <item.icon className="h-6 w-6 text-bluegray-50 flex justify-center" />
+        <div key={item.id} className="grid m-4">
+          <div className="bg-bluegray-200 rounded-full w-56 h-56 text-center grid content-center">
+            <div className="-mt-24 bg-yellow-400 h-16 w-16 rounded-xl p-6 m-auto grid content-center justify-center">
+              <item.icon className="h-8 w-8 text-bluegray-50" />
             </div>
-            <p className="font-medium"> {item.name}</p>
-            <p className="font-medium"> {item.stat}</p>
+            <p className="font-medium text-sm uppercase pt-6 text-bluegray-500"> {item.name}</p>
+            <p className="font-medium text-4xl text-lightblue-900 "> {item.stat}</p>
           </div>
         </div>
 
@@ -962,32 +978,33 @@ function Team() {
 
       </div>
 
-        <dl className=" grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
 
-          {stats.map((item) => (
-
-            <div
-              key={item.id}
-              className=" bg-bluegray-50 pt-5 px-6 h-48 w-48 shadow rounded-full overflow-hidden">
-              <dt>
-                <div className="absolute bg-yellow-400 rounded-md p-3">
-                  <item.icon className="h-6 w-6 text-bluegray-50" aria-hidden="true" />
-                </div>
-                <p className="ml-16 text-sm font-medium text-lightblue-900 truncate">{item.name}</p>
-              </dt>
-              <dd className="ml-16 pb-6 flex items-baseline sm:pb-7">
-                <p className="text-2xl font-semibold text-bluegray-500">{item.stat}</p>
-
-
-              </dd>
-            </div>
-
-          ))}
-
-        </dl>
       </div>
 
-
+      <div className="bg-bluegray-900">
+        <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
+          <div>
+            <h2 className="text-base font-semibold text-bluegray-300 uppercase tracking-wide">We Work better</h2>
+            <p className="mt-2 text-4xl font-extrabold tracking-wide text-yellow-300">Because work doesn't come first</p>
+            <p className="mt-4 text-lg text-bluegray-400">
+              At Untether, we realize we're better employees when life takes the lead.
+            </p>
+          </div>
+          <div className="mt-12 lg:mt-0 lg:col-span-2">
+            <dl className="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:grid-rows-3 sm:grid-flow-col sm:gap-x-6 sm:gap-y-10 lg:gap-x-8">
+              {culture.map((feature) => (
+                <div key={culture.name} className="relative">
+                  <dt>
+                    <CheckIcon className="absolute h-6 w-6 text-yellow-300" aria-hidden="true" />
+                    <p className="ml-9 text-lg leading-6 font-medium text-bluegray-100">{feature.name}</p>
+                  </dt>
+                  <dd className="mt-2 ml-9 text-base text-bluegray-400">{feature.description}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </div>
+      </div>
 
     </div>
 
