@@ -34,6 +34,12 @@ CogIcon,
  UserGroupIcon,
  MailOpenIcon,
  UsersIcon,
+ CameraIcon,
+ AcademicCapIcon,
+ BadgeCheckIcon,
+ CashIcon,
+ ClockIcon,
+ ReceiptRefundIcon,
 } from '@heroicons/react/outline'
 import {
   ChevronDownIcon,
@@ -48,9 +54,9 @@ import {
 const features = [
 {
 name: 'Our greatest strength lies in the ability to make your business run more smoothly.',
-href: '/integrations',
-button: 'Our Favorite Integrations',
-description: 'We believe in Product Minded Development, which means your needs come first. We thrive on building integrations that connect disparate systems and automating tedious manual tasks, making your worklife better.',
+href: '/services',
+button: 'Our Favorite Services',
+description: 'We believe in Product Minded Development, which means your needs come first. We thrive on building services that connect disparate systems and automating tedious manual tasks, making your worklife better.',
 icon: CursorClickIcon,
 },
 {
@@ -62,8 +68,8 @@ icon: CogIcon,
 },
 {
 name: "If a solution exists, we'll find it, and if it doesn't, we'll build it.",
-href: '/technicalexpertise',
-button: 'Our Technical Expertise',
+href: '/technologies',
+button: 'The Technologies We Use',
 description: "We handle everything from backend database development to the frontend UI layer, committing to a solid user experience for everyone involved. We are proficient in C#, Javascript and Ruby and have a special love for web and mobile applications.",
 icon: OfficeBuildingIcon },
 ]
@@ -114,8 +120,8 @@ icon: CalendarIcon,
 
 const enterprise = [
   { name: 'Case Studies', href: '/casestudies', icon: InformationCircleIcon },
-  { name: 'Technical Expertise', href: '/technicalexpertise', icon: OfficeBuildingIcon },
-  { name: 'Integrations', href: '/integrations', icon: NewspaperIcon },
+  { name: 'Technologies We Use', href: '/technologies', icon: OfficeBuildingIcon },
+  { name: 'Services', href: '/services', icon: NewspaperIcon },
   { name: 'Meet Our Team', href: '/team', icon: BriefcaseIcon },
   { name: 'Business Portal', href: '#', icon: ShieldCheckIcon },
 ]
@@ -153,8 +159,8 @@ const navigation = {
   ],
   enterprise: [
     { name: 'Case Studies', href: '/casestudies' },
-    { name: 'Technical Expertise', href: '/technicalexpertise' },
-    { name: 'Integrations', href: '/integrations' },
+    { name: 'Technologies We Use', href: '/technologies' },
+    { name: 'Services', href: '/services' },
     { name: 'Meet Our Team', href: '/team' },
     { name: 'Business Portal', href: '#' },
 
@@ -277,6 +283,97 @@ const culture = [
   { name: 'Sometimes we work different hours', description: "We don't hold office hours from 9-5 everyday, because life doesn't always work around work." },
 ]
 //team
+
+//technologies
+
+const coding = [
+  {
+    id: 1,
+    title: "C#",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+  {
+    id: 1,
+    title: "Ruby",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+  {
+    id: 1,
+    title: "Javascript",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+  {
+    id: 1,
+    title: "Lorem",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+  {
+    id: 1,
+    title: "Ipsum",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+  {
+    id: 1,
+    title: "Lorem",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+]
+
+//technologies
+
+//services
+
+const actions = [
+  {
+    title: 'Request time off',
+    icon: ClockIcon,
+    iconForeground: 'text-teal-700',
+    iconBackground: 'bg-teal-50',
+  },
+  {
+    title: 'Benefits',
+    icon: BadgeCheckIcon,
+    iconForeground: 'text-purple-700',
+    iconBackground: 'bg-purple-50',
+  },
+  {
+    title: 'Schedule a one-on-one',
+    icon: UsersIcon,
+    iconForeground: 'text-sky-700',
+    iconBackground: 'bg-sky-50',
+  },
+  { title: 'Payroll',
+  icon: CashIcon, 
+  iconForeground: 'text-yellow-700',
+  iconBackground: 'bg-yellow-50' },
+  {
+    title: 'Submit an expense',
+    icon: ReceiptRefundIcon,
+    iconForeground: 'text-rose-700',
+    iconBackground: 'bg-rose-50',
+  },
+  {
+    title: 'Training',
+    icon: AcademicCapIcon,
+    iconForeground: 'text-indigo-700',
+    iconBackground: 'bg-indigo-50',
+  },
+]
+
+const metrics = [
+  { id: 1, stat: '8K+', emphasis: 'Companies', rest: 'use laoreet amet lacus nibh integer quis.' },
+  { id: 2, stat: '25K+', emphasis: 'Countries around the globe', rest: 'lacus nibh integer quis.' },
+  { id: 3, stat: '98%', emphasis: 'Customer satisfaction', rest: 'laoreet amet lacus nibh integer quis.' },
+  { id: 4, stat: '12M+', emphasis: 'Issues resolved', rest: 'lacus nibh integer quis.' },
+]
+
+//services
 
 function classNames(...classes) {
 return classes.filter(Boolean).join(' ')
@@ -427,11 +524,11 @@ export default function BasicExample() {
           <Route path="/casestudies">
             <Casestudies />
           </Route>
-          <Route path="/technicalexpertise">
-            <Technicalexpertise />
+          <Route path="/technologies">
+            <Technologies />
           </Route>
-          <Route path="/integrations">
-            <Integrations />
+          <Route path="/services">
+            <Services />
           </Route>
           <Route path="/educatorservices">
             <Educatorservices />
@@ -476,7 +573,7 @@ export default function BasicExample() {
 
                 <div className="grid grid-cols-2 md:gap-8 items-start justify-items-center sm:justify-items-end">
                   <div>
-                    <h3 className="text-sm font-semibold text-yellow-300 tracking-wider uppercase">Education</h3>
+                    <h3 className="text-sm font-semibold text-yellow-400 tracking-wider uppercase">Education</h3>
                     <ul className="mt-4 space-y-4">
                       {navigation.education.map((item) => (
                         <li key={item.name}>
@@ -489,7 +586,7 @@ export default function BasicExample() {
                   </div>
 
                   <div className="">
-                    <h3 className="text-sm font-semibold text-yellow-300 tracking-wider uppercase">Enterprise</h3>
+                    <h3 className="text-sm font-semibold text-yellow-400 tracking-wider uppercase">Enterprise</h3>
                     <ul className="mt-4 space-y-4">
                       {navigation.enterprise.map((item) => (
                         <li key={item.name}>
@@ -985,7 +1082,7 @@ function Team() {
         <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
           <div>
             <h2 className="text-base font-semibold text-bluegray-300 uppercase tracking-wide">We Work better</h2>
-            <p className="mt-2 text-4xl font-extrabold tracking-wide text-yellow-300">Because work doesn't come first</p>
+            <p className="mt-2 text-4xl font-extrabold tracking-wide text-yellow-400">Because work doesn't come first</p>
             <p className="mt-4 text-lg text-bluegray-400">
               At Untether, we realize we're better employees when life takes the lead.
             </p>
@@ -995,7 +1092,7 @@ function Team() {
               {culture.map((feature) => (
                 <div key={culture.name} className="relative">
                   <dt>
-                    <CheckIcon className="absolute h-6 w-6 text-yellow-300" aria-hidden="true" />
+                    <CheckIcon className="absolute h-6 w-6 text-yellow-400" aria-hidden="true" />
                     <p className="ml-9 text-lg leading-6 font-medium text-bluegray-100">{feature.name}</p>
                   </dt>
                   <dd className="mt-2 ml-9 text-base text-bluegray-400">{feature.description}</dd>
@@ -1021,18 +1118,214 @@ function Casestudies() {
   );
 }
 
-function Technicalexpertise() {
+function Technologies() {
   return (
-    <div className="bg-yellow-400">
-      <h2>Technical Expertise</h2>
+    <div className="">
+
+      <div className=" max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+
+        <div className="text-center">
+          <h2 className="text-base font-semibold text-yellow-400 tracking-wide uppercase p-4">Technologies We Use</h2>
+          <p className="mt-1 text-4xl font-extrabold text-bluegray-50 sm:text-5xl sm:tracking-tight lg:text-6xl mb-12">
+            Let's Talk About Tech
+          </p>
+        </div>
+      </div>
+
+        <div className="bg-bluegray-100 overflow-hidden">
+              <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+                <div className="hidden lg:block bg-bluegray-200 absolute top-0 bottom-0 left-3/4 w-screen" />
+                <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
+                  <div>
+                    <h2 className="text-base text-bluegray-500 font-semibold tracking-wide uppercase">More About us</h2>
+                    <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-bluegray-800 sm:text-4xl">
+                      Meet Whitney
+                    </h3>
+                  </div>
+                </div>
+                <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
+                  <div className="relative lg:row-start-1 lg:col-start-2">
+
+                    <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
+                      <figure>
+                        <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
+                          <img
+                            className="rounded-lg shadow-lg object-cover object-center"
+                            src="https://images.unsplash.com/photo-1546913199-55e06682967e?ixlib=rb-1.2.1&auto=format&fit=crop&crop=focalpoint&fp-x=.735&fp-y=.55&w=1184&h=1376&q=80"
+                            alt="Whitney leaning against a railing on a downtown street"
+                            width={1184}
+                            height={1376}
+                          />
+                        </div>
+                        <figcaption className="mt-3 flex text-sm text-gray-500">
+                          <CameraIcon className="flex-none w-5 h-5 text-bluegray-400" aria-hidden="true" />
+                          <span className="ml-2">Photograph by Marcus O’Leary</span>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                  <div className="mt-8 lg:mt-0">
+                    <div className="text-base max-w-prose mx-auto lg:max-w-none">
+                      <p className="text-lg text-bluegray-500">
+                        Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique
+                        pellentesque. Blandit amet, sed aenean erat arcu morbi.
+                      </p>
+                    </div>
+                    <div className="mt-5 prose prose-indigo text-bluegray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
+                      <p>
+                        Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget
+                        pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna.
+                      </p>
+
+                      <ul>
+                        <li>Quis elit egestas venenatis mattis dignissim.</li>
+                        <li>Cras cras lobortis vitae vivamus ultricies facilisis tempus.</li>
+                        <li>Orci in sit morbi dignissim metus diam arcu pretium.</li>
+                      </ul>
+                      <p>
+                        Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies. Vulputate aliquet
+                        velit faucibus semper. Pellentesque in venenatis vestibulum consectetur nibh id. In id ut tempus
+                        egestas. Enim sit aliquam nec, a. Morbi enim fermentum lacus in. Viverra.
+                      </p>
+                      <h3>How we helped</h3>
+                      <p>
+                        Tincidunt integer commodo, cursus etiam aliquam neque, et. Consectetur pretium in volutpat, diam.
+                        Montes, magna cursus nulla feugiat dignissim id lobortis amet. Laoreet sem est phasellus eu proin massa,
+                        lectus. Diam rutrum posuere donec ultricies non morbi. Mi a platea auctor mi.
+                      </p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+      </div>
+
+      <div className="bg-bluegray-900">
+            <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+              <div className="max-w-2xl lg:mx-auto lg:text-center">
+                <h2 className="text-3xl font-extrabold tracking-wide text-yellow-400 sm:text-4xl">
+                  Languages We Love
+                </h2>
+                <p className="mt-4 text-bluegray-400">
+                  Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.
+                  Urna, sed a lectus elementum blandit et.
+                </p>
+              </div>
+              <div className="mt-20">
+                <dl className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-10">
+                  {coding.map((coding) => (
+                    <div key={coding.id}>
+                      <dt className="font-semibold text-bluegray-200">{coding.title}</dt>
+                      <dd className="mt-3 text-bluegray-400">{coding.description}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+            </div>
+          </div>
+
     </div>
   );
 }
 
-function Integrations() {
+function Services() {
   return (
-    <div className="bg-yellow-400">
-      <h2>Integrations</h2>
+
+    <div>
+
+      <div className=" max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+        <div className="text-center">
+          <h2 className="text-base font-semibold text-yellow-400 tracking-wide uppercase p-4">Services</h2>
+          <p className="mt-1 text-4xl font-extrabold text-bluegray-50 sm:text-5xl sm:tracking-tight capitalize lg:text-6xl mb-12">
+        What can we offer your business?
+          </p>
+        </div>
+     </div>
+
+     <div className="max-w-7xl mx-auto overflow-hidden shadow divide-y divide-gray-200 sm:divide-y-0 sm:grid sm:grid-cols-2 sm:gap-px">
+           {actions.map((action, actionIdx) => (
+             <div
+               key={action.title}
+               className={classNames(
+                 actionIdx === 0 ? 'rounded-tl-lg rounded-tr-lg sm:rounded-tr-none' : '',
+                 actionIdx === 1 ? 'sm:rounded-tr-lg' : '',
+                 actionIdx === actions.length - 2 ? 'sm:rounded-bl-lg' : '',
+                 actionIdx === actions.length - 1 ? 'rounded-bl-lg rounded-br-lg sm:rounded-bl-none' : '',
+                 'relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500'
+               )}
+             >
+               <div>
+                 <span
+                   className={classNames(
+                     action.iconBackground,
+                     action.iconForeground,
+                     'rounded-lg inline-flex p-3 ring-4 ring-white'
+                   )}
+                 >
+                   <action.icon className="h-6 w-6" aria-hidden="true" />
+                 </span>
+               </div>
+               <div className="mt-8">
+                 <h3 className="text-lg font-medium">
+                   <a href={action.href} className="focus:outline-none">
+                     {/* Extend touch target to entire panel */}
+                     <span className="absolute inset-0" aria-hidden="true" />
+                     {action.title}
+                   </a>
+                 </h3>
+                 <p className="mt-2 text-sm text-bluegray-400">
+                   Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et
+                   quo et molestiae.
+                 </p>
+               </div>
+
+             </div>
+           ))}
+         </div>
+
+        <div className="relative bg-bluegray-900">
+              <div className="h-80 w-full absolute bottom-0 xl:inset-0 xl:h-full">
+                <div className="h-full w-full xl:grid xl:grid-cols-2">
+                  <div className="h-full xl:relative xl:col-start-2">
+                    <img
+                      className="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0"
+                      src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
+                      alt="People working on laptops"
+                    />
+                    <div
+                      aria-hidden="true"
+                      className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-bluegray-900 to-bluegray-800 xl:inset-y-0 xl:left-0 xl:h-full xl:w-32 xl:bg-gradient-to-r"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-cols-2 xl:grid-flow-col-dense xl:gap-x-8">
+                <div className="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24">
+                  <h2 className="text-sm font-semibold text-yellow-400 tracking-wide uppercase">Valuable Metrics</h2>
+                  <p className="mt-3 text-3xl font-extrabold text-bluegray-50">
+                    Get actionable data that will help grow your business
+                  </p>
+                  <p className="mt-5 text-lg text-bluegray-300">
+                    Rhoncus sagittis risus arcu erat lectus bibendum. Ut in adipiscing quis in viverra tristique sem. Ornare
+                    feugiat viverra eleifend fusce orci in quis amet. Sit in et vitae tortor, massa. Dapibus laoreet amet lacus
+                    nibh integer quis. Eu vulputate diam sit tellus quis at.
+                  </p>
+                  <div className="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2">
+                    {metrics.map((item) => (
+                      <p key={item.id}>
+                        <span className="block text-2xl font-bold text-bluegray-50">{item.stat}</span>
+                        <span className="mt-1 block text-base text-bluegray-400">
+                          <span className="font-medium text-bluegray-50">{item.emphasis}</span> {item.rest}
+                        </span>
+                      </p>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+
     </div>
   );
 }

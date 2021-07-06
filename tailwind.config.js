@@ -19,7 +19,7 @@ module.exports = {
       indigo: colors.indigo,
       emerald: colors.emerald,
       green: colors.green,
-      'bg': '#14273d', 
+      'bg': '#14273d',
     },
     fontFamily: {
       'sans':['Lato', 'ui-sans-serif'],
@@ -61,6 +61,8 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/typography'),
     require('@tailwindcss/aspect-ratio'),
   ],
