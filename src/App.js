@@ -331,15 +331,15 @@ const coding = [
 
 const actions = [
   {
-    title: 'Request time off',
+    title: 'API Integrations',
     icon: ClockIcon,
-    iconForeground: 'text-cyan-100',
-    iconBackground: 'bg-cyan-500',
+    iconForeground: 'text-emerald-100',
+    iconBackground: 'bg-emerald-500',
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
 
   },
   {
-    title: 'Benefits',
+    title: 'Custom Automations',
     icon: BadgeCheckIcon,
     iconForeground: 'text-indigo-100',
     iconBackground: 'bg-indigo-500',
@@ -347,33 +347,33 @@ const actions = [
 
   },
   {
-    title: 'Schedule a one-on-one',
+    title: 'Webmaster Services',
     icon: UsersIcon,
-    iconForeground: 'text-green-100',
-    iconBackground: 'bg-green-500',
+    iconForeground: 'text-blue-100',
+    iconBackground: 'bg-blue-500',
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
 
   },
-  { title: 'Payroll',
+  { title: 'Third-Party Integrations',
   icon: CashIcon,
-  iconForeground: 'text-teal-100',
-  iconBackground: 'bg-teal-500',
+  iconForeground: 'text-lime-100',
+  iconBackground: 'bg-lime-500',
   description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
 },
 
   {
-    title: 'Submit an expense',
+    title: 'Database Development',
     icon: ReceiptRefundIcon,
-    iconForeground: 'text-red-100',
-    iconBackground: 'bg-red-500',
+    iconForeground: 'text-rose-100',
+    iconBackground: 'bg-rose-500',
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
 
   },
   {
-    title: 'Training',
+    title: 'Technology Education',
     icon: AcademicCapIcon,
-    iconForeground: 'text-blue-100',
-    iconBackground: 'bg-blue-500',
+    iconForeground: 'text-cyan-100',
+    iconBackground: 'bg-cyan-500',
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
 
   },
@@ -1254,11 +1254,15 @@ function Services() {
           <p className="mt-1 text-4xl font-extrabold text-bluegray-50 sm:text-5xl sm:tracking-tight capitalize lg:text-6xl mb-12">
         What can we offer your business?
           </p>
+          <p className="max-w-xl mt-5 mx-auto text-xl text-bluegray-300 font-serif">
+            "Untether has saved me so much time and money automating things that used to take me hours."
+          </p>
+          <p className="italic text-bluegray-500 font-serif">- Random Client</p>
         </div>
      </div>
 
     <div className="max-w-screen bg-bluegray-50">
-     <div className="max-w-7xl mx-auto overflow-hidden divide-y divide-bluegray-200  sm:grid sm:grid-cols-2  ">
+     <div className="py-8 max-w-7xl mx-auto overflow-hidden sm:grid sm:grid-cols-2  ">
            {actions.map((action, actionIdx) => (
              <div key={action.title}
                className={classNames( 'p-6 ')}>
@@ -1278,7 +1282,7 @@ function Services() {
                      <span className="absolute inset-0" aria-hidden="true" />
                      {action.title}
                  </h3>
-                 <p className="mt-2 text-sm text-bluegray-400">
+                 <p className="mt-2 text-sm text-bluegray-400 border-b-2 border-bluegray-200 pb-8">
                     {action.description}
                  </p>
                </div>
