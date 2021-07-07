@@ -333,36 +333,49 @@ const actions = [
   {
     title: 'Request time off',
     icon: ClockIcon,
-    iconForeground: 'text-teal-700',
-    iconBackground: 'bg-teal-50',
+    iconForeground: 'text-cyan-100',
+    iconBackground: 'bg-cyan-500',
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+
   },
   {
     title: 'Benefits',
     icon: BadgeCheckIcon,
-    iconForeground: 'text-purple-700',
-    iconBackground: 'bg-purple-50',
+    iconForeground: 'text-indigo-100',
+    iconBackground: 'bg-indigo-500',
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+
   },
   {
     title: 'Schedule a one-on-one',
     icon: UsersIcon,
-    iconForeground: 'text-sky-700',
-    iconBackground: 'bg-sky-50',
+    iconForeground: 'text-green-100',
+    iconBackground: 'bg-green-500',
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+
   },
   { title: 'Payroll',
-  icon: CashIcon, 
-  iconForeground: 'text-yellow-700',
-  iconBackground: 'bg-yellow-50' },
+  icon: CashIcon,
+  iconForeground: 'text-teal-100',
+  iconBackground: 'bg-teal-500',
+  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+},
+
   {
     title: 'Submit an expense',
     icon: ReceiptRefundIcon,
-    iconForeground: 'text-rose-700',
-    iconBackground: 'bg-rose-50',
+    iconForeground: 'text-red-100',
+    iconBackground: 'bg-red-500',
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+
   },
   {
     title: 'Training',
     icon: AcademicCapIcon,
-    iconForeground: 'text-indigo-700',
-    iconBackground: 'bg-indigo-50',
+    iconForeground: 'text-blue-100',
+    iconBackground: 'bg-blue-500',
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+
   },
 ]
 
@@ -1244,24 +1257,17 @@ function Services() {
         </div>
      </div>
 
-     <div className="max-w-7xl mx-auto overflow-hidden shadow divide-y divide-gray-200 sm:divide-y-0 sm:grid sm:grid-cols-2 sm:gap-px">
+    <div className="max-w-screen bg-bluegray-50">
+     <div className="max-w-7xl mx-auto overflow-hidden divide-y divide-bluegray-200  sm:grid sm:grid-cols-2  ">
            {actions.map((action, actionIdx) => (
-             <div
-               key={action.title}
-               className={classNames(
-                 actionIdx === 0 ? 'rounded-tl-lg rounded-tr-lg sm:rounded-tr-none' : '',
-                 actionIdx === 1 ? 'sm:rounded-tr-lg' : '',
-                 actionIdx === actions.length - 2 ? 'sm:rounded-bl-lg' : '',
-                 actionIdx === actions.length - 1 ? 'rounded-bl-lg rounded-br-lg sm:rounded-bl-none' : '',
-                 'relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500'
-               )}
-             >
+             <div key={action.title}
+               className={classNames( 'p-6 ')}>
                <div>
                  <span
                    className={classNames(
                      action.iconBackground,
                      action.iconForeground,
-                     'rounded-lg inline-flex p-3 ring-4 ring-white'
+                     'rounded-lg inline-flex p-3 shadow'
                    )}
                  >
                    <action.icon className="h-6 w-6" aria-hidden="true" />
@@ -1269,21 +1275,18 @@ function Services() {
                </div>
                <div className="mt-8">
                  <h3 className="text-lg font-medium">
-                   <a href={action.href} className="focus:outline-none">
-                     {/* Extend touch target to entire panel */}
                      <span className="absolute inset-0" aria-hidden="true" />
                      {action.title}
-                   </a>
                  </h3>
                  <p className="mt-2 text-sm text-bluegray-400">
-                   Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et
-                   quo et molestiae.
+                    {action.description}
                  </p>
                </div>
 
              </div>
            ))}
          </div>
+      </div>
 
         <div className="relative bg-bluegray-900">
               <div className="h-80 w-full absolute bottom-0 xl:inset-0 xl:h-full">
