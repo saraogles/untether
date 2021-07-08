@@ -61,14 +61,14 @@ icon: CursorClickIcon,
 },
 {
 name: "We solve real problems for real businesses, just like yours.",
-href: '/casestudies',
-button: 'Our Case Studies',
+href: '/ourwork',
+button: 'See Our Work',
 description: "With 50 years of collective experience, we are committed to designing a solution to fit your specific business model. We have worked in both commercial and government spaces, manufacturing plants to showroom floors, landing page websites and online storefronts.",
 icon: CogIcon,
 },
 {
 name: "If a solution exists, we'll find it, and if it doesn't, we'll build it.",
-href: '/technologies',
+href: '#',
 button: 'The Technologies We Use',
 description: "We handle everything from backend database development to the frontend UI layer, committing to a solid user experience for everyone involved. We are proficient in C#, Javascript and Ruby and have a special love for web and mobile applications.",
 icon: OfficeBuildingIcon },
@@ -77,7 +77,7 @@ icon: OfficeBuildingIcon },
 const passionate = [
 {
 name: '". . . about your growing business"',
-href: '/casestudies',
+href: '/ourwork',
 button: 'Learn More',
 description: 'We are as dedicated to your dreams as we are our own. We get excited about entrepreneurship and watching small businesses grow and would love to be part of your story. We are here to help you find, develop and integrate technical efficiencies and automations so you can keep dreaming big.',
 icon: CursorClickIcon,
@@ -119,7 +119,7 @@ icon: CalendarIcon,
 
 
 const enterprise = [
-  { name: 'Case Studies', href: '/casestudies', icon: InformationCircleIcon },
+  { name: 'See Our Work', href: '/ourwork', icon: InformationCircleIcon },
   { name: 'Technologies We Use', href: '/technologies', icon: OfficeBuildingIcon },
   { name: 'Services', href: '/services', icon: NewspaperIcon },
   { name: 'Meet Our Team', href: '/team', icon: BriefcaseIcon },
@@ -158,7 +158,7 @@ const navigation = {
     { name: 'Educator Portal', href: '#' },
   ],
   enterprise: [
-    { name: 'Case Studies', href: '/casestudies' },
+    { name: 'See Our Work', href: '/ourwork' },
     { name: 'Technologies We Use', href: '/technologies' },
     { name: 'Services', href: '/services' },
     { name: 'Meet Our Team', href: '/team' },
@@ -388,6 +388,69 @@ const metrics = [
 
 //services
 
+//Ourwork
+
+const work = [
+  {
+    client: 'IMG_4985.HEIC',
+    caption: '3.9 MB',
+    project: 'test',
+    source:
+      'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
+  },
+  {
+    client: 'IMG_4985.HEIC',
+    caption: '3.9 MB',
+    project: 'test',
+    source:
+      'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
+  },
+  {
+    client: 'IMG_4985.HEIC',
+    caption: '3.9 MB',
+    project: 'test',
+    source:
+      'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
+  },
+  {
+    client: 'IMG_4985.HEIC',
+    caption: '3.9 MB',
+    project: 'test',
+    source:
+      'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
+  },
+  {
+    client: 'IMG_4985.HEIC',
+    caption: '3.9 MB',
+    project: 'test',
+    source:
+      'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
+  },
+  {
+    client: 'IMG_4985.HEIC',
+    caption: '3.9 MB',
+    project: 'test',
+    source:
+      'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
+  },
+  {
+    client: 'IMG_4985.HEIC',
+    caption: '3.9 MB',
+    project: 'test',
+    source:
+      'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
+  },
+  {
+    client: 'IMG_4985.HEIC',
+    caption: '3.9 MB',
+    project: 'test',
+    source:
+      'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
+  },
+]
+
+//ourwork
+
 function classNames(...classes) {
 return classes.filter(Boolean).join(' ')
 }
@@ -534,8 +597,8 @@ export default function BasicExample() {
           <Route path="/team">
             <Team />
           </Route>
-          <Route path="/casestudies">
-            <Casestudies />
+          <Route path="/ourwork">
+            <Ourwork />
           </Route>
           <Route path="/technologies">
             <Technologies />
@@ -800,7 +863,7 @@ function Home() {
                         <p className="text-sm text-bluegray-700 font-serif">
                           {feature.description}
                         </p>
-                        <button className="shadow p-4 mb-4 sm:-mt-2 text-xs tracking-wider uppercase text-bluegray-800 bg-yellow-400 border-2 border-yellow-400 rounded-full hover:border-yellow-500 hover:bg-bluegray-200 hover:text-bluegray-900">{feature.button}</button>
+                        <button href={feature.href} className="shadow p-4 mb-4 sm:-mt-2 text-xs tracking-wider uppercase text-bluegray-800 bg-yellow-400 border-2 border-yellow-400 rounded-full hover:border-yellow-500 hover:bg-bluegray-200 hover:text-bluegray-900">{feature.button}</button>
                       </div>
                     </div>
                   </div>
@@ -1123,10 +1186,44 @@ function Team() {
   );
 }
 
-function Casestudies() {
+function Ourwork() {
   return (
-    <div className="bg-yellow-400">
-      <h2>Case Studies</h2>
+    <div className="">
+
+
+
+    <div className=" max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <div className="text-center">
+        <h2 className="text-base font-semibold text-yellow-400 tracking-wide uppercase p-4">See our work</h2>
+        <p className="mt-1 text-4xl font-extrabold text-bluegray-50 sm:text-5xl sm:tracking-tight capitalize lg:text-6xl mb-12">
+clients we have helped
+        </p>
+        <p className="max-w-xl mt-5 mx-auto text-xl text-bluegray-300 font-serif">
+          "Untether has saved me so much time and money automating things that used to take me hours."
+        </p>
+        <p className="italic text-bluegray-500 font-serif">- Random Client</p>
+      </div>
+   </div>
+
+   <div className="bg-bluegray-200 ">
+     <ul role="list" className=" grid justify-center mx-36 py-16 grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8 ">
+           {work.map((work) => (
+             <li key={work.source} className="relative">
+               <div className="group block w-full aspect-w-10 aspect-h-7 rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-bluegray-100 focus-within:ring-yellow-400 overflow-hidden">
+                 <img src={work.source} alt="" className="object-cover pointer-events-none group-hover:opacity-25" />
+                 <button type="button" className="absolute inset-0 focus:outline-none">
+                   <span className="sr-only">View details for {work.title}</span>
+                 </button>
+                 <p className="opacity-0 hover:opacity-100 font-bold text-bluegray-800 text-2xl text-center grid content-center">{work.project}</p>
+
+               </div>
+               <p className="mt-2 block text-sm font-medium text-gray-900 truncate pointer-events-none">{work.client}</p>
+               <p className="block text-sm font-medium text-gray-500 pointer-events-none">{work.caption}</p>
+             </li>
+           ))}
+         </ul>
+     </div>
+
     </div>
   );
 }
@@ -1310,7 +1407,7 @@ function Services() {
               </div>
               <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-cols-2 xl:grid-flow-col-dense xl:gap-x-8">
                 <div className="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24">
-                  <h2 className="text-sm font-semibold text-yellow-400 tracking-wide uppercase">Valuable Metrics</h2>
+                  <h2 className="text-sm font-semibold text-yellow-400 tracking-wide uppercase">Save time and money</h2>
                   <p className="mt-3 text-3xl font-extrabold text-bluegray-50">
                     Get actionable data that will help grow your business
                   </p>
