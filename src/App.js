@@ -40,6 +40,9 @@ CogIcon,
  CashIcon,
  ClockIcon,
  ReceiptRefundIcon,
+ ScaleIcon,
+ LightningBoltIcon,
+ AnnotationIcon,
 } from '@heroicons/react/outline'
 import {
   ChevronDownIcon,
@@ -78,15 +81,15 @@ const passionate = [
 {
 name: '". . . about your growing business"',
 href: '/ourwork',
-button: 'Learn More',
+button: "Clients We've Helped",
 description: 'We are as dedicated to your dreams as we are our own. We get excited about entrepreneurship and watching small businesses grow and would love to be part of your story. We are here to help you find, develop and integrate technical efficiencies and automations so you can keep dreaming big.',
 icon: CursorClickIcon,
 imageUrl: 'aimee.png',
 },
 {
 name: '". . . about training educators in techology"',
-href: '/educatorservices',
-button: 'Learn More',
+href: '/education',
+button: 'More About Education',
 description: "Integrating technology in the classroom doesn't have to be daunting. We're here to help you take these new tools and add efficiency and easier access to knowledge in your classrooms everyday. Whether you're intimidated by the techology itself or the endless list of options, we are with you until technology makes your day better, not worse.",
 icon: CogIcon,
 imageUrl: 'aimee.png',
@@ -94,39 +97,16 @@ imageUrl: 'aimee.png',
 
 ]
 
-
-const edresources = [
-{
-name: 'Educator Services',
-description: 'Get all of your questions answered in our forums or contact support.',
-href: '/educatorservices',
-icon: SupportIcon,
-},
-{
-name: 'Untethered Blog',
-description: 'Learn how to maximize our platform to get the most out of it.',
-href: '/blog',
-icon: BookmarkAltIcon,
-},
-{
-name: 'In The Media',
-description: 'See what meet-ups and other events we might be planning near you.',
-href: '/inthemedia',
-icon: CalendarIcon,
-},
-{ name: 'Educator Portal', description: 'Understand how we take your privacy seriously.', href: '#', icon: ShieldCheckIcon },
-]
-
-
 const enterprise = [
+  { name: 'Services', href: '/services', icon: NewspaperIcon },
   { name: 'See Our Work', href: '/ourwork', icon: InformationCircleIcon },
   { name: 'Technologies We Use', href: '/technologies', icon: OfficeBuildingIcon },
-  { name: 'Services', href: '/services', icon: NewspaperIcon },
   { name: 'Meet Our Team', href: '/team', icon: BriefcaseIcon },
+  { name: 'Contact Us', href: '/contact', icon: BriefcaseIcon },
   { name: 'Business Portal', href: '#', icon: ShieldCheckIcon },
 ]
 const education = [
-  { name: 'Educator Services', href: '/educatorservices', icon: UserGroupIcon },
+  { name: 'Educator Services', href: '/education', icon: UserGroupIcon },
   { name: 'Untethered Blog', href: '/blog', icon: GlobeAltIcon },
   { name: 'In the Media', href: '/inthemedia', icon: BookmarkAltIcon },
   { name: 'Educator Portal', href: '#', icon: DesktopComputerIcon },
@@ -151,20 +131,22 @@ const blogPosts = [
 ]
 const navigation = {
 
-  education: [
-    { name: 'Educator Services', href: '/educatorservices' },
-    { name: 'Untethered Blog', href: '/blog' },
-    { name: 'In The Media', href: '/inthemedia' },
-    { name: 'Educator Portal', href: '#' },
-  ],
   enterprise: [
     { name: 'See Our Work', href: '/ourwork' },
     { name: 'Technologies We Use', href: '/technologies' },
     { name: 'Services', href: '/services' },
     { name: 'Meet Our Team', href: '/team' },
+    { name: 'Contact Us', href: '/contact' },
     { name: 'Business Portal', href: '#' },
 
   ],
+  education: [
+    { name: 'Educator Services', href: '/education' },
+    { name: 'Untethered Blog', href: '/blog' },
+    { name: 'In The Media', href: '/inthemedia' },
+    { name: 'Educator Portal', href: '#' },
+  ],
+
   social: [
     {
       name: 'Facebook',
@@ -223,7 +205,7 @@ const navigation = {
 
 
 const stats = [
-  { id: 1, name: 'Cups of Coffee', stat: '14,600', icon: UsersIcon },
+  { id: 1, name: 'Years in Business', stat: '8', icon: UsersIcon },
   { id: 2, name: 'Lines of Code', stat: '77,000', icon: MailOpenIcon},
   { id: 3, name: 'Happy Clients', stat: '37', icon: CursorClickIcon},
   { id: 1, name: 'Cups of Coffee', stat: '14,600', icon: UsersIcon },
@@ -451,6 +433,65 @@ const work = [
 
 //ourwork
 
+//Education
+
+const hobbyFeatures = [
+  'Pariatur quod similique',
+  'Sapiente libero doloribus',
+  'Vel ipsa esse repudiandae']
+const scaleFeatures = [
+  'Pariatur quod similique',
+  'Sapiente libero doloribus',
+  'Vel ipsa esse repudiandae']
+const growthFeatures = [
+  'Quia rem est sed impedit magnam',
+  'Dolorem vero ratione voluptates',
+  'Qui sed ab doloribus voluptatem dolore',
+  'Laborum commodi molestiae id et fugiat',
+  'Nam ut ipsa nesciunt culpa modi dolor',
+]
+
+const edservices = [
+  {
+    name: 'School-Specific Services',
+    description:
+      "One size fits all doesn't exist in education. After meeting with your school's leadership team, I'll be able to better able to identify specific strengths and weaknesses and apply that to your training schedule.",
+    icon: GlobeAltIcon,
+  },
+  {
+    name: 'Professional Development',
+    description:
+      "During your district's scheduled professional development days, your school will receive priority scheduling for training and development of either small groups or full staff.",
+    icon: ScaleIcon,
+  },
+  {
+    name: 'Consistent Training',
+    description:
+    "In my [#] years of experience, it's shown that a cyclic training schedule is the most effective way to implement a new initiative. This approach also allows teachers time and space to prepare for their sessions.",
+    icon: LightningBoltIcon,
+  },
+  {
+    name: 'Wireless Wednesday',
+    description:
+    "Each month an email newsletter is sent out, which includes teaching strategies, technology tools, classroom management tips for using technology and enhanced Google information.",
+    icon: AnnotationIcon,
+  },
+  {
+    name: 'Teacher Leaders',
+    description:
+    "Developing teacher leaders provides an opportunity for teachers to take ownership of their own learning. This is an imperative part of the continued success of the digital program after our initial training ends.",
+    icon: LightningBoltIcon,
+  },
+  {
+    name: 'Google Certification',
+    description:
+    "At the end of the year, teachers will have the option, as well as the knowledge they need, to be able to take the Google Certified test.",
+    icon: AnnotationIcon,
+  },
+]
+
+//education
+
 function classNames(...classes) {
 return classes.filter(Boolean).join(' ')
 }
@@ -606,14 +647,17 @@ export default function BasicExample() {
           <Route path="/services">
             <Services />
           </Route>
-          <Route path="/educatorservices">
-            <Educatorservices />
+          <Route path="/education">
+            <Education />
           </Route>
           <Route path="/blog">
             <Blog />
           </Route>
           <Route path="/inthemedia">
             <Inthemedia />
+          </Route>
+          <Route path="/contact">
+            <Contact />
           </Route>
         </Switch>
         <footer className="" aria-labelledby="footerHeading">
@@ -649,9 +693,9 @@ export default function BasicExample() {
 
                 <div className="grid grid-cols-2 md:gap-8 items-start justify-items-center sm:justify-items-end">
                   <div>
-                    <h3 className="text-sm font-semibold text-yellow-400 tracking-wider uppercase">Education</h3>
+                    <h3 className="text-sm font-semibold text-yellow-400 tracking-wider uppercase">Enterprise</h3>
                     <ul className="mt-4 space-y-4">
-                      {navigation.education.map((item) => (
+                      {navigation.enterprise.map((item) => (
                         <li key={item.name}>
                           <a href={item.href} className="text-base text-bluegray-300 hover:text-yellow-400">
                             {item.name}
@@ -662,9 +706,9 @@ export default function BasicExample() {
                   </div>
 
                   <div className="">
-                    <h3 className="text-sm font-semibold text-yellow-400 tracking-wider uppercase">Enterprise</h3>
+                    <h3 className="text-sm font-semibold text-yellow-400 tracking-wider uppercase">Education</h3>
                     <ul className="mt-4 space-y-4">
-                      {navigation.enterprise.map((item) => (
+                      {navigation.education.map((item) => (
                         <li key={item.name}>
                           <a href={item.href} className="text-base text-bluegray-300 hover:text-yellow-400">
                             {item.name}
@@ -741,7 +785,7 @@ function Home() {
             </p>
             <div className="mt-10 w-64">
               <div className="rounded-full">
-                <a href="#"
+                <a href="/contact"
                   className="flex items-center justify-center ml-16 p-4 w-48 border-2 border-yellow-400 text-sm font-normal tracking-wider uppercase rounded-full text-bluegray-800 bg-yellow-400 hover:bg-transparent hover:text-yellow-400 hover:font-bold">
                   Let's Get Started
                 </a>
@@ -863,7 +907,9 @@ function Home() {
                         <p className="text-sm text-bluegray-700 font-serif">
                           {feature.description}
                         </p>
-                        <button href={feature.href} className="shadow p-4 mb-4 sm:-mt-2 text-xs tracking-wider uppercase text-bluegray-800 bg-yellow-400 border-2 border-yellow-400 rounded-full hover:border-yellow-500 hover:bg-bluegray-200 hover:text-bluegray-900">{feature.button}</button>
+                      <a href={feature.href}>
+                        <button className="shadow p-4 mb-4 sm:-mt-2 text-xs tracking-wider uppercase text-bluegray-800 bg-yellow-400 border-2 border-yellow-400 rounded-full hover:border-yellow-500 hover:bg-bluegray-200 hover:text-bluegray-900">{feature.button}</button>
+                      </a>
                       </div>
                     </div>
                   </div>
@@ -995,7 +1041,9 @@ function Home() {
                             <p className="text-md text-bluegray-600 font-serif">
                               {feature.description}
                             </p>
+                          <a href={feature.href}>
                             <button className="shadow p-4 mb-4 -mt-4 text-xs tracking-wider uppercase text-bluegray-900 bg-yellow-400 border-2 border-yellow-400 rounded-full hover:bg-transparent hover:text-bluegray-800">{feature.button}</button>
+                          </a>
                           </div>
                         </div>
                       </div>
@@ -1035,7 +1083,7 @@ function Home() {
                          </p>
                          <a
                            className="block w-full py-3 px-5 text-center bg-yellow-400 rounded-full shadow-md text-xs font-medium text-bluegray-900 hover:bg-bluegray-900 hover:text-yellow-400 border-2 uppercase border-yellow-400 sm:inline-block sm:w-auto"
-                           href="#"
+                           href="/contact"
                          >
                            Get In Touch
                          </a>
@@ -1211,9 +1259,7 @@ clients we have helped
              <li key={work.source} className="relative">
                <div className="group block w-full aspect-w-10 aspect-h-7 rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-bluegray-100 focus-within:ring-yellow-400 overflow-hidden">
                  <img src={work.source} alt="" className="object-cover pointer-events-none group-hover:opacity-25" />
-                 <button type="button" className="absolute inset-0 focus:outline-none">
                    <span className="sr-only">View details for {work.title}</span>
-                 </button>
                  <p className="opacity-0 hover:opacity-100 font-bold text-bluegray-800 text-2xl text-center grid content-center">{work.project}</p>
 
                </div>
@@ -1434,11 +1480,343 @@ function Services() {
   );
 }
 
-function Educatorservices() {
+function Education() {
   return (
-    <div className="bg-yellow-400">
-      <h2>Educator Services</h2>
-    </div>
+    <div className="relative bg-bluegray-50 overflow-hidden">
+        <div className="max-w-7xl mx-auto">
+          <div className="relative z-10  sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+
+
+            <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+              <div className="sm:text-center lg:text-left">
+                <h1 className="text-5xl tracking-loose font-extrabold text-bluegray-800 sm:text-6xl md:text-7xl">
+                  <span className="block xl:inline leading-tight">Using technology makes schools</span>{' '}
+                  <span className="block text-emerald-500 xl:inline">better</span>
+                </h1>
+                <p className="mt-3 text-base text-bluegray-700 sm:mt-5 sm:text-lg sm:max-w-md sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                  Let's embolden students to develop the skills to learn and create with technology together.
+                </p>
+                <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                  <div className="rounded-full shadow max-w-xs mx-auto sm:m-0">
+                    <a
+                      href="#"
+                      className="uppercase flex items-center justify-center px-8 py-3 border-2 border-transparent rounded-full text-bluegray-50 bg-emerald-500 hover:bg-emerald-400 md:py-4 md:px-10"
+                    >
+                      Get In Touch
+                    </a>
+                  </div>
+                  <div className="mt-3 sm:mt-0 sm:ml-3">
+
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+
+        </div>
+        <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+          <img
+            className="h-56 w-full rounded-l-full object-cover sm:h-72 md:h-96 lg:w-auto lg:h-auto"
+            src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
+            alt=""
+          />
+        </div>
+
+
+        <div className="py-12 bg-bluegray-50">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="lg:text-center">
+                  <h2 className="text-base text-emerald-500 font-semibold tracking-wide uppercase">Educator services</h2>
+                  <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-bluegray-800 sm:text-4xl">
+                    What does Instructional Technology look like?
+                  </p>
+                  <p className="mt-4 max-w-2xl text-xl text-bluegray-500 lg:mx-auto">
+                    Having a plan in place for embedded teacher training and support is the primary way to ensure success in a digital initiative.
+                  </p>
+                </div>
+
+                <div className="mt-10">
+                  <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+                    {edservices.map((feature) => (
+                      <div key={feature.name} className="relative">
+                        <dt>
+                          <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-emerald-500 text-bluegray-50">
+                            <feature.icon className="h-6 w-6" aria-hidden="true" />
+                          </div>
+                          <p className="ml-16 text-lg leading-6 font-medium text-gray-900">{feature.name}</p>
+                        </dt>
+                        <dd className="mt-2 ml-16 text-base text-gray-500">{feature.description}</dd>
+                      </div>
+                    ))}
+                  </dl>
+                </div>
+              </div>
+            </div>
+
+
+        <div className="bg-bluegray-50 py-16 lg:py-24">
+             <div className="relative w-screen">
+               <div className="relative py-24 px-8 bg-emerald-500 shadow-lg overflow-hidden lg:px-16 lg:grid lg:grid-cols-2 lg:gap-x-8">
+                 <div className="absolute inset-0 opacity-50 filter saturate-0 mix-blend-multiply -top-120">
+                   <img
+                     src="crayons.jpg"
+                     alt=""
+                     className="w-full object-scale-down"
+                   />
+                 </div>
+                 <div className="lg:ml-36 relative lg:col-span-1">
+                   <blockquote className="mt-6 text-bluegray-50">
+                     <p className="text-xl sm:text-2xl italic font-serif">
+                       "Casie Barksdale has provided, by far, the best professional development I have received at Oneonta City in the past 19 years.
+                       Her knowledge of the latest tech tools and her deliverance is well worth the time to sit through and actually learn something I can implement in my classroom."
+                     </p>
+                     <footer className="mt-6">
+                       <p className="flex flex-col font-medium">
+                         <span>Wendy Smithson</span>
+                         <span>Teacher at Oneonta City Schools</span>
+                       </p>
+                     </footer>
+                   </blockquote>
+                 </div>
+               </div>
+             </div>
+           </div>
+
+
+
+        <div className="bg-bluegray-900">
+              <div className="pt-12 px-4 sm:px-6 lg:px-8 lg:pt-20">
+                <div className="text-center">
+                  <h2 className="text-lg leading-6 font-semibold text-bluegray-300 uppercase tracking-wider">Pricing</h2>
+                  <p className="mt-2 text-3xl font-extrabold text-bluegray-50 sm:text-4xl lg:text-5xl">
+                    The right price for you, whoever you are
+                  </p>
+                  <p className="mt-3 max-w-4xl mx-auto text-xl text-bluegray-300 sm:mt-5 sm:text-2xl">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos odit doloribus
+                    molestiae voluptatum.
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-16 bg-bluegray-50 pb-12 lg:mt-20 lg:pb-20">
+                <div className="relative z-0">
+                  <div className="absolute inset-0 h-5/6 bg-bluegray-900 lg:h-2/3" />
+                  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="relative lg:grid lg:grid-cols-7">
+                      <div className="mx-auto max-w-md lg:mx-0 lg:max-w-none lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3">
+                        <div className="h-full flex flex-col rounded-lg shadow-lg overflow-hidden lg:rounded-none lg:rounded-l-lg">
+                          <div className="flex-1 flex flex-col">
+                            <div className="bg-bluegray-50 px-6 py-10">
+                              <div>
+                                <h3 className="text-center text-2xl font-medium text-bluegray-900" id="tier-hobby">
+                                  Hobby
+                                </h3>
+                                <div className="mt-4 flex items-center justify-center">
+                                  <span className="px-3 flex items-start text-6xl tracking-tight text-bluegray-900">
+                                    <span className="mt-2 mr-2 text-4xl font-medium">$</span>
+                                    <span className="font-extrabold">79</span>
+                                  </span>
+                                  <span className="text-xl font-medium text-bluegray-500">/month</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="flex-1 flex flex-col justify-between border-t-2 border-bluegray-100 p-6 bg-bluegray-50 sm:p-10 lg:p-6 xl:p-10">
+                              <ul className="space-y-4">
+                                {hobbyFeatures.map((feature) => (
+                                  <li key={feature} className="flex items-start">
+                                    <div className="flex-shrink-0">
+                                      <CheckIcon className="flex-shrink-0 h-6 w-6 text-emerald-500" aria-hidden="true" />
+                                    </div>
+                                    <p className="ml-3 text-base font-medium text-bluegray-500">{feature}</p>
+                                  </li>
+                                ))}
+                              </ul>
+                              <div className="mt-8">
+                                <div className="rounded-full shadow-md">
+                                  <a
+                                    href="#"
+                                    className="block w-full text-center rounded-full border border-transparent bg-bluegray-50 px-6 py-3 text-sm uppercase font-medium text-emerald-500 hover:bg-emerald-500 hover:text-bluegray-50"
+                                    aria-describedby="tier-hobby"
+                                  >
+                                    Start your trial
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="mt-10 max-w-lg mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-start-3 lg:col-end-6 lg:row-start-1 lg:row-end-4">
+                        <div className="relative z-10 rounded-lg shadow-xl">
+                          <div
+                            className="pointer-events-none absolute inset-0 rounded-lg border-2 border-emerald-500"
+                            aria-hidden="true"
+                          />
+                          <div className="absolute inset-x-0 top-0 transform translate-y-px">
+                            <div className="flex justify-center transform -translate-y-1/2">
+                              <span className="inline-flex rounded-full bg-emerald-500 px-4 py-1 text-sm font-semibold tracking-wider uppercase text-bluegray-50">
+                                Most popular
+                              </span>
+                            </div>
+                          </div>
+                          <div className="bg-bluegray-50 rounded-t-lg px-6 pt-12 pb-10">
+                            <div>
+                              <h3 className="text-center text-3xl font-semibold text-gray-900 sm:-mx-6" id="tier-growth">
+                                Growth
+                              </h3>
+                              <div className="mt-4 flex items-center justify-center">
+                                <span className="px-3 flex items-start text-6xl tracking-tight text-bluegray-900 sm:text-6xl">
+                                  <span className="mt-2 mr-2 text-4xl font-medium">$</span>
+                                  <span className="font-extrabold">149</span>
+                                </span>
+                                <span className="text-2xl font-medium text-bluegray-500">/month</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="border-t-2 border-bluegray-100 rounded-b-lg pt-10 pb-8 px-6 bg-gray-50 sm:px-10 sm:py-10">
+                            <ul className="space-y-4">
+                              {growthFeatures.map((feature) => (
+                                <li key={feature} className="flex items-start">
+                                  <div className="flex-shrink-0">
+                                    <CheckIcon className="flex-shrink-0 h-6 w-6 text-emerald-500" aria-hidden="true" />
+                                  </div>
+                                  <p className="ml-3 text-base font-medium text-bluegray-500">{feature}</p>
+                                </li>
+                              ))}
+                            </ul>
+                            <div className="mt-10">
+                              <div className="rounded-full shadow-md">
+                                <a
+                                  href="#"
+                                  className="block w-full text-center rounded-full border border-transparent bg-emerald-500 px-6 py-4 text-lg uppercase leading-6 font-medium text-bluegray-50 hover:bg-emerald-400"
+                                  aria-describedby="tier-growth"
+                                >
+                                  Start your trial
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="mt-10 mx-auto max-w-md lg:m-0 lg:max-w-none lg:col-start-6 lg:col-end-8 lg:row-start-2 lg:row-end-3">
+                        <div className="h-full flex flex-col rounded-lg shadow-lg overflow-hidden lg:rounded-none lg:rounded-r-lg">
+                          <div className="flex-1 flex flex-col">
+                            <div className="bg-bluegray-50 px-6 py-10">
+                              <div>
+                                <h3 className="text-center text-2xl font-medium text-bluegray-900" id="tier-scale">
+                                  Scale
+                                </h3>
+                                <div className="mt-4 flex items-center justify-center">
+                                  <span className="px-3 flex items-start text-6xl tracking-tight text-gray-900">
+                                    <span className="mt-2 mr-2 text-4xl font-medium">$</span>
+                                    <span className="font-extrabold">349</span>
+                                  </span>
+                                  <span className="text-xl font-medium text-bluegray-500">/month</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="flex-1 flex flex-col justify-between border-t-2 border-bluegray-100 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
+                              <ul className="space-y-4">
+                                {scaleFeatures.map((feature) => (
+                                  <li key={feature} className="flex items-start">
+                                    <div className="flex-shrink-0">
+                                      <CheckIcon className="flex-shrink-0 h-6 w-6 text-emerald-500" aria-hidden="true" />
+                                    </div>
+                                    <p className="ml-3 text-base font-medium text-bluegray-500">{feature}</p>
+                                  </li>
+                                ))}
+                              </ul>
+                              <div className="mt-8">
+                                <div className="rounded-full shadow-md">
+                                  <a
+                                    href="#"
+                                    className="uppercase block w-full text-center rounded-full border border-transparent bg-bluegray-50 px-6 py-3 text-sm font-medium text-emerald-500 hover:bg-emerald-500 hover:text-bluegray-50"
+                                    aria-describedby="tier-scale"
+                                  >
+                                    Start your trial
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div className="bg-bluegray-50 py-16 sm:py-24">
+                  <div className="relative sm:py-16">
+                    <div aria-hidden="true" className="hidden sm:block">
+
+                    </div>
+                    <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
+                      <div className="relative rounded-2xl px-6 py-10 bg-bluegray-900 overflow-hidden shadow-xl sm:px-12 sm:py-20">
+                        <div aria-hidden="true" className="absolute inset-0 -mt-72 sm:-mt-32 md:mt-0">
+                          <svg
+                            className="absolute inset-0 h-full w-full"
+                            preserveAspectRatio="xMidYMid slice"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 1463 360"
+                          >
+                            <path
+                              className="text-bluegray-500 text-opacity-40"
+                              fill="currentColor"
+                              d="M-82.673 72l1761.849 472.086-134.327 501.315-1761.85-472.086z"
+                            />
+                            <path
+                              className="text-bluegray-700 text-opacity-40"
+                              fill="currentColor"
+                              d="M-217.088 544.086L1544.761 72l134.327 501.316-1761.849 472.086z"
+                            />
+                          </svg>
+                        </div>
+                        <div className="relative">
+                          <div className="sm:text-center">
+                            <h2 className="text-3xl font-bold text-bluegray-50  sm:text-4xl">
+                              Need more time to decide?
+                            </h2>
+                            <p className="mt-6 mx-auto max-w-2xl text-lg text-bluegray-200">
+                            Enter your email below to receive a sample proposal and occassional free educational resources to keep you up to date with the latest educational technology.
+                            </p>
+                          </div>
+                          <form action="#" className="mt-12 sm:mx-auto sm:max-w-lg sm:flex">
+                            <div className="min-w-0 flex-1">
+                              <label htmlFor="cta-email" className="sr-only">
+                                Email address
+                              </label>
+                              <input
+                                id="cta-email"
+                                type="email"
+                                className="block w-full border border-transparent rounded-md px-5 py-3 text-base text-emerald-900 placeholder-bluegray-300 shadow-sm focus:outline-none focus:border-transparent focus:ring-1 focus:ring-bluegray-50 focus:ring-offset-2 focus:ring-offset-emerald-400"
+                                placeholder="Enter your email"
+                              />
+                            </div>
+                            <div className="mt-4 sm:mt-0 sm:ml-3">
+                              <button
+                                type="submit"
+                                className="block w-full rounded-full border border-transparent px-5 py-3 bg-emerald-500 text-sm font-medium text-bluegray-50 shadow hover:bg-emerald-400 uppercase hover:text-bluegray-50 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-emerald-500 sm:px-10"
+                              >
+                                subscribe
+                              </button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+
+           </div>
   );
 }
 
@@ -1446,6 +1824,14 @@ function Inthemedia() {
   return (
     <div className="bg-yellow-400">
       <h2>In The Media</h2>
+    </div>
+  );
+}
+
+function Contact() {
+  return (
+    <div className="bg-yellow-400">
+      <h2>Contact Us</h2>
     </div>
   );
 }
