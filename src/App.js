@@ -436,19 +436,17 @@ const work = [
 //Education
 
 const hobbyFeatures = [
-  'Pariatur quod similique',
-  'Sapiente libero doloribus',
-  'Vel ipsa esse repudiandae']
+  'Full day of customized training',
+  'Teachers receive training during planning periods',]
 const scaleFeatures = [
-  'Pariatur quod similique',
-  'Sapiente libero doloribus',
-  'Vel ipsa esse repudiandae']
+  'Full day of customized training',
+  'Teachers grouped by grade or technology level',
+  'Each group receives an identical half-day of training']
 const growthFeatures = [
-  'Quia rem est sed impedit magnam',
-  'Dolorem vero ratione voluptates',
-  'Qui sed ab doloribus voluptatem dolore',
-  'Laborum commodi molestiae id et fugiat',
-  'Nam ut ipsa nesciunt culpa modi dolor',
+  'Full day of customized training',
+  'Full-group, full-day instruction at the school',
+  'All teachers attend training together',
+  'Delivers as much customized instructional material as possible in one day',
 ]
 
 const edservices = [
@@ -467,7 +465,7 @@ const edservices = [
   {
     name: 'Consistent Training',
     description:
-    "In my [#] years of experience, it's shown that a cyclic training schedule is the most effective way to implement a new initiative. This approach also allows teachers time and space to prepare for their sessions.",
+    "In my 15 years of experience, it's shown that a cyclic training schedule is the most effective way to implement a new initiative. This approach also allows teachers time and space to prepare for their sessions.",
     icon: LightningBoltIcon,
   },
   {
@@ -1556,16 +1554,16 @@ function Education() {
 
         <div className="bg-bluegray-50 py-16 lg:py-24">
              <div className="relative w-screen">
-               <div className="relative py-24 px-8 bg-emerald-500 shadow-lg overflow-hidden lg:px-16 lg:grid lg:grid-cols-2 lg:gap-x-8">
-                 <div className="absolute inset-0 opacity-50 filter saturate-0 mix-blend-multiply -top-120">
+               <div className="relative py-24 px-8 bg-emerald-500 shadow-lg overflow-hidden lg:px-16 lg:grid lg:grid-cols-5 lg:gap-x-8 ">
+                 <div className="absolute inset-0 opacity-50 filter saturate-0 mix-blend-multiply flex justify-items-end">
                    <img
                      src="crayons.jpg"
                      alt=""
-                     className="w-full object-scale-down"
+                     className=""
                    />
                  </div>
-                 <div className="lg:ml-36 relative lg:col-span-1">
-                   <blockquote className="mt-6 text-bluegray-50">
+                 <div className=" relative lg:col-start-2 lg:col-span-3  m-auto">
+                   <blockquote className=" text-bluegray-50 text-center">
                      <p className="text-xl sm:text-2xl italic font-serif">
                        "Casie Barksdale has provided, by far, the best professional development I have received at Oneonta City in the past 19 years.
                        Her knowledge of the latest tech tools and her deliverance is well worth the time to sit through and actually learn something I can implement in my classroom."
@@ -1587,13 +1585,12 @@ function Education() {
         <div className="bg-bluegray-900">
               <div className="pt-12 px-4 sm:px-6 lg:px-8 lg:pt-20">
                 <div className="text-center">
-                  <h2 className="text-lg leading-6 font-semibold text-bluegray-300 uppercase tracking-wider">Pricing</h2>
+                  <h2 className="text-lg leading-8 font-semibold text-emerald-400 uppercase tracking-wider">Customize your training</h2>
                   <p className="mt-2 text-3xl font-extrabold text-bluegray-50 sm:text-4xl lg:text-5xl">
-                    The right price for you, whoever you are
+                    Professional Development Day Options
                   </p>
-                  <p className="mt-3 max-w-4xl mx-auto text-xl text-bluegray-300 sm:mt-5 sm:text-2xl">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos odit doloribus
-                    molestiae voluptatum.
+                  <p className="mt-3 max-w-4xl mx-auto text-xl text-bluegray-300 sm:mt-5 ">
+                    Our training packages are customizable based upon your school or district's needs.
                   </p>
                 </div>
               </div>
@@ -1609,15 +1606,9 @@ function Education() {
                             <div className="bg-bluegray-50 px-6 py-10">
                               <div>
                                 <h3 className="text-center text-2xl font-medium text-bluegray-900" id="tier-hobby">
-                                  Hobby
+                                  Full Day - Planning Cycles
                                 </h3>
-                                <div className="mt-4 flex items-center justify-center">
-                                  <span className="px-3 flex items-start text-6xl tracking-tight text-bluegray-900">
-                                    <span className="mt-2 mr-2 text-4xl font-medium">$</span>
-                                    <span className="font-extrabold">79</span>
-                                  </span>
-                                  <span className="text-xl font-medium text-bluegray-500">/month</span>
-                                </div>
+
                               </div>
                             </div>
                             <div className="flex-1 flex flex-col justify-between border-t-2 border-bluegray-100 p-6 bg-bluegray-50 sm:p-10 lg:p-6 xl:p-10">
@@ -1638,7 +1629,7 @@ function Education() {
                                     className="block w-full text-center rounded-full border border-transparent bg-bluegray-50 px-6 py-3 text-sm uppercase font-medium text-emerald-500 hover:bg-emerald-500 hover:text-bluegray-50"
                                     aria-describedby="tier-hobby"
                                   >
-                                    Start your trial
+                                    Request more information
                                   </a>
                                 </div>
                               </div>
@@ -1655,22 +1646,16 @@ function Education() {
                           <div className="absolute inset-x-0 top-0 transform translate-y-px">
                             <div className="flex justify-center transform -translate-y-1/2">
                               <span className="inline-flex rounded-full bg-emerald-500 px-4 py-1 text-sm font-semibold tracking-wider uppercase text-bluegray-50">
-                                Most popular
+                                Best Value
                               </span>
                             </div>
                           </div>
                           <div className="bg-bluegray-50 rounded-t-lg px-6 pt-12 pb-10">
                             <div>
                               <h3 className="text-center text-3xl font-semibold text-gray-900 sm:-mx-6" id="tier-growth">
-                                Growth
+                                Full Day - Full PD
                               </h3>
-                              <div className="mt-4 flex items-center justify-center">
-                                <span className="px-3 flex items-start text-6xl tracking-tight text-bluegray-900 sm:text-6xl">
-                                  <span className="mt-2 mr-2 text-4xl font-medium">$</span>
-                                  <span className="font-extrabold">149</span>
-                                </span>
-                                <span className="text-2xl font-medium text-bluegray-500">/month</span>
-                              </div>
+
                             </div>
                           </div>
                           <div className="border-t-2 border-bluegray-100 rounded-b-lg pt-10 pb-8 px-6 bg-gray-50 sm:px-10 sm:py-10">
@@ -1691,7 +1676,7 @@ function Education() {
                                   className="block w-full text-center rounded-full border border-transparent bg-emerald-500 px-6 py-4 text-lg uppercase leading-6 font-medium text-bluegray-50 hover:bg-emerald-400"
                                   aria-describedby="tier-growth"
                                 >
-                                  Start your trial
+                                  Request more info
                                 </a>
                               </div>
                             </div>
@@ -1704,15 +1689,9 @@ function Education() {
                             <div className="bg-bluegray-50 px-6 py-10">
                               <div>
                                 <h3 className="text-center text-2xl font-medium text-bluegray-900" id="tier-scale">
-                                  Scale
+                                  Full Day - Half/Half Cycle
                                 </h3>
-                                <div className="mt-4 flex items-center justify-center">
-                                  <span className="px-3 flex items-start text-6xl tracking-tight text-gray-900">
-                                    <span className="mt-2 mr-2 text-4xl font-medium">$</span>
-                                    <span className="font-extrabold">349</span>
-                                  </span>
-                                  <span className="text-xl font-medium text-bluegray-500">/month</span>
-                                </div>
+
                               </div>
                             </div>
                             <div className="flex-1 flex flex-col justify-between border-t-2 border-bluegray-100 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
@@ -1733,7 +1712,7 @@ function Education() {
                                     className="uppercase block w-full text-center rounded-full border border-transparent bg-bluegray-50 px-6 py-3 text-sm font-medium text-emerald-500 hover:bg-emerald-500 hover:text-bluegray-50"
                                     aria-describedby="tier-scale"
                                   >
-                                    Start your trial
+                                    Request more info
                                   </a>
                                 </div>
                               </div>
