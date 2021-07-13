@@ -772,7 +772,7 @@ function Home() {
             <h1 className="font-bold text-5xl sm:text-4xl md:text-5xl lg:text-7xl mb-12 tracking-wide">
               <span className="block text-bluegray-200 leading-tight">Your business</span>{' '}
               <span className="block text-bluegray-200 leading-tight">deserves the</span>{' '}
-              <span className="block font-extrabold text-yellow-400 inline py-2 pl-16 -ml-16 border-b-8 border-yellow-400 leading-tight whitespace-nowrap 2xl:pl-0 2xl:ml-0">right</span>
+              <span className="block font-extrabold text-yellow-400 inline py-2 border-b-8 border-yellow-400 leading-tight whitespace-nowrap 2xl:pl-0 2xl:ml-0">right</span>
               <span className="text-bluegray-200 inline whitespace-nowrap"> solution.</span>
             </h1>
             <p className="font-serif mt-16 ml-0 md:ml-8 max-w-md text-xl lg:text-2xl text-bluegray-200 tracking-wide">
@@ -1514,7 +1514,7 @@ function Education() {
         </div>
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
           <img
-            className="h-56 w-full rounded-l-full object-cover sm:h-72 md:h-96 lg:w-auto lg:h-auto"
+            className="h-56 w-full rounded-l-full object-cover sm:h-72 md:h-96 lg:w-auto lg:h-1/6"
             src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
             alt=""
           />
@@ -1676,7 +1676,7 @@ function Education() {
                                   className="block w-full text-center rounded-full border border-transparent bg-emerald-500 px-6 py-4 text-lg uppercase leading-6 font-medium text-bluegray-50 hover:bg-emerald-400"
                                   aria-describedby="tier-growth"
                                 >
-                                  Request more info
+                                  Request more information
                                 </a>
                               </div>
                             </div>
@@ -1712,7 +1712,7 @@ function Education() {
                                     className="uppercase block w-full text-center rounded-full border border-transparent bg-bluegray-50 px-6 py-3 text-sm font-medium text-emerald-500 hover:bg-emerald-500 hover:text-bluegray-50"
                                     aria-describedby="tier-scale"
                                   >
-                                    Request more info
+                                    Request more information
                                   </a>
                                 </div>
                               </div>
@@ -1727,8 +1727,8 @@ function Education() {
             </div>
 
 
-            <div className="bg-bluegray-50 py-16 sm:py-24">
-                  <div className="relative sm:py-16">
+            <div className="bg-bluegray-50 pb-16">
+                  <div className="relative ">
                     <div aria-hidden="true" className="hidden sm:block">
 
                     </div>
