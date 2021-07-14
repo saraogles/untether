@@ -16,6 +16,8 @@ import {
 // work properly.
 
 import { Fragment } from 'react'
+import { useState } from 'react'
+
 import { Popover, Transition } from '@headlessui/react'
 import {
 BookmarkAltIcon,
@@ -103,13 +105,13 @@ const enterprise = [
   { name: 'Technologies We Use', href: '/technologies', icon: OfficeBuildingIcon },
   { name: 'Meet Our Team', href: '/team', icon: BriefcaseIcon },
   { name: 'Contact Us', href: '/contact', icon: BriefcaseIcon },
-  { name: 'Business Portal', href: '#', icon: ShieldCheckIcon },
+  //{ name: 'Business Portal', href: '#', icon: ShieldCheckIcon },
 ]
 const education = [
   { name: 'Educator Services', href: '/education', icon: UserGroupIcon },
   { name: 'Untethered Blog', href: '/blog', icon: GlobeAltIcon },
   { name: 'In the Media', href: '/inthemedia', icon: BookmarkAltIcon },
-  { name: 'Educator Portal', href: '#', icon: DesktopComputerIcon },
+  //{ name: 'Educator Portal', href: '#', icon: DesktopComputerIcon },
 ]
 const blogPosts = [
   {
@@ -137,20 +139,20 @@ const navigation = {
     { name: 'Services', href: '/services' },
     { name: 'Meet Our Team', href: '/team' },
     { name: 'Contact Us', href: '/contact' },
-    { name: 'Business Portal', href: '#' },
+  //  { name: 'Business Portal', href: '#' },
 
   ],
   education: [
     { name: 'Educator Services', href: '/education' },
     { name: 'Untethered Blog', href: '/blog' },
     { name: 'In The Media', href: '/inthemedia' },
-    { name: 'Educator Portal', href: '#' },
+  //  { name: 'Educator Portal', href: '#' },
   ],
 
   social: [
     {
       name: 'Facebook',
-      href: '#',
+      href: 'https://facebook.com/untetherllc',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -163,7 +165,7 @@ const navigation = {
     },
     {
       name: 'Instagram',
-      href: '#',
+      href: 'https://instagram.com/untetherllc',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -176,7 +178,7 @@ const navigation = {
     },
     {
       name: 'Twitter',
-      href: '#',
+      href: 'https://twitter.com/casiebarksdale',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
@@ -185,13 +187,13 @@ const navigation = {
     },
 
     {
-      name: 'Dribbble',
-      href: '#',
+      name: 'LinkedIn',
+      href: 'https://www.linkedin.com/company/untether-llc',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
             fillRule="evenodd"
-            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
             clipRule="evenodd"
           />
         </svg>
@@ -490,6 +492,8 @@ const edservices = [
 
 //education
 
+
+
 function classNames(...classes) {
 return classes.filter(Boolean).join(' ')
 }
@@ -570,7 +574,7 @@ export default function BasicExample() {
                         </ul>
                       </div>
                       <div>
-                        <h3 className="text-sm font-medium tracking-wide text-bluegray-500 uppercase">Education</h3>
+                        <h3 className="text-sm font-medium tracking-wide text-bluegray-500 uppercase">Education & More</h3>
                         <ul className="mt-5 space-y-6">
                           {education.map((item) => (
                             <li key={item.name} className="flow-root">
@@ -704,7 +708,7 @@ export default function BasicExample() {
                   </div>
 
                   <div className="">
-                    <h3 className="text-sm font-semibold text-yellow-400 tracking-wider uppercase">Education</h3>
+                    <h3 className="text-sm font-semibold text-yellow-400 tracking-wider uppercase">Education & More</h3>
                     <ul className="mt-4 space-y-4">
                       {navigation.education.map((item) => (
                         <li key={item.name}>
@@ -1554,8 +1558,8 @@ function Education() {
 
         <div className="bg-bluegray-50 py-16 lg:py-24">
              <div className="relative w-screen">
-               <div className="relative py-24 px-8 bg-emerald-500 shadow-lg overflow-hidden lg:px-16 lg:grid lg:grid-cols-5 lg:gap-x-8 ">
-                 <div className="absolute inset-0 opacity-50 filter saturate-0 mix-blend-multiply flex justify-items-end">
+               <div className="relative py-24 px-8 bg-emerald-500 shadow-lg overflow-hidden lg:px-16 lg:grid lg:grid-cols-5 lg:gap-x-8">
+                 <div className="absolute bottom-0 opacity-50 filter saturate-0 mix-blend-multiply">
                    <img
                      src="crayons.jpg"
                      alt=""
@@ -1801,17 +1805,228 @@ function Education() {
 
 function Inthemedia() {
   return (
-    <div className="bg-yellow-400">
-      <h2>In The Media</h2>
+    <div className="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+      <div className="absolute inset-0">
+        <div className="bg-bluegray-50 h-1/3 sm:h-2/3" />
+      </div>
+      <div className="relative max-w-7xl mx-auto">
+        <div className="text-center">
+          <h2 className="text-base text-emerald-500 font-semibold tracking-wide uppercase">In The Media</h2>
+          <p className="mt-2 text-3xl leading-8 capitalize font-extrabold tracking-tight text-bluegray-800 sm:text-4xl">
+            Some people think we're cool
+          </p>
+          <p className="mt-4 max-w-2xl text-xl text-bluegray-500 lg:mx-auto">
+            Take a look at some of the places we've been and hear from people we've met along the way.
+          </p>
+        </div>
+
+
+        <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+            <div  className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+              <div className="flex-shrink-0">
+                <img className="w-full object-cover" src="podcast.jpg" alt="" />
+              </div>
+              <div className="flex-1 bg-bluegray-50 p-6 flex flex-col justify-between">
+                <div className="flex-1">
+                  <p className="text-sm font-medium text-emerald-500">
+                      MP3
+                  </p>
+
+                    <p className="text-xl font-semibold text-gray-900">Politics and Moore Podcast</p>
+                    <p className="mt-3 text-base text-gray-500">Untether is passionate about being a motivator in the community of entrepreneurship and we are so thankful to have come to mind when discussing business ownership.</p>
+                    <audio controls="controls" src="politicsandmoore.m4a" className="m-4"></audio>
+
+                </div>
+                <div className="mt-6 flex items-center mx-auto">
+                  <div className="flex-shrink-0">
+                    <a href="https://www.wvnn.com/politics-and-moore-sat-11am-12pm/">
+                      <span className="sr-only"></span>
+                      <img className="h-auto w-24" src="wvnn.png" alt="" />
+                    </a>
+                  </div>
+                  <div className="ml-3">
+                    <p className="text-sm font-medium text-gray-900">
+                        Guest Speaker Ryan Knight
+                    </p>
+                    <div className="flex space-x-1 text-sm text-gray-500">
+                      <time >2021</time>
+                      <span aria-hidden="true">&middot;</span>
+                      <span>Shannon Moore</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+        </div>
+      </div>
     </div>
   );
 }
 
 function Contact() {
-  return (
-    <div className="bg-yellow-400">
-      <h2>Contact Us</h2>
-    </div>
+  const [agreed, setAgreed] = useState(false)
+
+
+    return (
+      <div className="bg-bluegray-50 py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24">
+        <div className="relative max-w-xl mx-auto">
+
+          <div className="text-center">
+            <h2 className="text-3xl font-extrabold tracking-tight text-lightblue-900 sm:text-4xl">Let's Work Together</h2>
+            <p className="mt-4 text-lg leading-6 text-bluegray-500">
+              We'd love to hear from you! Send us a message using the form below or email us directly and let's get your project started.
+            </p>
+          </div>
+          <div className="mt-12">
+            <form action="#" method="POST" className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+              <div>
+                <label htmlFor="first-name" className="block text-sm font-medium text-bluegray-700">
+                  First name
+                </label>
+                <div className="mt-1">
+                  <input
+                    type="text"
+                    name="first-name"
+                    id="first-name"
+                    autoComplete="given-name"
+                    className="py-3 px-4 block w-full shadow-sm focus:ring-yellow-400 focus:border-yellow-400 border-bluegray-300 rounded-md"
+                  />
+                </div>
+              </div>
+              <div>
+                <label htmlFor="last-name" className="block text-sm font-medium text-bluegray-700">
+                  Last name
+                </label>
+                <div className="mt-1">
+                  <input
+                    type="text"
+                    name="last-name"
+                    id="last-name"
+                    autoComplete="family-name"
+                    className="py-3 px-4 block w-full shadow-sm focus:ring-yellow-400 focus:border-yellow-400 border-bluegray-300 rounded-md"
+                  />
+                </div>
+              </div>
+              <div className="sm:col-span-2">
+                <label htmlFor="company" className="block text-sm font-medium text-bluegray-700">
+                  Company
+                </label>
+                <div className="mt-1">
+                  <input
+                    type="text"
+                    name="company"
+                    id="company"
+                    autoComplete="organization"
+                    className="py-3 px-4 block w-full shadow-sm focus:ring-yellow-400 focus:border-yellow-400 border-bluegray-300 rounded-md"
+                  />
+                </div>
+              </div>
+              <div className="sm:col-span-2">
+                <label htmlFor="email" className="block text-sm font-medium text-bluegray-700">
+                  Email
+                </label>
+                <div className="mt-1">
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autoComplete="email"
+                    className="py-3 px-4 block w-full shadow-sm focus:ring-yellow-400 focus:border-yellow-400 border-bluegray-300 rounded-md"
+                  />
+                </div>
+              </div>
+              <div className="sm:col-span-2">
+                <label htmlFor="phone-number" className="block text-sm font-medium text-bluegray-700">
+                  Phone Number
+                </label>
+                <div className="mt-1 relative rounded-md shadow-sm">
+                  <div className="absolute inset-y-0 left-0 flex items-center">
+                    <label htmlFor="country" className="sr-only">
+                      Country
+                    </label>
+                    <select
+                      id="country"
+                      name="country"
+                      className="h-full py-0 pl-4 pr-8 border-transparent bg-transparent text-bluegray-500 focus:ring-yellow-400 focus:border-yellow-400 rounded-md"
+                    >
+                      <option>US</option>
+                      <option>CA</option>
+                      <option>EU</option>
+                    </select>
+                  </div>
+                  <input
+                    type="text"
+                    name="phone-number"
+                    id="phone-number"
+                    autoComplete="tel"
+                    className="py-3 px-4 block w-full pl-20 focus:ring-yellow-400 focus:border-yellow-400 border-bluegray-300 rounded-md"
+                    placeholder="+1 (555) 987-6543"
+                  />
+                </div>
+              </div>
+              <div className="sm:col-span-2">
+                <label htmlFor="message" className="block text-sm font-medium text-bluegray-700">
+                  Message
+                </label>
+                <div className="mt-1">
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows={4}
+                    className="py-3 px-4 block w-full shadow-sm focus:ring-yellow-400 focus:border-yellow-400 border border-bluegray-300 rounded-md"
+                    defaultValue={''}
+                  />
+                </div>
+              </div>
+              <div className="sm:col-span-2">
+                <div className="flex items-start">
+                  <div className="flex-shrink-0">
+                    <Switch
+                      checked={agreed}
+                      onChange={setAgreed}
+                      className={classNames(
+                        agreed ? 'bg-indigo-600' : 'bg-gray-200',
+                        'relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400'
+                      )}
+                    >
+                      <span className="sr-only">Agree to policies</span>
+                      <span
+                        aria-hidden="true"
+                        className={classNames(
+                          agreed ? 'translate-x-5' : 'translate-x-0',
+                          'inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200'
+                        )}
+                      />
+                    </Switch>
+                  </div>
+                  <div className="ml-3">
+                    <p className="text-base text-bluegray-400">
+                      By selecting this, you agree to the{' '}
+                      <a href="#" className="font-medium text-bluegray-300 underline">
+                        Privacy Policy
+                      </a>{' '}
+                      and{' '}
+                      <a href="#" className="font-medium text-bluegray-300 underline">
+                        Cookie Policy
+                      </a>
+                      .
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-span-2">
+                <button
+                  type="submit"
+                  className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-full shadow-sm text-sm font-medium uppercase text-bluegray-900 bg-yellow-400 hover:bg-bluegray-900 hover:text-bluegray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400"
+                >
+                  Let's talk
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
   );
 }
 
