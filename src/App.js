@@ -3,20 +3,13 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+  Redirect
 } from "react-router-dom";
 
-// This site has 3 pages, all of which are rendered
-// dynamically in the browser (not server rendered).
-//
-// Although the page does not ever refresh, notice how
-// React Router keeps the URL up to date as you navigate
-// through the site. This preserves the browser history,
-// making sure things like the back button and bookmarks
-// work properly.
 
-import { Fragment } from 'react'
-import { useState } from 'react'
+import { Fragment } from 'react';
+import { useState } from 'react';
 
 import { Popover, Transition } from '@headlessui/react'
 import {
@@ -60,7 +53,7 @@ const features = [
 {
 name: 'Our greatest strength lies in the ability to make your business run more smoothly.',
 href: '/services',
-button: 'Our Favorite Services',
+button: 'Services We Offer',
 description: 'We believe in Product Minded Development, which means your needs come first. We thrive on building services that connect disparate systems and automating tedious manual tasks, making your worklife better.',
 icon: CursorClickIcon,
 },
@@ -73,7 +66,7 @@ icon: CogIcon,
 },
 {
 name: "If a solution exists, we'll find it, and if it doesn't, we'll build it.",
-href: '#',
+href: '/technologies',
 button: 'The Technologies We Use',
 description: "We handle everything from backend database development to the frontend UI layer, committing to a solid user experience for everyone involved. We are proficient in C#, Javascript and Ruby and have a special love for web and mobile applications.",
 icon: OfficeBuildingIcon },
@@ -491,7 +484,6 @@ const edservices = [
 ]
 
 //education
-
 
 
 function classNames(...classes) {
@@ -1982,20 +1974,24 @@ function Contact() {
               <div className="sm:col-span-2">
                 <div className="flex items-start">
                   <div className="flex-shrink-0">
+
+                  //left off here
                     <Switch
                       checked={agreed}
                       onChange={setAgreed}
                       className={classNames(
-                        agreed ? 'bg-indigo-600' : 'bg-gray-200',
+                        agreed ? 'bg-bluegray-50' : 'bg-gray-200',
                         'relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400'
                       )}
                     >
+
+
                       <span className="sr-only">Agree to policies</span>
                       <span
                         aria-hidden="true"
                         className={classNames(
                           agreed ? 'translate-x-5' : 'translate-x-0',
-                          'inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200'
+                          'inline-block h-5 w-5 rounded-full bg-bluegray-50 shadow transform ring-0 transition ease-in-out duration-200'
                         )}
                       />
                     </Switch>
