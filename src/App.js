@@ -3,8 +3,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
-  Redirect
 } from "react-router-dom";
 
 
@@ -14,15 +12,12 @@ import { useState } from 'react';
 import { Popover, Transition } from '@headlessui/react'
 import {
 BookmarkAltIcon,
-CalendarIcon,
-IdentificationIcon,
+ClipboardListIcon,
 CursorClickIcon,
-ShieldCheckIcon,
-SupportIcon,
+TerminalIcon,
 OfficeBuildingIcon,
 CogIcon,
  BriefcaseIcon,
- DesktopComputerIcon,
  GlobeAltIcon,
  InformationCircleIcon,
  NewspaperIcon,
@@ -38,13 +33,14 @@ CogIcon,
  ScaleIcon,
  LightningBoltIcon,
  AnnotationIcon,
+ TrendingUpIcon,
+ EmojiHappyIcon,
+ LightBulbIcon,
+ LibraryIcon,
 } from '@heroicons/react/outline'
 import {
   ChevronDownIcon,
-  ArrowSmDownIcon,
-  ArrowSmUpIcon,
   MailIcon,
-  PhoneIcon,
   CheckIcon,
 } from '@heroicons/react/solid'
 
@@ -55,21 +51,21 @@ name: 'Our greatest strength lies in the ability to make your business run more 
 href: '/services',
 button: 'Services We Offer',
 description: 'We believe in Product Minded Development, which means your needs come first. We thrive on building services that connect disparate systems and automating tedious manual tasks, making your worklife better.',
-icon: CursorClickIcon,
+icon: ClipboardListIcon,
 },
 {
 name: "We solve real problems for real businesses, just like yours.",
 href: '/ourwork',
 button: 'See Our Work',
 description: "With 50 years of collective experience, we are committed to designing a solution to fit your specific business model. We have worked in both commercial and government spaces, manufacturing plants to showroom floors, landing page websites and online storefronts.",
-icon: CogIcon,
+icon: OfficeBuildingIcon,
 },
 {
 name: "If a solution exists, we'll find it, and if it doesn't, we'll build it.",
 href: '/technologies',
 button: 'The Technologies We Use',
 description: "We handle everything from backend database development to the frontend UI layer, committing to a solid user experience for everyone involved. We are proficient in C#, Javascript and Ruby and have a special love for web and mobile applications.",
-icon: OfficeBuildingIcon },
+icon: TerminalIcon },
 ]
 
 const passionate = [
@@ -200,12 +196,12 @@ const navigation = {
 
 
 const stats = [
-  { id: 1, name: 'Years in Business', stat: '8', icon: UsersIcon },
+  { id: 1, name: 'Cups of Coffee', stat: '17,520', icon: LightBulbIcon },
   { id: 2, name: 'Lines of Code', stat: '77,000', icon: MailOpenIcon},
-  { id: 3, name: 'Happy Clients', stat: '37', icon: CursorClickIcon},
-  { id: 1, name: 'Cups of Coffee', stat: '14,600', icon: UsersIcon },
-  { id: 2, name: 'Lines of Code', stat: '77,000', icon: MailOpenIcon},
-  { id: 3, name: 'Happy Clients', stat: '37', icon: CursorClickIcon},
+  { id: 3, name: 'Happy Clients', stat: '37', icon: EmojiHappyIcon},
+  { id: 1, name: 'Years in Business', stat: '8', icon: TrendingUpIcon },
+  { id: 2, name: 'Scripts Written', stat: '3,600', icon: TerminalIcon},
+  { id: 3, name: 'Teachers Trained', stat: '275', icon: LibraryIcon},
 ]
 
 
@@ -1115,7 +1111,7 @@ function Team() {
 
 
 
-      <div className="mt-6 bg-bluegray-200 relative shadow max-w-screen mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-16">
+      <div className="mt-6 bg-bluegray-100 relative shadow max-w-screen mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-16">
 
       <h2 className=" text-3xl font-normal uppercase text-lightblue-900 sm:tracking-wide  -mt-16 sm:-mt-20 lg:-mt-24 bg-bluegray-50 shadow rounded-full p-4 max-w-md m-auto">
       Our Aeronauts
@@ -1174,29 +1170,9 @@ function Team() {
       </div>
 
 
-      <div className=" mt-8 mb-8 p-8 max-w-7xl m-auto">
-
-      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 justify-items-center">
-        {stats.map((item)=>(
-
-        <div key={item.id} className="grid m-4">
-          <div className="bg-bluegray-200 rounded-full w-56 h-56 text-center grid content-center">
-            <div className="-mt-24 bg-yellow-400 h-16 w-16 rounded-xl p-6 m-auto grid content-center justify-center">
-              <item.icon className="h-8 w-8 text-bluegray-50" />
-            </div>
-            <p className="font-medium text-sm uppercase pt-6 text-bluegray-500"> {item.name}</p>
-            <p className="font-medium text-4xl text-lightblue-900 "> {item.stat}</p>
-          </div>
-        </div>
-
-        ))}
-
-      </div>
 
 
-      </div>
-
-      <div className="bg-bluegray-900">
+      <div className="">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
           <div>
             <h2 className="text-base font-semibold text-bluegray-300 uppercase tracking-wide">We Work better</h2>
@@ -1219,6 +1195,28 @@ function Team() {
             </dl>
           </div>
         </div>
+      </div>
+
+      <div className=" mt-8 mb-8 p-8 m-auto bg-bluegray-100 w-screen">
+
+      <div className=" grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-6 max-w-7xl mx-auto">
+        {stats.map((item)=>(
+
+        <div key={item.id} className="grid my-8">
+          <div className="bg-bluegray-50 rounded-full w-48 h-48 text-center grid content-center shadow">
+            <div className="-mt-20 bg-yellow-400 h-16 w-16 rounded-xl  m-auto grid content-center justify-center">
+              <item.icon className="h-8 w-8 text-bluegray-50" />
+            </div>
+            <p className="font-medium text-sm uppercase pt-6 text-bluegray-500"> {item.name}</p>
+            <p className="font-medium text-4xl text-yellow-400 "> {item.stat}</p>
+          </div>
+        </div>
+
+        ))}
+
+      </div>
+
+
       </div>
 
     </div>
