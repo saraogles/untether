@@ -16,20 +16,15 @@ ClipboardListIcon,
 CursorClickIcon,
 TerminalIcon,
 OfficeBuildingIcon,
-CogIcon,
  BriefcaseIcon,
  GlobeAltIcon,
  InformationCircleIcon,
  NewspaperIcon,
  UserGroupIcon,
  MailOpenIcon,
- UsersIcon,
  CameraIcon,
  AcademicCapIcon,
- BadgeCheckIcon,
  CashIcon,
- ClockIcon,
- ReceiptRefundIcon,
  ScaleIcon,
  LightningBoltIcon,
  AnnotationIcon,
@@ -37,6 +32,8 @@ CogIcon,
  EmojiHappyIcon,
  LightBulbIcon,
  LibraryIcon,
+ DatabaseIcon,
+ ShareIcon,
 } from '@heroicons/react/outline'
 import {
   ChevronDownIcon,
@@ -75,15 +72,14 @@ href: '/ourwork',
 button: "Clients We've Helped",
 description: 'We are as dedicated to your dreams as we are our own. We get excited about entrepreneurship and watching small businesses grow and would love to be part of your story. We are here to help you find, develop and integrate technical efficiencies and automations so you can keep dreaming big.',
 icon: CursorClickIcon,
-imageUrl: 'aimee.png',
+imageUrl: 'jonathan.jpeg',
 },
 {
 name: '". . . about training educators in techology"',
 href: '/education',
 button: 'More About Education',
 description: "Integrating technology in the classroom doesn't have to be daunting. We're here to help you take these new tools and add efficiency and easier access to knowledge in your classrooms everyday. Whether you're intimidated by the techology itself or the endless list of options, we are with you until technology makes your day better, not worse.",
-icon: CogIcon,
-imageUrl: 'aimee.png',
+imageUrl: 'casie.jpeg',
 },
 
 ]
@@ -207,34 +203,58 @@ const stats = [
 
 const peoples = [
   {
-    name: 'Jane Cooper',
+    name: 'Jonathan Barksdale',
     title: 'Paradigm Representative',
     role: 'Founder & CEO',
-    email: 'janecooper@example.com',
+    email: 'jonathan@untetherllc.com',
     imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
+      'jonathan.jpeg',
   },
   {
-    name: 'Jane Cooper',
+    name: 'Casie Barksdale',
     title: 'Paradigm Representative',
     role: 'Director of Technology',
-    email: 'janecooper@example.com',
+    email: 'casie@untetherllc.com',
     imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
+      'casie.jpeg'
   },
   {
-    name: 'Jane Cooper',
+    name: 'Sara Ogles',
     title: 'Paradigm Representative',
-    role: 'UX Designer & Product Manager',
-    email: 'janecooper@example.com',
+    role: 'Product Manager & Designer',
+    email: 'sara@untetherllc.com',
     imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
+    'sara.jpeg'
   },
   {
-    name: 'Jane Cooper',
+    name: 'Kinjal Gandhi',
     title: 'Paradigm Representative',
     role: 'Senior Engineer',
-    email: 'janecooper@example.com',
+    email: 'kinjal@untetherllc.com',
+    imageUrl:
+      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
+  },
+  {
+    name: 'Jason Davis',
+    title: 'Paradigm Representative',
+    role: 'Senior Engineer',
+    email: 'jasondavis@untetherllc.com',
+    imageUrl:
+      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
+  },
+  {
+    name: 'Kyndal Barksdale',
+    title: 'Paradigm Representative',
+    role: 'Data Analyst Intern',
+    email: 'jonathan@untetherllc.com',
+    imageUrl:
+    'kyndal.jpeg'
+  },
+  {
+    name: 'Ty Heery',
+    title: 'Paradigm Representative',
+    role: 'Intern Extraordinaire',
+    email: 'jonathan@untetherllc.com',
     imageUrl:
       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
   },
@@ -304,50 +324,50 @@ const coding = [
 
 const actions = [
   {
-    title: 'API Integrations',
-    icon: ClockIcon,
-    iconForeground: 'text-emerald-100',
-    iconBackground: 'bg-emerald-500',
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
-
+  title: 'Third-Party Setup & Integrations',
+  icon: CashIcon,
+  iconForeground: 'text-emerald-100',
+  iconBackground: 'bg-emerald-500',
+  description: "Does your business need to use Salesforce, Shopify, Smartsheet or another third-party application? No problem! We can explore the best combination of services to get you started or we can integrate the solutions you're already using.",
   },
   {
     title: 'Custom Automations',
-    icon: BadgeCheckIcon,
+    icon: TerminalIcon,
     iconForeground: 'text-indigo-100',
     iconBackground: 'bg-indigo-500',
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    description: "If you find yourself performing the same repetitive, monotonous task day in and day out, let's see if we can't automate that for you and give you a little time back in your day. We can help keep your data accurate and up to date without added manual processes.",
 
   },
   {
     title: 'Webmaster Services',
-    icon: UsersIcon,
+    icon: GlobeAltIcon,
     iconForeground: 'text-blue-100',
     iconBackground: 'bg-blue-500',
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    description: "It's past time to have a web presence but if that's the last thing you want to think about, much less maintain, let us take that on for you. We can get one up and running and keep it up and running without you ever having to think about a website again.",
 
   },
-  { title: 'Third-Party Integrations',
-  icon: CashIcon,
-  iconForeground: 'text-lime-100',
-  iconBackground: 'bg-lime-500',
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
-},
-
   {
-    title: 'Database Development',
-    icon: ReceiptRefundIcon,
+    title: 'Custom Software & Analytics',
+    icon: ShareIcon,
+    iconForeground: 'text-lime-100',
+    iconBackground: 'bg-lime-500',
+    description: "B2B is our specialty. We've created ways to keep warehouses and inventory synchronized, employees up to date and even dashboards for management to be informed. Whatever your company's needs may be, we start there.",
+
+  },
+  {
+    title: 'Database & API Development',
+    icon: DatabaseIcon,
     iconForeground: 'text-rose-100',
     iconBackground: 'bg-rose-500',
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    description: "If a third-party solution isn't for you, let's build something custom for your data. Whether you have a unique business model or so much data you don't know where to start, we can create something that keeps your information secure for the long haul.",
 
   },
   {
-    title: 'Technology Education',
+    title: 'Technology Training',
     icon: AcademicCapIcon,
     iconForeground: 'text-cyan-100',
     iconBackground: 'bg-cyan-500',
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    description: "If just reading about technology makes you break out into a cold sweat, let's talk about technology training. We'd love to get you comfortable with the tools you're using and help you find ways for those tools to add efficiency to your day.",
 
   },
 ]
@@ -365,46 +385,47 @@ const metrics = [
 
 const work = [
   {
-    client: 'IMG_4985.HEIC',
+    client: 'Bella Vita',
     caption: '3.9 MB',
-    project: 'test',
+    project: 'bella vita',
     source:
-      'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
+    'clientpage/bellavita.jpg'
+    },
+  {
+    client: 'Line-X',
+    caption: '3.9 MB',
+    project: 'line-x',
+    source:
+    'clientpage/linex.jpg'
   },
   {
-    client: 'IMG_4985.HEIC',
+    client: 'Logo Brands',
     caption: '3.9 MB',
-    project: 'test',
+    project: 'logo brands',
     source:
-      'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
+    'clientpage/logobrands.jpg'
+  },
+
+  {
+    client: 'Blount County Schools',
+    caption: '3.9 MB',
+    project: 'Blount county schools',
+    source:
+    'clientpage/blountcounty.jpg'
   },
   {
-    client: 'IMG_4985.HEIC',
+    client: 'Oneonta City Schools',
     caption: '3.9 MB',
-    project: 'test',
+    project: 'oneonta city schools',
     source:
-      'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
+    'clientpage/ohs.jpg'
   },
   {
-    client: 'IMG_4985.HEIC',
+    client: 'Caspari',
     caption: '3.9 MB',
-    project: 'test',
+    project: 'Caspari',
     source:
-      'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-  },
-  {
-    client: 'IMG_4985.HEIC',
-    caption: '3.9 MB',
-    project: 'test',
-    source:
-      'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-  },
-  {
-    client: 'IMG_4985.HEIC',
-    caption: '3.9 MB',
-    project: 'test',
-    source:
-      'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
+    'clientpage/caspari.jpg'
   },
   {
     client: 'IMG_4985.HEIC',
@@ -1020,10 +1041,10 @@ function Home() {
                     {passionate.map((feature) => (
                     <div key={feature.name} className="pt-6">
                       <div className="shadow-md flow-root bg-bluegray-200 rounded-sm px-6">
-                        <div className="-mt-6 h-auto">
+                        <div className="mt-6 h-auto">
                           <div>
-                            <span className="inline-flex items-center justify-center p-3 -mt-8">
-                              <img className="h-32 w-32 md:h-56 md:w-56 flex-shrink-0" src={feature.imageUrl} alt=""/>
+                            <span className="inline-flex items-center justify-center p-3 -mt-32">
+                              <img className=" flex-shrink-0 rounded-full" src={feature.imageUrl} alt=""/>
                             </span>
                           </div>
                           <div className="flex flex-wrap justify-center place-content-evenly h-120 m-4">
@@ -1131,12 +1152,12 @@ function Team() {
                    <div className="flex-1 flex flex-col p-8">
                      <img className="w-32 h-32 flex-shrink-0 mx-auto bg-bluegray-900 rounded-full" src={person.imageUrl} alt="" />
                      <h3 className="mt-6 text-bluegray-900 text-sm font-medium">{person.name}</h3>
-                     <dl className="mt-1 flex-grow flex flex-col justify-between">
+                     <dl className="mt-1 flex-grow flex flex-col justify-center">
                        <dt className="sr-only">Title</dt>
-                       <dd className="text-bluegray-500 text-sm">{person.title}</dd>
+                       <dd className="text-bluegray-500 text-sm ">{person.title}</dd>
                        <dt className="sr-only">Role</dt>
-                       <dd className="mt-3">
-                         <span className="px-2 py-1 text-bluegray-800 text-xs font-medium bg-yellow-300 rounded-full">
+                       <dd className="mt-3 ">
+                         <span className="px-2 py-1 text-bluegray-800 text-xs font-medium bg-yellow-300 rounded-full whitespace-nowrap ">
                            {person.role}
                          </span>
                        </dd>
@@ -1239,9 +1260,8 @@ function Ourwork() {
 clients we have helped
         </p>
         <p className="max-w-xl mt-5 mx-auto text-xl text-bluegray-300 font-serif">
-          "Untether has saved me so much time and money automating things that used to take me hours."
-        </p>
-        <p className="italic text-bluegray-500 font-serif">- Random Client</p>
+"Untether is our go-to company for solving any of our integration needs. Their work produces a large ROI by eliminating manual tasks."        </p>
+        <p className="italic text-bluegray-500 font-serif">- Brent Singley, Bella Vita, Inc.</p>
       </div>
    </div>
 
@@ -1250,9 +1270,9 @@ clients we have helped
            {work.map((work) => (
              <li key={work.source} className="relative">
                <div className="group block w-full aspect-w-10 aspect-h-7 rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-bluegray-100 focus-within:ring-yellow-400 overflow-hidden">
-                 <img src={work.source} alt="" className="object-cover pointer-events-none group-hover:opacity-25" />
+                 <img src={work.source} alt="" className="object-cover pointer-events-none " />
                    <span className="sr-only">View details for {work.title}</span>
-                 <p className="opacity-0 hover:opacity-100 font-bold text-bluegray-800 text-2xl text-center grid content-center">{work.project}</p>
+                 <p className="sr-only">{work.project}</p>
 
                </div>
                <p className="mt-2 block text-sm font-medium text-gray-900 truncate pointer-events-none">{work.client}</p>
@@ -1274,8 +1294,11 @@ function Technologies() {
 
         <div className="text-center">
           <h2 className="text-base font-semibold text-yellow-400 tracking-wide uppercase p-4">Technologies We Use</h2>
-          <p className="mt-1 text-4xl font-extrabold text-bluegray-50 sm:text-5xl sm:tracking-tight lg:text-6xl mb-12">
+          <p className="mt-1 text-4xl font-extrabold text-bluegray-50 sm:text-5xl sm:tracking-tight lg:text-6xl mb-8">
             Let's Talk About Tech
+          </p>
+          <p className="max-w-7xl mx-auto text-xl text-bluegray-300 font-serif">
+            More about the tools we use and technical experience we've gained along the way
           </p>
         </div>
       </div>
@@ -1353,8 +1376,8 @@ function Technologies() {
       <div className="bg-bluegray-900">
             <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
               <div className="max-w-2xl lg:mx-auto lg:text-center">
-                <h2 className="text-3xl font-extrabold tracking-wide text-yellow-400 sm:text-4xl">
-                  Languages We Love
+                <h2 className="text-3xl font-extrabold tracking-wide text-bluegray-50 sm:text-4xl">
+                  Programming Languages & Other Tools
                 </h2>
                 <p className="mt-4 text-bluegray-400">
                   Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.
@@ -1390,9 +1413,8 @@ function Services() {
         What can we offer your business?
           </p>
           <p className="max-w-xl mt-5 mx-auto text-xl text-bluegray-300 font-serif">
-            "Untether has saved me so much time and money automating things that used to take me hours."
-          </p>
-          <p className="italic text-bluegray-500 font-serif">- Random Client</p>
+"Untether is our go-to company for solving any of our integration needs. Their work produces a large ROI by eliminating manual tasks."          </p>
+          <p className="italic text-bluegray-500 font-serif">- Brent Singley, Bella Vita, Inc.</p>
         </div>
      </div>
 
@@ -1509,7 +1531,7 @@ function Education() {
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
           <img
             className="h-56 w-full rounded-l-full object-cover sm:h-72 md:h-96 lg:w-auto lg:h-1/6"
-            src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
+            src="hourofcode.jpg"
             alt=""
           />
         </div>
@@ -1546,10 +1568,10 @@ function Education() {
             </div>
 
 
-        <div className="bg-bluegray-50 py-16 lg:py-24">
+        <div className="bg-bluegray-50 ">
              <div className="relative w-screen">
-               <div className="relative py-24 px-8 bg-emerald-500 shadow-lg overflow-hidden lg:px-16 lg:grid lg:grid-cols-5 lg:gap-x-8">
-                 <div className="absolute bottom-0 opacity-50 filter saturate-0 mix-blend-multiply">
+               <div className="relative py-24 px-8 bg-gradient-to-b from-emerald-500  to-bluegray-900 shadow-lg overflow-hidden lg:px-16 lg:grid lg:grid-cols-5 lg:gap-x-8">
+                 <div className="absolute bottom-0 left-0 opacity-50 filter saturate-0 mix-blend-multiply invisible sm:visible ">
                    <img
                      src="crayons.jpg"
                      alt=""
@@ -1846,8 +1868,46 @@ function Inthemedia() {
                   </div>
                 </div>
               </div>
-
             </div>
+
+            <div  className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+              <div className="flex-shrink-0">
+              <a href="https://www.enewscourier.com/news/javascript-is-a-girl-s-best-friend-tanner-introduces-students/article_105256a8-9f95-11e5-b9c5-d7d2f4a905e9.html">
+                <img className="w-full object-cover" src="hourofcode.jpg" alt="" />
+              </a>
+              </div>
+              <div className="flex-1 bg-bluegray-50 p-6 flex flex-col justify-between">
+                <div className="flex-1">
+                  <p className="text-sm font-medium text-emerald-500 uppercase">
+                      Article
+                  </p>
+
+                    <p className="text-xl font-semibold text-gray-900">The News Courier</p>
+                    <p className="mt-3 text-base text-gray-500">"The potential for children to develop innovative concepts with software exists now, because it's easy for students to be near a computer and learn programming. It's different than most career fields because it doesn't require a lot of up-front cost or specialized knowledge."</p>
+
+                </div>
+                <div className="mt-6 flex items-center mx-auto">
+                  <div className="flex-shrink-0">
+                    <a href="https://www.enewscourier.com/news/javascript-is-a-girl-s-best-friend-tanner-introduces-students/article_105256a8-9f95-11e5-b9c5-d7d2f4a905e9.html">
+                      <span className="sr-only"></span>
+                      <img className="h-auto w-12" src="newscourier.png" alt="" />
+                    </a>
+                  </div>
+                  <div className="ml-3">
+                    <p className="text-sm font-medium text-gray-900 italic capitalize">
+                        JavaScript is a girl's best friend
+                    </p>
+                    <div className="flex space-x-1 text-sm text-gray-500">
+                      <time >2015</time>
+                      <span aria-hidden="true">&middot;</span>
+                      <span>Hour of Code</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
         </div>
       </div>
     </div>
@@ -1971,42 +2031,8 @@ function Contact() {
               </div>
               <div className="sm:col-span-2">
                 <div className="flex items-start">
-                  <div className="flex-shrink-0">
-
-                  //left off here
-                    <Switch
-                      checked={agreed}
-                      onChange={setAgreed}
-                      className={classNames(
-                        agreed ? 'bg-bluegray-50' : 'bg-gray-200',
-                        'relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400'
-                      )}
-                    >
 
 
-                      <span className="sr-only">Agree to policies</span>
-                      <span
-                        aria-hidden="true"
-                        className={classNames(
-                          agreed ? 'translate-x-5' : 'translate-x-0',
-                          'inline-block h-5 w-5 rounded-full bg-bluegray-50 shadow transform ring-0 transition ease-in-out duration-200'
-                        )}
-                      />
-                    </Switch>
-                  </div>
-                  <div className="ml-3">
-                    <p className="text-base text-bluegray-400">
-                      By selecting this, you agree to the{' '}
-                      <a href="#" className="font-medium text-bluegray-300 underline">
-                        Privacy Policy
-                      </a>{' '}
-                      and{' '}
-                      <a href="#" className="font-medium text-bluegray-300 underline">
-                        Cookie Policy
-                      </a>
-                      .
-                    </p>
-                  </div>
                 </div>
               </div>
               <div className="col-span-2">
