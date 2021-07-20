@@ -72,14 +72,14 @@ href: '/ourwork',
 button: "Clients We've Helped",
 description: 'We are as dedicated to your dreams as we are our own. We get excited about entrepreneurship and watching small businesses grow and would love to be part of your story. We are here to help you find, develop and integrate technical efficiencies and automations so you can keep dreaming big.',
 icon: CursorClickIcon,
-imageUrl: 'jonathan.jpeg',
+imageUrl: 'team/jonathan.jpeg',
 },
 {
 name: '". . . about training educators in techology"',
 href: '/education',
 button: 'More About Education',
 description: "Integrating technology in the classroom doesn't have to be daunting. We're here to help you take these new tools and add efficiency and easier access to knowledge in your classrooms everyday. Whether you're intimidated by the techology itself or the endless list of options, we are with you until technology makes your day better, not worse.",
-imageUrl: 'casie.jpeg',
+imageUrl: 'team/casie.jpeg',
 },
 
 ]
@@ -208,7 +208,7 @@ const peoples = [
     role: 'Founder & CEO',
     email: 'jonathan@untetherllc.com',
     imageUrl:
-      'jonathan.jpeg',
+      '/team/jonathan.jpeg',
   },
   {
     name: 'Casie Barksdale',
@@ -216,7 +216,7 @@ const peoples = [
     role: 'Director of Technology',
     email: 'casie@untetherllc.com',
     imageUrl:
-      'casie.jpeg'
+      '/team/casie.jpeg'
   },
   {
     name: 'Sara Ogles',
@@ -224,7 +224,7 @@ const peoples = [
     role: 'Product Manager & Designer',
     email: 'sara@untetherllc.com',
     imageUrl:
-    'sara.jpeg'
+    '/team/sara.jpeg'
   },
   {
     name: 'Kinjal Gandhi',
@@ -248,7 +248,7 @@ const peoples = [
     role: 'Data Analyst Intern',
     email: 'jonathan@untetherllc.com',
     imageUrl:
-    'kyndal.jpeg'
+    '/team/kyndal.jpeg'
   },
   {
     name: 'Ty Heery',
@@ -939,22 +939,22 @@ function Home() {
                 <div className="flow-root mt-8 lg:mt-10">
                   <div className="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4">
                     <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
-                      <img className="h-36" src="/bellavita.png" alt="Bella Vita" />
+                      <img className="h-36" src="logos/bellavita.png" alt="Bella Vita" />
                     </div>
                     <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
-                      <img className="h-36" src="/linex.png" alt="Line-X" />
+                      <img className="h-36" src="logos/linex.png" alt="Line-X" />
                     </div>
                     <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
                       <img
                         className="h-36"
-                        src="/logobrands.png"
+                        src="logos/logobrands.png"
                         alt="Logo Brands"
                       />
                     </div>
                     <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
                       <img
                         className="h-36"
-                        src="/OHS.png"
+                        src="logos/OHS.png"
                         alt="OHS"
                       />
 
@@ -962,14 +962,14 @@ function Home() {
                     <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
                       <img
                         className="h-36"
-                        src="/blount.png"
+                        src="logos/blount.png"
                         alt="Blount County Schools"
                       />
                     </div>
                     <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
                       <img
                         className="h-36"
-                        src="/caspari.png"
+                        src="logos/caspari.png"
                         alt="Caspari"
                       />
                     </div>
