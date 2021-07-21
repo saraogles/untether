@@ -119,9 +119,9 @@ const blogPosts = [
 const navigation = {
 
   enterprise: [
+    { name: 'Services', href: '/services' },
     { name: 'See Our Work', href: '/ourwork' },
     { name: 'Technologies We Use', href: '/technologies' },
-    { name: 'Services', href: '/services' },
     { name: 'Meet Our Team', href: '/team' },
     { name: 'Contact Us', href: '/contact' },
   //  { name: 'Business Portal', href: '#' },
@@ -483,7 +483,7 @@ const edservices = [
   {
     name: 'Wireless Wednesday',
     description:
-    "Each month an email newsletter is sent out, which includes teaching strategies, technology tools, classroom management tips for using technology and enhanced Google information.",
+    "Each month an email newsletter is sent out, which includes teaching strategies, technology tools and classroom management tips for using technology and enhanced Google information.",
     icon: AnnotationIcon,
   },
   {
@@ -1491,6 +1491,7 @@ function Services() {
             </div>
 
     </div>
+
   );
 }
 
@@ -1513,7 +1514,7 @@ function Education() {
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div className="rounded-full shadow max-w-xs mx-auto sm:m-0">
                     <a
-                      href="#"
+                      href="contact"
                       className="uppercase flex items-center justify-center px-8 py-3 border-2 border-transparent rounded-full text-bluegray-50 bg-emerald-500 hover:bg-emerald-400 md:py-4 md:px-10"
                     >
                       Get In Touch
@@ -1641,7 +1642,7 @@ function Education() {
                               <div className="mt-8">
                                 <div className="rounded-full shadow-md">
                                   <a
-                                    href="#"
+                                    href="contact"
                                     className="block w-full text-center rounded-full border border-transparent bg-bluegray-50 px-6 py-3 text-sm uppercase font-medium text-emerald-500 hover:bg-emerald-500 hover:text-bluegray-50"
                                     aria-describedby="tier-hobby"
                                   >
@@ -1688,7 +1689,7 @@ function Education() {
                             <div className="mt-10">
                               <div className="rounded-full shadow-md">
                                 <a
-                                  href="#"
+                                  href="contact"
                                   className="block w-full text-center rounded-full border border-transparent bg-emerald-500 px-6 py-4 text-lg uppercase leading-6 font-medium text-bluegray-50 hover:bg-emerald-400"
                                   aria-describedby="tier-growth"
                                 >
@@ -1724,7 +1725,7 @@ function Education() {
                               <div className="mt-8">
                                 <div className="rounded-full shadow-md">
                                   <a
-                                    href="#"
+                                    href="contact"
                                     className="uppercase block w-full text-center rounded-full border border-transparent bg-bluegray-50 px-6 py-3 text-sm font-medium text-emerald-500 hover:bg-emerald-500 hover:text-bluegray-50"
                                     aria-describedby="tier-scale"
                                   >
@@ -1853,7 +1854,7 @@ function Inthemedia() {
                   <div className="flex-shrink-0">
                     <a href="https://www.wvnn.com/politics-and-moore-sat-11am-12pm/">
                       <span className="sr-only"></span>
-                      <img className="h-auto w-24" src="wvnn.png" alt="" />
+                      <img className="h-auto w-24" src="logos/wvnn.png" alt="" />
                     </a>
                   </div>
                   <div className="ml-3">
@@ -1890,7 +1891,7 @@ function Inthemedia() {
                   <div className="flex-shrink-0">
                     <a href="https://www.enewscourier.com/news/javascript-is-a-girl-s-best-friend-tanner-introduces-students/article_105256a8-9f95-11e5-b9c5-d7d2f4a905e9.html">
                       <span className="sr-only"></span>
-                      <img className="h-auto w-12" src="newscourier.png" alt="" />
+                      <img className="h-auto w-12" src="logos/newscourier.png" alt="" />
                     </a>
                   </div>
                   <div className="ml-3">
