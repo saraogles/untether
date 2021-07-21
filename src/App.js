@@ -34,6 +34,9 @@ OfficeBuildingIcon,
  LibraryIcon,
  DatabaseIcon,
  ShareIcon,
+ CalendarIcon,
+ RefreshIcon,
+ StatusOnlineIcon,
 } from '@heroicons/react/outline'
 import {
   ChevronDownIcon,
@@ -193,10 +196,10 @@ const navigation = {
 
 const stats = [
   { id: 1, name: 'Cups of Coffee', stat: '17,520', icon: LightBulbIcon },
-  { id: 2, name: 'Lines of Code', stat: '77,000', icon: MailOpenIcon},
-  { id: 3, name: 'Happy Clients', stat: '37', icon: EmojiHappyIcon},
+  { id: 3, name: 'Happy Clients', stat: '40+', icon: EmojiHappyIcon},
   { id: 1, name: 'Years in Business', stat: '8', icon: TrendingUpIcon },
   { id: 2, name: 'Scripts Written', stat: '3,600', icon: TerminalIcon},
+  { id: 2, name: 'Lines of Code', stat: '300,000+', icon: MailOpenIcon},
   { id: 3, name: 'Teachers Trained', stat: '275', icon: LibraryIcon},
 ]
 
@@ -219,6 +222,14 @@ const peoples = [
       '/team/casie.jpeg'
   },
   {
+    name: 'Kyndal Barksdale',
+    title: 'Paradigm Representative',
+    role: 'Data Analyst Intern',
+    email: 'jonathan@untetherllc.com',
+    imageUrl:
+    '/team/kyndal.jpeg'
+  },
+  {
     name: 'Sara Ogles',
     title: 'Paradigm Representative',
     role: 'Product Manager & Designer',
@@ -235,20 +246,20 @@ const peoples = [
       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
   },
   {
+    name: 'Greg Willis',
+    title: 'Paradigm Representative',
+    role: 'Intern Extraordinaire',
+    email: 'jonathan@untetherllc.com',
+    imageUrl:
+      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
+  },
+  {
     name: 'Jason Davis',
     title: 'Paradigm Representative',
     role: 'Senior Engineer',
     email: 'jasondavis@untetherllc.com',
     imageUrl:
       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
-  },
-  {
-    name: 'Kyndal Barksdale',
-    title: 'Paradigm Representative',
-    role: 'Data Analyst Intern',
-    email: 'jonathan@untetherllc.com',
-    imageUrl:
-    '/team/kyndal.jpeg'
   },
   {
     name: 'Ty Heery',
@@ -389,21 +400,24 @@ const work = [
     caption: '3.9 MB',
     project: 'bella vita',
     source:
-    'clientpage/bellavita.jpg'
+    'clientpage/bellavita.jpg',
+    href: 'https://shopbellavita.com/',
     },
   {
     client: 'Line-X',
     caption: '3.9 MB',
     project: 'line-x',
     source:
-    'clientpage/linex.jpg'
+    'clientpage/linex.jpg',
+    href: 'https://linex.com/',
   },
   {
     client: 'Logo Brands',
     caption: '3.9 MB',
     project: 'logo brands',
     source:
-    'clientpage/logobrands.jpg'
+    'clientpage/logobrands.jpg',
+    href: 'https://logobrands.com/',
   },
 
   {
@@ -411,21 +425,24 @@ const work = [
     caption: '3.9 MB',
     project: 'Blount county schools',
     source:
-    'clientpage/blountcounty.jpg'
+    'clientpage/blountcounty.jpg',
+    href: 'http://www.blountboe.net/',
   },
   {
     client: 'Oneonta City Schools',
     caption: '3.9 MB',
     project: 'oneonta city schools',
     source:
-    'clientpage/ohs.jpg'
+    'clientpage/ohs.jpg',
+    href: 'https://www.oneontacityschools.com/',
   },
   {
     client: 'Caspari',
     caption: '3.9 MB',
     project: 'Caspari',
     source:
-    'clientpage/caspari.jpg'
+    'clientpage/caspari.jpg',
+    href: 'https://www.casparionline.com/',
   },
   {
     client: 'IMG_4985.HEIC',
@@ -466,31 +483,31 @@ const edservices = [
     name: 'School-Specific Services',
     description:
       "One size fits all doesn't exist in education. After meeting with your school's leadership team, I'll be able to better able to identify specific strengths and weaknesses and apply that to your training schedule.",
-    icon: GlobeAltIcon,
+    icon: LibraryIcon,
   },
   {
     name: 'Professional Development',
     description:
       "During your district's scheduled professional development days, your school will receive priority scheduling for training and development of either small groups or full staff.",
-    icon: ScaleIcon,
+    icon: CalendarIcon,
   },
   {
     name: 'Consistent Training',
     description:
     "In my 15 years of experience, it's shown that a cyclic training schedule is the most effective way to implement a new initiative. This approach also allows teachers time and space to prepare for their sessions.",
-    icon: LightningBoltIcon,
+    icon: RefreshIcon,
   },
   {
     name: 'Wireless Wednesday',
     description:
     "Each month an email newsletter is sent out, which includes teaching strategies, technology tools and classroom management tips for using technology and enhanced Google information.",
-    icon: AnnotationIcon,
+    icon: StatusOnlineIcon,
   },
   {
     name: 'Teacher Leaders',
     description:
     "Developing teacher leaders provides an opportunity for teachers to take ownership of their own learning. This is an imperative part of the continued success of the digital program after our initial training ends.",
-    icon: LightningBoltIcon,
+    icon: AcademicCapIcon,
   },
   {
     name: 'Google Certification',
@@ -702,7 +719,7 @@ export default function BasicExample() {
 
 
 
-                <div className="grid grid-cols-2 md:gap-8 items-start justify-items-center sm:justify-items-end">
+                <div className="grid grid-cols-2 md:gap-8 items-start justify-items-center sm:justify-items-end ">
                   <div>
                     <h3 className="text-sm font-semibold text-yellow-400 tracking-wider uppercase">Enterprise</h3>
                     <ul className="mt-4 space-y-4">
@@ -936,7 +953,7 @@ function Home() {
         <div className="bg-bluegray-900 w-full">
               <div className="max-w-7xl py-16 px-8 sm:px-24 m-auto">
                 <h2 className="sm:-ml-16 text-3xl font-extrabold text-bluegray-50">We've worked with companies from all over the country</h2>
-                <div className="flow-root mt-8 lg:mt-10">
+                <div className="flow-root mt-8 lg:mt-10 ">
                   <div className="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4">
                     <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
                       <img className="h-36" src="logos/bellavita.png" alt="Bella Vita" />
@@ -1040,20 +1057,20 @@ function Home() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-4xl text-center">
                     {passionate.map((feature) => (
                     <div key={feature.name} className="pt-6">
-                      <div className="shadow-md flow-root bg-bluegray-200 rounded-sm px-6">
-                        <div className="mt-6 h-auto">
+                      <div className="shadow-md flow-root bg-bluegray-200 rounded-sm px-8 sm:px-6">
+                        <div className="mt-16 sm:mt-6 h-auto">
                           <div>
-                            <span className="inline-flex items-center justify-center p-3 -mt-32">
+                            <span className="inline-flex items-center justify-center p-8 -mt-32">
                               <img className=" flex-shrink-0 rounded-full" src={feature.imageUrl} alt=""/>
                             </span>
                           </div>
-                          <div className="flex flex-wrap justify-center place-content-evenly h-120 m-4">
-                            <h3 className="italic text-xl font-sans text-bluegray-900 tracking-tight">{feature.name}</h3>
+                          <div className="flex flex-wrap justify-center place-content-evenly h-auto my-8">
+                            <h3 className="italic text-xl font-sans text-bluegray-900 tracking-tight my-8">{feature.name}</h3>
                             <p className="text-md text-bluegray-600 font-serif">
                               {feature.description}
                             </p>
                           <a href={feature.href}>
-                            <button className="shadow p-4 mb-4 -mt-4 text-xs tracking-wider uppercase text-bluegray-900 bg-yellow-400 border-2 border-yellow-400 rounded-full hover:bg-transparent hover:text-bluegray-800">{feature.button}</button>
+                            <button className="shadow p-4 my-8  text-xs tracking-wider uppercase text-bluegray-900 bg-yellow-400 border-2 border-yellow-400 rounded-full hover:bg-transparent hover:text-bluegray-800">{feature.button}</button>
                           </a>
                           </div>
                         </div>
@@ -1220,7 +1237,7 @@ function Team() {
 
       <div className=" mt-8 mb-8 p-8 m-auto bg-bluegray-100 w-screen">
 
-      <div className=" grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-6 max-w-7xl mx-auto">
+      <div className=" grid grid-cols-1  sm:grid-cols-3 xl:grid-cols-6 max-w-7xl justify-items-center mx-auto">
         {stats.map((item)=>(
 
         <div key={item.id} className="grid my-8">
@@ -1266,14 +1283,15 @@ clients we have helped
    </div>
 
    <div className="bg-bluegray-200 ">
-     <ul role="list" className=" grid justify-center mx-36 py-16 grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8 ">
+     <ul role="list" className=" grid justify-center mx-8 py-4 sm:mx-36 sm:py-16 grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8 ">
            {work.map((work) => (
              <li key={work.source} className="relative">
-               <div className="group block w-full aspect-w-10 aspect-h-7 rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-bluegray-100 focus-within:ring-yellow-400 overflow-hidden">
+               <div className="group block w-full aspect-w-10 aspect-h-10 rounded-lg bg-gray-100 overflow-hidden">
+               <a href={work.href}>
                  <img src={work.source} alt="" className="object-cover pointer-events-none " />
+               </a>
                    <span className="sr-only">View details for {work.title}</span>
-                 <p className="sr-only">{work.project}</p>
-
+                   <p className="sr-only">{work.project}</p>
                </div>
                <p className="mt-2 block text-sm font-medium text-gray-900 truncate pointer-events-none">{work.client}</p>
                <p className="block text-sm font-medium text-gray-500 pointer-events-none">{work.caption}</p>
@@ -1504,7 +1522,7 @@ function Education() {
 
             <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
               <div className="sm:text-center lg:text-left">
-                <h1 className="text-5xl tracking-loose font-extrabold text-bluegray-800 sm:text-6xl md:text-7xl">
+                <h1 className="text-5xl tracking-loose font-extrabold text-bluegray-800 md:text-7xl ">
                   <span className="block xl:inline leading-tight">Using technology makes schools</span>{' '}
                   <span className="block text-emerald-500 xl:inline">better</span>
                 </h1>
@@ -1529,7 +1547,7 @@ function Education() {
           </div>
 
         </div>
-        <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+        <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-5/12">
           <img
             className="h-56 w-full rounded-l-full object-cover sm:h-72 md:h-96 lg:w-auto lg:h-1/6"
             src="hourofcode.jpg"
@@ -1931,7 +1949,7 @@ function Contact() {
           </div>
           <div className="mt-12">
             <form action="#" method="POST" className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
-              <div>
+              <div >
                 <label htmlFor="first-name" className="block text-sm font-medium text-bluegray-700">
                   First name
                 </label>
