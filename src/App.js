@@ -802,7 +802,7 @@ function Home() {
             <h1 className="font-bold text-5xl sm:text-4xl md:text-5xl lg:text-7xl mb-12 tracking-wide">
               <span className="block text-bluegray-200 leading-tight">Your business</span>{' '}
               <span className="block text-bluegray-200 leading-tight">deserves the</span>{' '}
-              <span className="block font-extrabold text-yellow-400 inline py-2 border-b-8 border-yellow-400 leading-tight whitespace-nowrap 2xl:pl-0 2xl:ml-0">right</span>
+              <span className="block font-extrabold text-yellow-400 inline py-2 border-yellow-400 leading-tight whitespace-nowrap 2xl:pl-0 2xl:ml-0">right</span>
               <span className="text-bluegray-200 inline whitespace-nowrap"> solution.</span>
             </h1>
             <p className="font-serif mt-16 ml-0 md:ml-8 max-w-md text-xl lg:text-2xl text-bluegray-200 tracking-wide">
