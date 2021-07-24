@@ -91,7 +91,7 @@ const enterprise = [
   { name: 'Services', href: '/services', icon: NewspaperIcon },
   { name: 'See Our Work', href: '/ourwork', icon: InformationCircleIcon },
   { name: 'Technologies We Use', href: '/technologies', icon: OfficeBuildingIcon },
-  { name: 'Meet Our Team', href: '/team', icon: BriefcaseIcon },
+  { name: 'Meet Our Team', href: '/ourteam', icon: BriefcaseIcon },
   { name: 'Contact Us', href: '/contact', icon: BriefcaseIcon },
   //{ name: 'Business Portal', href: '#', icon: ShieldCheckIcon },
 ]
@@ -125,7 +125,7 @@ const navigation = {
     { name: 'Services', href: '/services' },
     { name: 'See Our Work', href: '/ourwork' },
     { name: 'Technologies We Use', href: '/technologies' },
-    { name: 'Meet Our Team', href: '/team' },
+    { name: 'Meet Our Team', href: '/ourteam' },
     { name: 'Contact Us', href: '/contact' },
   //  { name: 'Business Portal', href: '#' },
 
@@ -663,8 +663,8 @@ export default function BasicExample() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/team">
-            <Team />
+          <Route path="/ourteam">
+            <OurTeam />
           </Route>
           <Route path="/ourwork">
             <Ourwork />
@@ -719,7 +719,7 @@ export default function BasicExample() {
 
 
 
-                <div className="grid grid-cols-2 md:gap-8 items-start justify-items-center sm:justify-items-end ">
+                <div className="grid grid-cols-2 md:gap-8 items-start gap-4 lg:justify-items-end ">
                   <div>
                     <h3 className="text-sm font-semibold text-yellow-400 tracking-wider uppercase">Enterprise</h3>
                     <ul className="mt-4 space-y-4">
@@ -955,20 +955,20 @@ function Home() {
                 <h2 className="sm:-ml-16 text-3xl font-extrabold text-bluegray-50">We've worked with companies from all over the country</h2>
                 <div className="flow-root mt-8 lg:mt-10 ">
                   <div className="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4">
-                    <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
+                    <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4 justify-center sm:justify-start">
                       <img className="h-36" src="logos/bellavita.png" alt="Bella Vita" />
                     </div>
-                    <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
+                    <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4 justify-center sm:justify-start">
                       <img className="h-36" src="logos/linex.png" alt="Line-X" />
                     </div>
-                    <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
+                    <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4 justify-center sm:justify-start">
                       <img
                         className="h-36"
                         src="logos/logobrands.png"
                         alt="Logo Brands"
                       />
                     </div>
-                    <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
+                    <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4 justify-center sm:justify-start">
                       <img
                         className="h-36"
                         src="logos/OHS.png"
@@ -976,14 +976,14 @@ function Home() {
                       />
 
                     </div>
-                    <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
+                    <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4 justify-center sm:justify-start">
                       <img
                         className="h-36"
                         src="logos/blount.png"
                         alt="Blount County Schools"
                       />
                     </div>
-                    <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
+                    <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4 justify-center sm:justify-start">
                       <img
                         className="h-36"
                         src="logos/caspari.png"
@@ -1128,7 +1128,7 @@ function Home() {
   );
 }
 
-function Team() {
+function OurTeam() {
   return (
 
     <div className="">
@@ -1237,22 +1237,22 @@ function Team() {
 
       <div className=" mt-8 mb-8 p-8 m-auto bg-bluegray-100 w-screen">
 
-      <div className=" grid grid-cols-1  sm:grid-cols-3 xl:grid-cols-6 max-w-7xl justify-items-center mx-auto">
-        {stats.map((item)=>(
+        <div className=" grid grid-cols-1  sm:grid-cols-3 xl:grid-cols-6 max-w-7xl justify-items-center mx-auto">
+          {stats.map((item)=>(
 
-        <div key={item.id} className="grid my-8">
-          <div className="bg-bluegray-50 rounded-full w-48 h-48 text-center grid content-center shadow">
-            <div className="-mt-20 bg-yellow-400 h-16 w-16 rounded-xl  m-auto grid content-center justify-center">
-              <item.icon className="h-8 w-8 text-bluegray-50" />
+          <div key={item.id} className="grid my-8">
+            <div className="bg-bluegray-50 rounded-full w-48 h-48 text-center grid content-center shadow">
+              <div className="-mt-20 bg-yellow-400 h-16 w-16 rounded-xl  m-auto grid content-center justify-center">
+                <item.icon className="h-8 w-8 text-bluegray-50" />
+              </div>
+              <p className="font-medium text-sm uppercase pt-6 text-bluegray-500"> {item.name}</p>
+              <p className="font-medium text-4xl text-yellow-400 "> {item.stat}</p>
             </div>
-            <p className="font-medium text-sm uppercase pt-6 text-bluegray-500"> {item.name}</p>
-            <p className="font-medium text-4xl text-yellow-400 "> {item.stat}</p>
           </div>
+
+          ))}
+
         </div>
-
-        ))}
-
-      </div>
 
 
       </div>
@@ -1441,20 +1441,16 @@ function Services() {
            {actions.map((action, actionIdx) => (
              <div key={action.title}
                className={classNames( 'p-6 ')}>
-               <div>
+               <div className="mt-8">
                  <span
                    className={classNames(
                      action.iconBackground,
                      action.iconForeground,
-                     'rounded-lg inline-flex p-3 shadow'
-                   )}
-                 >
+                     'rounded-lg p-3 shadow inline-block'
+                   )}>
                    <action.icon className="h-6 w-6" aria-hidden="true" />
                  </span>
-               </div>
-               <div className="mt-8">
-                 <h3 className="text-lg font-medium">
-                     <span className="absolute inset-0" aria-hidden="true" />
+                 <h3 className="text-lg font-medium inline-block align-top pl-5 pt-2">
                      {action.title}
                  </h3>
                  <p className="mt-2 text-sm text-bluegray-400 border-b-2 border-bluegray-200 pb-8">
@@ -1948,12 +1944,12 @@ function Contact() {
             </p>
           </div>
           <div className="mt-12">
-            <form action="#" method="POST" className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
-              <div >
+            <form action="#" method="POST" className="sm:grid sm:grid-cols-1 sm:gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+              <div>
                 <label htmlFor="first-name" className="block text-sm font-medium text-bluegray-700">
                   First name
                 </label>
-                <div className="mt-1">
+                <div className="mt-1 mb-3 sm:mb-0">
                   <input
                     type="text"
                     name="first-name"
@@ -1967,7 +1963,7 @@ function Contact() {
                 <label htmlFor="last-name" className="block text-sm font-medium text-bluegray-700">
                   Last name
                 </label>
-                <div className="mt-1">
+                <div className="mt-1 mb-3 sm:mb-0">
                   <input
                     type="text"
                     name="last-name"
@@ -1981,7 +1977,7 @@ function Contact() {
                 <label htmlFor="company" className="block text-sm font-medium text-bluegray-700">
                   Company
                 </label>
-                <div className="mt-1">
+                <div className="mt-1 mb-3 sm:mb-0">
                   <input
                     type="text"
                     name="company"
@@ -1995,7 +1991,7 @@ function Contact() {
                 <label htmlFor="email" className="block text-sm font-medium text-bluegray-700">
                   Email
                 </label>
-                <div className="mt-1">
+                <div className="mt-1 mb-3 sm:mb-0">
                   <input
                     id="email"
                     name="email"
@@ -2009,7 +2005,7 @@ function Contact() {
                 <label htmlFor="phone-number" className="block text-sm font-medium text-bluegray-700">
                   Phone Number
                 </label>
-                <div className="mt-1 relative rounded-md shadow-sm">
+                <div className="mt-1 mb-3 sm:mb-0 relative rounded-md shadow-sm">
                   <div className="absolute inset-y-0 left-0 flex items-center">
                     <label htmlFor="country" className="sr-only">
                       Country
@@ -2043,14 +2039,13 @@ function Contact() {
                     id="message"
                     name="message"
                     rows={4}
-                    className="py-3 px-4 block w-full shadow-sm focus:ring-yellow-400 focus:border-yellow-400 border border-bluegray-300 rounded-md"
+                    className=" mb-3 sm:mb-0 py-3 px-4 block w-full shadow-sm focus:ring-yellow-400 focus:border-yellow-400 border border-bluegray-300 rounded-md"
                     defaultValue={''}
                   />
                 </div>
               </div>
               <div className="sm:col-span-2">
                 <div className="flex items-start">
-
 
                 </div>
               </div>
