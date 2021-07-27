@@ -73,7 +73,7 @@ const passionate = [
 name: '". . . about your growing business"',
 href: '/ourwork',
 button: "Clients We've Helped",
-description: 'We are as dedicated to your dreams as we are our own. We get excited about entrepreneurship and watching small businesses grow and would love to be part of your story. We are here to help you find, develop and integrate technical efficiencies and automations so you can keep dreaming big.',
+description: "We are as dedicated to your dreams as we are our own. We get excited about entrepreneurship and watching small businesses grow. We would love to be part of your story. We're here to help you find, develop and integrate technical efficiencies and automations so you can keep your dreams big.",
 icon: CursorClickIcon,
 imageUrl: 'team/jonathan.jpeg',
 },
@@ -198,7 +198,7 @@ const stats = [
   { id: 1, name: 'Cups of Coffee', stat: '17,520', icon: LightBulbIcon },
   { id: 3, name: 'Happy Clients', stat: '40+', icon: EmojiHappyIcon},
   { id: 1, name: 'Years in Business', stat: '8', icon: TrendingUpIcon },
-  { id: 2, name: 'Scripts Written', stat: '3,600', icon: TerminalIcon},
+  { id: 2, name: 'Automations', stat: '782', icon: TerminalIcon},
   { id: 2, name: 'Lines of Code', stat: '300,000+', icon: MailOpenIcon},
   { id: 3, name: 'Teachers Trained', stat: '275', icon: LibraryIcon},
 ]
@@ -212,6 +212,8 @@ const peoples = [
     email: 'jonathan@untetherllc.com',
     imageUrl:
       '/team/jonathan.jpeg',
+    imageUrlsilly:
+      '/team/silly.png',
   },
   {
     name: 'Casie Barksdale',
@@ -219,7 +221,10 @@ const peoples = [
     role: 'Director of Technology',
     email: 'casie@untetherllc.com',
     imageUrl:
-      '/team/casie.jpeg'
+      '/team/casie.jpeg',
+    imageUrlsilly:
+    '/team/silly.png',
+
   },
   {
     name: 'Kyndal Barksdale',
@@ -227,31 +232,9 @@ const peoples = [
     role: 'Data Analyst Intern',
     email: 'jonathan@untetherllc.com',
     imageUrl:
-    '/team/kyndal.jpeg'
-  },
-  {
-    name: 'Sara Ogles',
-    title: 'Paradigm Representative',
-    role: 'Product Manager & Designer',
-    email: 'sara@untetherllc.com',
-    imageUrl:
-    '/team/sara.jpeg'
-  },
-  {
-    name: 'Kinjal Gandhi',
-    title: 'Paradigm Representative',
-    role: 'Senior Engineer',
-    email: 'kinjal@untetherllc.com',
-    imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
-  },
-  {
-    name: 'Greg Willis',
-    title: 'Paradigm Representative',
-    role: 'Intern Extraordinaire',
-    email: 'jonathan@untetherllc.com',
-    imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
+    '/team/kyndal.jpeg',
+  imageUrlsilly:
+  '/team/silly.png',
   },
   {
     name: 'Jason Davis',
@@ -260,6 +243,18 @@ const peoples = [
     email: 'jasondavis@untetherllc.com',
     imageUrl:
       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
+    imageUrlsilly:
+    '/team/silly.png',
+  },
+  {
+    name: 'Kinjal Gandhi',
+    title: 'Paradigm Representative',
+    role: 'Senior Engineer',
+    email: 'kinjal@untetherllc.com',
+    imageUrl:
+      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
+    imageUrlsilly:
+    '/team/silly.png',
   },
   {
     name: 'Ty Heery',
@@ -268,7 +263,31 @@ const peoples = [
     email: 'jonathan@untetherllc.com',
     imageUrl:
       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
+    imageUrlsilly:
+    '/team/silly.png',
   },
+  {
+    name: 'Sara Ogles',
+    title: 'Paradigm Representative',
+    role: 'Product Manager & Designer',
+    email: 'sara@untetherllc.com',
+    imageUrl:
+    '/team/sara.jpeg',
+  imageUrlsilly:
+  '/team/silly.png',
+  },
+  {
+    name: 'Greg Willis',
+    title: 'Paradigm Representative',
+    role: 'Intern Extraordinaire',
+    email: 'jonathan@untetherllc.com',
+    imageUrl:
+      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
+    imageUrlsilly:
+    '/team/silly.png',
+  },
+
+
   // More people...
 ]
 
@@ -397,7 +416,7 @@ const metrics = [
 const work = [
   {
     client: 'Bella Vita',
-    caption: '3.9 MB',
+    caption: 'A leads management application allows Bella Vita to track in store prospects. Used daily, it organizes and manages special orders and even notifies customers when a saved item is restocked.',
     project: 'bella vita',
     source:
     'clientpage/bellavita.jpg',
@@ -405,7 +424,7 @@ const work = [
     },
   {
     client: 'Line-X',
-    caption: '3.9 MB',
+    caption: "Unifying data is a common business challenge, and a difficult one when using disparate systems. Integrating data into a single database and modeling it in Cognos allows for seamless reporting.",
     project: 'line-x',
     source:
     'clientpage/linex.jpg',
@@ -413,7 +432,7 @@ const work = [
   },
   {
     client: 'Logo Brands',
-    caption: '3.9 MB',
+    caption: "Complex business rules are common with Logo Brands. Combining warehousing, manufacturing and distribution for various agreement types, automation processes are essential to managing fulfillment across multiple warehouses.",
     project: 'logo brands',
     source:
     'clientpage/logobrands.jpg',
@@ -438,7 +457,7 @@ const work = [
   },
   {
     client: 'Caspari',
-    caption: '3.9 MB',
+    caption: "When a product lifecycle involves an intricate and inderdepartmental hand-off process, a combination of Smartsheets for data entry and API calls for data synchronization keeps everyone informed at every stage of the process.",
     project: 'Caspari',
     source:
     'clientpage/caspari.jpg',
@@ -446,7 +465,7 @@ const work = [
   },
   {
     client: 'Southwest Indiana Chamber',
-    caption: '3.9 MB',
+    caption: "Timely estimations are essential when dealing with various industries like Healthcare, Education and Detention. A custom web application was developed to quickly estimate and engineer project costs across every branch of service.",
     project: 'SWC',
     source:
     'clientpage/swc.jpg',
@@ -1153,13 +1172,11 @@ function OurTeam() {
           <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h2 className="text-base font-semibold text-yellow-400 tracking-wide uppercase p-4">Meet Our Team</h2>
-              <p className="mt-1 text-4xl font-extrabold text-bluegray-50 sm:text-5xl sm:tracking-tight lg:text-6xl mb-12">
+              <p className="mt-1 text-4xl font-extrabold text-bluegray-50 sm:text-5xl sm:tracking-tight lg:text-6xl mb-8">
                 If you need us, we'll be in the Cloud.
               </p>
-              <p className="max-w-xl mt-5 mx-auto text-xl text-bluegray-300 font-serif">
-                "Don't tell me the sky's the limit when there are footprints on the moon."
-              </p>
-              <p className="italic text-bluegray-500 font-serif">- Paul Brandt</p>
+
+
 
             </div>
           </div>
@@ -1171,7 +1188,10 @@ function OurTeam() {
       <h2 className=" text-3xl font-normal uppercase text-lightblue-900 sm:tracking-wide  -mt-16 sm:-mt-20 lg:-mt-24 bg-bluegray-50 shadow rounded-full p-4 max-w-md m-auto">
       Our Aeronauts
       </h2>
-
+      <p className="text-bluegray-500 text-2xl font-serif mt-12">aer•o•naut (noun)</p>
+      <p className="max-w-xl mt-2 mx-auto text-xl text-bluegray-400 font-serif italic">
+        a traveler in a hot-air balloon, airship, or other flying craft
+      </p>
         <div className="space-y-20 my-16">
 
 
@@ -1184,7 +1204,8 @@ function OurTeam() {
                    className="col-span-1 flex flex-col text-center bg-bluegray-50 rounded-lg shadow divide-y divide-bluegray-200"
                  >
                    <div className="flex-1 flex flex-col p-8">
-                     <img className="w-32 h-32 flex-shrink-0 mx-auto bg-bluegray-900 rounded-full" src={person.imageUrl} alt="" />
+                     <img className="w-48 h-48 flex-shrink-0 mx-auto bg-bluegray-900 rounded-full" src={person.imageUrlsilly} alt="" />
+                     <img className="z-0 mx-auto w-48 h-48 flex-shrink-0 bg-bluegray-900 rounded-full -mt-48 hover:opacity-0" src={person.imageUrl} alt="" />
                      <h3 className="mt-6 text-bluegray-900 text-sm font-medium">{person.name}</h3>
                      <dl className="mt-1 flex-grow flex flex-col justify-center">
                        <dt className="sr-only">Title</dt>
@@ -1198,6 +1219,8 @@ function OurTeam() {
                      </dl>
                    </div>
                    <div>
+
+{ /*
                      <div className="-mt-px flex divide-x divide-gray-200">
                        <div className="w-0 flex-1 flex hover:bg-yellow-400 rounded-b-lg">
                          <a
@@ -1210,6 +1233,8 @@ function OurTeam() {
                        </div>
 
                      </div>
+ */ }
+
                    </div>
                  </li>
                ))}
@@ -1341,14 +1366,7 @@ function Technologies() {
         <div className="bg-bluegray-100 overflow-hidden">
               <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
                 <div className="hidden lg:block bg-bluegray-200 absolute top-0 bottom-0 left-3/4 w-screen" />
-                <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
-                  <div>
-                    <h2 className="text-base text-bluegray-500 font-semibold tracking-wide uppercase">More About us</h2>
-                    <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-bluegray-800 sm:text-4xl">
-                      Meet Whitney
-                    </h3>
-                  </div>
-                </div>
+
                 <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
                   <div className="relative lg:row-start-1 lg:col-start-2">
 
@@ -1363,42 +1381,42 @@ function Technologies() {
                             height={1376}
                           />
                         </div>
-                        <figcaption className="mt-3 flex text-sm text-gray-500">
-                          <CameraIcon className="flex-none w-5 h-5 text-bluegray-400" aria-hidden="true" />
-                          <span className="ml-2">Photograph by Marcus O’Leary</span>
-                        </figcaption>
                       </figure>
                     </div>
                   </div>
                   <div className="mt-8 lg:mt-0">
                     <div className="text-base max-w-prose mx-auto lg:max-w-none">
+                    <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
+                      <div>
+                        <h2 className="text-base text-bluegray-500 font-semibold tracking-wide uppercase">Working With Untether</h2>
+                        <h3 className="my-4 text-3xl leading-8 font-extrabold tracking-tight text-bluegray-800 sm:text-4xl">
+                        Our Approach
+                        </h3>
+                      </div>
+                    </div>
                       <p className="text-lg text-bluegray-500">
-                        Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique
-                        pellentesque. Blandit amet, sed aenean erat arcu morbi.
+                        What sets us apart, both technologically and as a team, is our captivation for the unknown. We view new methods, new ideas and new solutions as a challenge to understand and opportunity to grow.
                       </p>
                     </div>
                     <div className="mt-5 prose prose-indigo text-bluegray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
                       <p>
-                        Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget
-                        pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna.
+                        We are not intimidated by insurmountable business problems because we believe in our determination, dedication and willpower to overcome obstacles we encounter.
+                      </p>
+
+
+
+                      <h3 className="text-bluegray-800">Why work with a full-stack team?</h3>
+                      <p>
+                        Working alongside a small team with broad skillsets gives you the ability to create a custom project plan for your business. We can add in resources to compliment your existing team or take the entire project off of your hands.
                       </p>
 
                       <ul>
-                        <li>Quis elit egestas venenatis mattis dignissim.</li>
-                        <li>Cras cras lobortis vitae vivamus ultricies facilisis tempus.</li>
-                        <li>Orci in sit morbi dignissim metus diam arcu pretium.</li>
+                        <li>We have architects ready to identify potential solutions for your business.</li>
+                        <li>We have engineers ready to bring that vision to life.</li>
+                        <li>We have creatives to make sure user experience isn't sacrificed along the way.</li>
+                        <li>We have product people to balance our perfectionism with efficiency. </li>
+
                       </ul>
-                      <p>
-                        Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies. Vulputate aliquet
-                        velit faucibus semper. Pellentesque in venenatis vestibulum consectetur nibh id. In id ut tempus
-                        egestas. Enim sit aliquam nec, a. Morbi enim fermentum lacus in. Viverra.
-                      </p>
-                      <h3>How we helped</h3>
-                      <p>
-                        Tincidunt integer commodo, cursus etiam aliquam neque, et. Consectetur pretium in volutpat, diam.
-                        Montes, magna cursus nulla feugiat dignissim id lobortis amet. Laoreet sem est phasellus eu proin massa,
-                        lectus. Diam rutrum posuere donec ultricies non morbi. Mi a platea auctor mi.
-                      </p>
 
                     </div>
                   </div>
@@ -1412,7 +1430,7 @@ function Technologies() {
             <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
               <div className="max-w-2xl lg:mx-auto lg:text-center">
                 <h2 className="text-3xl font-extrabold tracking-wide text-bluegray-50 sm:text-4xl">
-                  Programming Languages & Other Tools
+                  Languages & Other Tools
                 </h2>
                 <p className="mt-4 text-bluegray-400">
                   Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.
@@ -1423,7 +1441,7 @@ function Technologies() {
                 <dl className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-10">
                   {coding.map((coding) => (
                     <div key={coding.id}>
-                      <dt className="font-semibold text-bluegray-200">{coding.title}</dt>
+                      <dt className="font-semibold text-bluegray-200 text-2xl pb-2 border-b border-bluegray-600">{coding.title}</dt>
                       <dd className="mt-3 text-bluegray-400">{coding.description}</dd>
                     </div>
                   ))}
@@ -1447,9 +1465,16 @@ function Services() {
           <p className="mt-1 text-4xl font-extrabold text-bluegray-50 sm:text-5xl sm:tracking-tight capitalize lg:text-6xl mb-12">
         What can we offer your business?
           </p>
-          <p className="max-w-xl mt-5 mx-auto text-xl text-bluegray-300 font-serif">
-"Untether is our go-to company for solving any of our integration needs. Their work produces a large ROI by eliminating manual tasks."          </p>
-          <p className="italic text-bluegray-500 font-serif">- Brent Singley, Bella Vita, Inc.</p>
+
+
+
+              <p className="max-w-xl mt-5 mx-auto text-xl text-bluegray-300 font-serif">
+                "Don't tell me the sky's the limit when there are footprints on the moon."
+              </p>
+              <p className="italic text-bluegray-500 font-serif">- Paul Brandt</p>
+
+
+
         </div>
      </div>
 
@@ -1467,10 +1492,10 @@ function Services() {
                    )}>
                    <action.icon className="h-6 w-6" aria-hidden="true" />
                  </span>
-                 <h3 className="text-lg font-medium inline-block align-top pl-5 pt-2">
+                 <h3 className="text-lg font-medium inline-block align-top pl-5 pt-2 text-bluegray-800">
                      {action.title}
                  </h3>
-                 <p className="mt-2 text-sm text-bluegray-400 border-b-2 border-bluegray-200 pb-8">
+                 <p className="mt-2 text-sm text-bluegray-500 border-b-2 border-bluegray-200 pb-8">
                     {action.description}
                  </p>
                </div>
@@ -1961,7 +1986,7 @@ function Contact() {
             </p>
           </div>
           <div className="mt-12">
-            <form action="mailto:sara@untetherllc.com" method="POST" className="sm:grid sm:grid-cols-1 sm:gap-y-6 sm:grid-cols-2 sm:gap-x-8" enctype="multipart/form-data" name="EmailForm">
+            <form action="#" method="POST" className="sm:grid sm:grid-cols-1 sm:gap-y-6 sm:grid-cols-2 sm:gap-x-8" enctype="multipart/form-data" name="EmailForm">
               <div>
                 <label htmlFor="first-name" className="block text-sm font-medium text-bluegray-700">
                   First name
@@ -1992,7 +2017,7 @@ function Contact() {
               </div>
               <div className="sm:col-span-2">
                 <label htmlFor="company" className="block text-sm font-medium text-bluegray-700">
-                  Company
+                  Company or School
                 </label>
                 <div className="mt-1 mb-3 sm:mb-0">
                   <input
