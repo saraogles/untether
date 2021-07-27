@@ -445,18 +445,20 @@ const work = [
     href: 'https://www.casparionline.com/',
   },
   {
-    client: 'IMG_4985.HEIC',
+    client: 'Southwest Indiana Chamber',
     caption: '3.9 MB',
-    project: 'test',
+    project: 'SWC',
     source:
-      'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
+    'clientpage/swc.jpg',
+    href: 'https://www.swinchamber.com/',
   },
   {
-    client: 'IMG_4985.HEIC',
+    client: 'Driven Locks',
     caption: '3.9 MB',
-    project: 'test',
+    project: 'Driven',
     source:
-      'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
+    'clientpage/driven.jpg',
+    href: 'https://www.drivenlocks.com/',
   },
 ]
 
@@ -990,6 +992,21 @@ function Home() {
                         alt="Caspari"
                       />
                     </div>
+              { /*      <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4 justify-center sm:justify-start">
+                      <img
+                        className="h-40"
+                        src="logos/swc.png"
+                        alt="Southwest Indiana Chamber"
+                      />
+                    </div>
+                    <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4 justify-center sm:justify-start">
+                      <img
+                        className="h-40"
+                        src="logos/driven.png"
+                        alt="Driven Locks"
+                      />
+                    </div>
+                   */ }
                   </div>
                 </div>
               </div>
@@ -1944,7 +1961,7 @@ function Contact() {
             </p>
           </div>
           <div className="mt-12">
-            <form action="#" method="POST" className="sm:grid sm:grid-cols-1 sm:gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+            <form action="mailto:sara@untetherllc.com" method="POST" className="sm:grid sm:grid-cols-1 sm:gap-y-6 sm:grid-cols-2 sm:gap-x-8" enctype="multipart/form-data" name="EmailForm">
               <div>
                 <label htmlFor="first-name" className="block text-sm font-medium text-bluegray-700">
                   First name
