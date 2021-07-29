@@ -1398,7 +1398,7 @@ function Technologies() {
                         What sets us apart, both technologically and as a team, is our captivation for the unknown. We view new methods, new ideas and new solutions as a challenge to understand and opportunity to grow.
                       </p>
                     </div>
-                    <div className="mt-5 prose prose-indigo text-bluegray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
+                    <div className="text-lg mt-5 prose prose-indigo text-bluegray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
                       <p>
                         We are not intimidated by insurmountable business problems because we believe in our determination, dedication and willpower to overcome obstacles we encounter.
                       </p>
@@ -1406,7 +1406,7 @@ function Technologies() {
 
 
                       <h3 className="text-bluegray-800">Why work with a full-stack team?</h3>
-                      <p>
+                      <p className="text-lg">
                         Working alongside a small team with broad skillsets gives you the ability to create a custom project plan for your business. We can add in resources to compliment your existing team or take the entire project off of your hands.
                       </p>
 
