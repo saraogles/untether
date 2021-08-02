@@ -206,7 +206,7 @@ const stats = [
 const peoples = [
   {
     name: 'Jonathan Barksdale',
-    title: 'Currently obsessed with 4:30',
+    blurb: 'Currently obsessed with 4:30AM workouts.',
     role: 'Founder & CEO',
     email: 'jonathan@untetherllc.com',
     imageUrl:
@@ -216,7 +216,7 @@ const peoples = [
   },
   {
     name: 'Casie Barksdale',
-    title: 'Paradigm Representative',
+    blurb: 'Paradigm Representative',
     role: 'Director of Technology',
     email: 'casie@untetherllc.com',
     imageUrl:
@@ -227,7 +227,7 @@ const peoples = [
   },
   {
     name: 'Kyndal Barksdale',
-    title: 'Paradigm Representative',
+    blurb: 'Paradigm Representative',
     role: 'Data Analyst Intern',
     email: 'jonathan@untetherllc.com',
     imageUrl:
@@ -237,7 +237,7 @@ const peoples = [
   },
   {
     name: 'Jason Davis',
-    title: 'Paradigm Representative',
+    blurb: 'Paradigm Representative',
     role: 'Senior Engineer',
     email: 'jasondavis@untetherllc.com',
     imageUrl:
@@ -247,7 +247,7 @@ const peoples = [
   },
   {
     name: 'Kinjal Gandhi',
-    title: 'Paradigm Representative',
+    blurb: 'Paradigm Representative',
     role: 'Senior Engineer',
     email: 'kinjal@untetherllc.com',
     imageUrl:
@@ -257,7 +257,7 @@ const peoples = [
   },
   {
     name: 'Ty Heery',
-    title: 'Paradigm Representative',
+    blurb: 'Paradigm Representative',
     role: 'Intern Extraordinaire',
     email: 'jonathan@untetherllc.com',
     imageUrl:
@@ -267,7 +267,7 @@ const peoples = [
   },
   {
     name: 'Sara Ogles',
-    title: 'Paradigm Representative',
+    blurb: 'Paradigm Representative',
     role: 'Product Manager & Designer',
     email: 'sara@untetherllc.com',
     imageUrl:
@@ -275,9 +275,10 @@ const peoples = [
   imageUrlsilly:
   '/team/silly.png',
   },
+
   {
     name: 'Greg Willis',
-    title: 'Paradigm Representative',
+    blurb: 'Paradigm Representative',
     role: 'Intern Extraordinaire',
     email: 'jonathan@untetherllc.com',
     imageUrl:
@@ -351,7 +352,7 @@ const coding = [
 
 //services
 
-const actions = [
+const serviceslist = [
   {
   title: 'Third-Party Setup & Integrations',
   icon: CashIcon,
@@ -484,14 +485,14 @@ const work = [
 
 //Education
 
-const hobbyFeatures = [
+const planningFeatures = [
   'Full day of customized training',
   'Teachers receive training during planning periods',]
-const scaleFeatures = [
+const halfhalfFeatures = [
   'Full day of customized training',
   'Teachers grouped by grade or technology level',
   'Each group receives an identical half-day of training']
-const growthFeatures = [
+const fulldayFeatures = [
   'Full day of customized training',
   'Full-group, full-day instruction at the school',
   'All teachers attend training together',
@@ -1203,7 +1204,7 @@ function OurTeam() {
 
 
 
-          <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
                {peoples.map((person) => (
                  <li
                    key={person.email}
@@ -1215,7 +1216,7 @@ function OurTeam() {
                      <h3 className="mt-6 text-bluegray-900 text-sm font-medium">{person.name}</h3>
                      <dl className="mt-1 flex-grow flex flex-col justify-center">
                        <dt className="sr-only">Title</dt>
-                       <dd className="text-bluegray-500 text-sm ">{person.title}</dd>
+                       <dd className="text-bluegray-400 text-sm font-normal tracking-wide italic">{person.blurb}</dd>
                        <dt className="sr-only">Role</dt>
                        <dd className="mt-3 ">
                          <span className="px-2 py-1 text-bluegray-800 text-xs font-medium bg-yellow-300 rounded-full whitespace-nowrap ">
@@ -1486,23 +1487,23 @@ function Services() {
 
     <div className="max-w-screen bg-bluegray-50">
      <div className="py-8 max-w-7xl mx-auto overflow-hidden sm:grid sm:grid-cols-2  ">
-           {actions.map((action, actionIdx) => (
-             <div key={action.title}
+           {serviceslist.map((serviceslist, serviceslistIdx) => (
+             <div key={serviceslist.title}
                className={classNames( 'p-6 ')}>
                <div className="mt-8">
                  <span
                    className={classNames(
-                     action.iconBackground,
-                     action.iconForeground,
+                     serviceslist.iconBackground,
+                     serviceslist.iconForeground,
                      'rounded-lg p-3 shadow inline-block'
                    )}>
-                   <action.icon className="h-6 w-6" aria-hidden="true" />
+                   <serviceslist.icon className="h-6 w-6" aria-hidden="true" />
                  </span>
                  <h3 className="text-lg font-medium inline-block align-top pl-5 pt-2 text-bluegray-800">
-                     {action.title}
+                     {serviceslist.title}
                  </h3>
                  <p className="mt-2 text-sm text-bluegray-500 border-b-2 border-bluegray-200 pb-8">
-                    {action.description}
+                    {serviceslist.description}
                  </p>
                </div>
 
@@ -1692,7 +1693,7 @@ function Education() {
                             </div>
                             <div className="flex-1 flex flex-col justify-between border-t-2 border-bluegray-100 p-6 bg-bluegray-50 sm:p-10 lg:p-6 xl:p-10">
                               <ul className="space-y-4">
-                                {hobbyFeatures.map((feature) => (
+                                {planningFeatures.map((feature) => (
                                   <li key={feature} className="flex items-start">
                                     <div className="flex-shrink-0">
                                       <CheckIcon className="flex-shrink-0 h-6 w-6 text-emerald-500" aria-hidden="true" />
@@ -1739,7 +1740,7 @@ function Education() {
                           </div>
                           <div className="border-t-2 border-bluegray-100 rounded-b-lg pt-10 pb-8 px-6 bg-gray-50 sm:px-10 sm:py-10">
                             <ul className="space-y-4">
-                              {growthFeatures.map((feature) => (
+                              {fulldayFeatures.map((feature) => (
                                 <li key={feature} className="flex items-start">
                                   <div className="flex-shrink-0">
                                     <CheckIcon className="flex-shrink-0 h-6 w-6 text-emerald-500" aria-hidden="true" />
@@ -1775,7 +1776,7 @@ function Education() {
                             </div>
                             <div className="flex-1 flex flex-col justify-between border-t-2 border-bluegray-100 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
                               <ul className="space-y-4">
-                                {scaleFeatures.map((feature) => (
+                                {halfhalfFeatures.map((feature) => (
                                   <li key={feature} className="flex items-start">
                                     <div className="flex-shrink-0">
                                       <CheckIcon className="flex-shrink-0 h-6 w-6 text-emerald-500" aria-hidden="true" />
