@@ -5,7 +5,6 @@ import {
   Route,
 } from "react-router-dom";
 
-
 import { Fragment } from 'react';
 import { useState } from 'react';
 
@@ -21,7 +20,7 @@ OfficeBuildingIcon,
  InformationCircleIcon,
  NewspaperIcon,
  UserGroupIcon,
- MailOpenIcon,
+ CodeIcon,
  CameraIcon,
  AcademicCapIcon,
  CashIcon,
@@ -199,7 +198,7 @@ const stats = [
   { id: 3, name: 'Happy Clients', stat: '40+', icon: EmojiHappyIcon},
   { id: 1, name: 'Years in Business', stat: '8', icon: TrendingUpIcon },
   { id: 2, name: 'Automations', stat: '782', icon: TerminalIcon},
-  { id: 2, name: 'Lines of Code', stat: '300,000+', icon: MailOpenIcon},
+  { id: 2, name: 'Lines of Code', stat: '300,000+', icon: CodeIcon},
   { id: 3, name: 'Teachers Trained', stat: '275', icon: LibraryIcon},
 ]
 
@@ -207,7 +206,7 @@ const stats = [
 const peoples = [
   {
     name: 'Jonathan Barksdale',
-    title: 'Paradigm Representative',
+    title: 'Currently obsessed with 4:30',
     role: 'Founder & CEO',
     email: 'jonathan@untetherllc.com',
     imageUrl:
@@ -464,12 +463,12 @@ const work = [
     href: 'https://www.casparionline.com/',
   },
   {
-    client: 'Southwest Indiana Chamber',
+    client: 'South Western Communications',
     caption: "Timely estimations are essential when dealing with various industries like Healthcare, Education and Detention. A custom web application was developed to quickly estimate and engineer project costs across every branch of service.",
     project: 'SWC',
     source:
     'clientpage/swc.jpg',
-    href: 'https://www.swinchamber.com/',
+    href: 'https://www.swc.net/general',
   },
   {
     client: 'Driven Locks',
@@ -539,6 +538,7 @@ const edservices = [
 ]
 
 //education
+
 
 
 function classNames(...classes) {
@@ -708,6 +708,10 @@ export default function BasicExample() {
           <Route path="/contact">
             <Contact />
           </Route>
+          <Route path="/404">
+            <NotFoundPage />
+          </Route>
+
         </Switch>
         <footer className="" aria-labelledby="footerHeading">
           <h2 id="footerHeading" className="sr-only">
@@ -877,7 +881,7 @@ function Home() {
                 </p>
                 <div className="mt-10 w-64">
                   <div className="">
-                    <a href="team" className="flex items-center justify-center ml-16 p-4 w-48 border-2 border-yellow-400 text-sm font-normal tracking-wider uppercase rounded-full text-bluegray-800 bg-yellow-400 hover:bg-transparent hover:text-yellow-400 hover:font-bold">
+                    <a href="ourteam" className="flex items-center justify-center ml-16 p-4 w-48 border-2 border-yellow-400 text-sm font-normal tracking-wider uppercase rounded-full text-bluegray-800 bg-yellow-400 hover:bg-transparent hover:text-yellow-400 hover:font-bold">
                       More About Us
                     </a>
                   </div>
@@ -1176,7 +1180,9 @@ function OurTeam() {
                 If you need us, we'll be in the Cloud.
               </p>
 
-
+              <p className="max-w-xl mt-8 mx-auto text-xl text-bluegray-300 font-serif">
+              "There's nothing better than sharing in success. The individual, the singular - not fun. The team - awesome."        </p>
+              <p className="italic text-bluegray-500 font-serif mt-2">- Dan Patrick, Sportscaster</p>
 
             </div>
           </div>
@@ -1971,6 +1977,9 @@ function Inthemedia() {
   );
 }
 
+
+
+
 function Contact() {
   const [agreed, setAgreed] = useState(false)
 
@@ -1982,11 +1991,11 @@ function Contact() {
           <div className="text-center">
             <h2 className="text-3xl font-extrabold tracking-tight text-lightblue-900 sm:text-4xl">Let's Work Together</h2>
             <p className="mt-4 text-lg leading-6 text-bluegray-500">
-              We'd love to hear from you! Send us a message using the form below or email us directly and let's get your project started.
+              We'd love to hear from you! Send us a message using the form below and let's get your project started.
             </p>
           </div>
           <div className="mt-12">
-            <form action="#" method="POST" className="sm:grid sm:grid-cols-1 sm:gap-y-6 sm:grid-cols-2 sm:gap-x-8" enctype="multipart/form-data" name="EmailForm">
+            <form method="POST" className="sm:grid sm:grid-cols-1 sm:gap-y-6 sm:grid-cols-2 sm:gap-x-8" enctype="multipart/form-data" name="EmailForm">
               <div>
                 <label htmlFor="first-name" className="block text-sm font-medium text-bluegray-700">
                   First name
@@ -2067,8 +2076,8 @@ function Contact() {
                     name="phone-number"
                     id="phone-number"
                     autoComplete="tel"
-                    className="py-3 px-4 block w-full pl-20 focus:ring-yellow-400 focus:border-yellow-400 border-bluegray-300 rounded-md"
-                    placeholder="+1 (555) 987-6543"
+                    className="py-3 px-4 block w-full pl-20 focus:ring-yellow-400 focus:border-yellow-400 border-bluegray-300 rounded-md "
+                    placeholder="+1 (555) 867-5309"
                   />
                 </div>
               </div>
@@ -2086,11 +2095,23 @@ function Contact() {
                   />
                 </div>
               </div>
-              <div className="sm:col-span-2">
-                <div className="flex items-start">
+{
+  /* Checkbox for temporary bug routing? */
 
+  /*
+                <div className="relative flex items-start">
+                  <div className="flex items-center">
+                    <input id="activecustomer" className="focus:ring-yellow-400 text-yellow-400 border-bluegray-300 rounded" type="checkbox" class="form-checkbox"/>
+                  </div>
+                  <div className="ml-4">
+                    <label htmlFor="activecustomer" className="text-sm text-red-400">
+                      Check here
+                    </label>
+                  </div>
                 </div>
-              </div>
+*/
+}
+
               <div className="col-span-2">
                 <button
                   type="submit"
@@ -2111,5 +2132,36 @@ function Blog() {
     <div className="bg-yellow-400">
       <h2>Blog</h2>
     </div>
+  );
+}
+
+function NotFoundPage() {
+  return (
+
+    <div
+        className="min-h-screen bg-center"
+        style={{
+          backgroundImage: "url('/404background.jpg')",
+        }}
+      >
+        <div className="max-w-7xl mx-auto px-4 py-16 text-center sm:px-6 sm:py-24 lg:px-8 lg:py-48">
+          <p className="text-yellow-400 text-sm font-semibold text-black uppercase tracking-wide">404 error</p>
+          <h1 className="text-bluegray-50 mt-2 text-4xl font-extrabold tracking-tight sm:text-5xl">
+            Uh oh! I think you’re lost.
+          </h1>
+          <p className="text-bluegray-50 mt-2 text-lg font-medium">
+            It looks like the page you’re looking for doesn't exist.
+          </p>
+          <div className="mt-6">
+            <a
+              href="/"
+              className="inline-flex justify-center items-center p-4 w-48 border-2 border-yellow-400 text-sm font-normal tracking-wider uppercase rounded-full text-bluegray-800 bg-yellow-400 hover:bg-transparent hover:text-yellow-400 hover:font-bold"
+            >
+              Go back home
+            </a>
+          </div>
+        </div>
+      </div>
+
   );
 }
