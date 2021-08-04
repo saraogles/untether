@@ -195,18 +195,18 @@ const navigation = {
 
 const stats = [
   { id: 1, name: 'Cups of Coffee', stat: '17,520', icon: LightBulbIcon },
-  { id: 3, name: 'Happy Clients', stat: '40+', icon: EmojiHappyIcon},
-  { id: 1, name: 'Years in Business', stat: '8', icon: TrendingUpIcon },
-  { id: 2, name: 'Automations', stat: '782', icon: TerminalIcon},
-  { id: 2, name: 'Lines of Code', stat: '300,000+', icon: CodeIcon},
-  { id: 3, name: 'Teachers Trained', stat: '275', icon: LibraryIcon},
+  { id: 2, name: 'Happy Clients', stat: '40+', icon: EmojiHappyIcon},
+  { id: 3, name: 'Years in Business', stat: '8', icon: TrendingUpIcon },
+  { id: 4, name: 'Lines of Code', stat: '300,000+', icon: CodeIcon},
+  { id: 5, name: 'Automations', stat: '782', icon: TerminalIcon},
+  { id: 6, name: 'Teachers Trained', stat: '500+', icon: LibraryIcon},
 ]
 
 
 const peoples = [
   {
     name: 'Jonathan Barksdale',
-    blurb: 'Currently obsessed with 4:30AM workouts.',
+    blurb: 'Hooked on 4:30AM workouts.',
     role: 'Founder & CEO',
     email: 'jonathan@untetherllc.com',
     imageUrl:
@@ -217,7 +217,7 @@ const peoples = [
   {
     name: 'Casie Barksdale',
     blurb: 'Paradigm Representative',
-    role: 'Director of Technology',
+    role: 'Director of Education Technology Services',
     email: 'casie@untetherllc.com',
     imageUrl:
       '/team/casie.jpeg',
@@ -228,7 +228,7 @@ const peoples = [
   {
     name: 'Kyndal Barksdale',
     blurb: 'Paradigm Representative',
-    role: 'Data Analyst Intern',
+    role: 'Data & Systems Configuration',
     email: 'jonathan@untetherllc.com',
     imageUrl:
     '/team/kyndal.jpeg',
@@ -238,7 +238,7 @@ const peoples = [
   {
     name: 'Jason Davis',
     blurb: 'Paradigm Representative',
-    role: 'Senior Engineer',
+    role: 'Senior Consultant',
     email: 'jasondavis@untetherllc.com',
     imageUrl:
       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
@@ -248,7 +248,7 @@ const peoples = [
   {
     name: 'Kinjal Gandhi',
     blurb: 'Paradigm Representative',
-    role: 'Senior Engineer',
+    role: 'Senior Software Developer',
     email: 'kinjal@untetherllc.com',
     imageUrl:
       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
@@ -258,7 +258,7 @@ const peoples = [
   {
     name: 'Ty Heery',
     blurb: 'Paradigm Representative',
-    role: 'Intern Extraordinaire',
+    role: 'Junior Programmer',
     email: 'jonathan@untetherllc.com',
     imageUrl:
       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
@@ -268,7 +268,7 @@ const peoples = [
   {
     name: 'Sara Ogles',
     blurb: 'Paradigm Representative',
-    role: 'Product Manager & Designer',
+    role: 'UX Designer & Product Manager',
     email: 'sara@untetherllc.com',
     imageUrl:
     '/team/sara.jpeg',
@@ -279,7 +279,7 @@ const peoples = [
   {
     name: 'Greg Willis',
     blurb: 'Paradigm Representative',
-    role: 'Intern Extraordinaire',
+    role: 'Senior Software Engineer',
     email: 'jonathan@untetherllc.com',
     imageUrl:
       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
@@ -309,43 +309,94 @@ const culture = [
 
 //technologies
 
-const coding = [
+const techstack = [
   {
-    id: 1,
-    title: "C#",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    title: 'C#',
+    size: '3.9 MB',
+    source: 'techlogos/csharp.png',
+
   },
   {
-    id: 1,
-    title: "Ruby",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    title: '.NET',
+    size: '3.9 MB',
+    source: 'techlogos/dotnet.png',
+
   },
   {
-    id: 1,
-    title: "Javascript",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    title: 'Ruby on Rails',
+    size: '3.9 MB',
+    source: 'techlogos/rails.svg',
+
   },
   {
-    id: 1,
-    title: "Lorem",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    title: 'JavaScript',
+    size: '3.9 MB',
+    source: 'techlogos/javascript.png',
+
   },
   {
-    id: 1,
-    title: "Ipsum",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    title: 'ASP.NET',
+    size: '3.9 MB',
+    source: 'techlogos/aspnet.png',
+
   },
   {
-    id: 1,
-    title: "Lorem",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    title: 'jQuery',
+    size: '3.9 MB',
+    source: 'techlogos/jquery.png',
+
   },
+  {
+    title: 'SQL Server',
+    size: '3.9 MB',
+    source: 'techlogos/sqlserver.png',
+
+  },
+  {
+    title: 'DevExpress',
+    size: '3.9 MB',
+    source: 'techlogos/devexpress.png',
+
+  },
+
+  {
+    title: 'REST',
+    size: '3.9 MB',
+    source: 'techlogos/rest.png',
+
+  },
+  {
+    title: 'React',
+    size: '3.9 MB',
+    source: 'techlogos/react.png',
+
+  },
+
+]
+
+const servicestack = [
+
+
+  {
+    title: 'Lightspeed',
+    size: '3.9 MB',
+    source: 'techlogos/lightspeed.png',
+
+  },
+  {
+    title: 'MailChimp',
+    size: '3.9 MB',
+    source: 'techlogos/mailchimp.png',
+
+  },
+
+  {
+    title: 'Quickbooks',
+    size: '3.9 MB',
+    source: 'techlogos/qb-logo.svg',
+
+  },
+
 ]
 
 //technologies
@@ -1158,6 +1209,7 @@ function Home() {
                          </a>
                        </div>
                      </div>
+
                    </div>
                  </div>
                </div>
@@ -1216,10 +1268,10 @@ function OurTeam() {
                      <h3 className="mt-6 text-bluegray-900 text-sm font-medium">{person.name}</h3>
                      <dl className="mt-1 flex-grow flex flex-col justify-center">
                        <dt className="sr-only">Title</dt>
-                       <dd className="text-bluegray-400 text-sm font-normal tracking-wide italic">{person.blurb}</dd>
+                       <dd className="text-bluegray-500 text-sm font-normal tracking-wide italic">{person.blurb}</dd>
                        <dt className="sr-only">Role</dt>
                        <dd className="mt-3 ">
-                         <span className="px-2 py-1 text-bluegray-800 text-xs font-medium bg-yellow-300 rounded-full whitespace-nowrap ">
+                         <span className="text-yellow-400 text-sm font-medium uppercase">
                            {person.role}
                          </span>
                        </dd>
@@ -1391,6 +1443,7 @@ function Technologies() {
                       </figure>
                     </div>
                   </div>
+
                   <div className="mt-8 lg:mt-0">
                     <div className="text-base max-w-prose mx-auto lg:max-w-none">
                     <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
@@ -1433,29 +1486,82 @@ function Technologies() {
 
       </div>
 
-      <div className="bg-bluegray-900">
-            <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-              <div className="max-w-2xl lg:mx-auto lg:text-center">
-                <h2 className="text-3xl font-extrabold tracking-wide text-bluegray-50 sm:text-4xl">
-                  Languages & Other Tools
-                </h2>
-                <p className="mt-4 text-bluegray-400">
-                  Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.
-                  Urna, sed a lectus elementum blandit et.
+      <div className="mt-24 flex-col text-center">
+            <h2 className="text-bluegray-50 text-2xl font-serif ">Programming, Cloud & Databases</h2>
+            <p className="pt-2 pb-8 text-xl text-bluegray-400 font-serif italic">
+              Take a closer look at some of our favorite tools to use.
+            </p>
+      </div>
+        <div className="bg-bluegray-50 shadow-lg rounded-lg m-8">
+          <ul role="list" className=" grid grid-cols-2 gap-x-4 gap-y-8 lg:grid-cols-5 xl:gap-x-8">
+                {techstack.map((tech) => (
+                  <div key={tech.source} className="relative flex h-36 p-4 sm:p-8 justify-center">
+                      <img src={tech.source} alt="" className="object-scale-down" />
+                  </div>
+                ))}
+
+              </ul>
+              <p className="flex justify-end pb-4 pr-8 text-sm text-bluegray-600 italic">
+                * Not listed but still loved: AWS, MySQL and Twilio.
+              </p>
+      </div>
+          <div className="mt-24 flex-col text-center">
+                <h2 className="mt-8 text-bluegray-50 text-2xl font-serif ">API Integration Experience</h2>
+                <p className="pt-2 pb-8 mx-16  text-xl text-bluegray-400 font-serif italic">
+                  We're no stranger to integrating with existing third-party solutions.
                 </p>
-              </div>
-              <div className="mt-20">
-                <dl className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-10">
-                  {coding.map((coding) => (
-                    <div key={coding.id}>
-                      <dt className="font-semibold text-bluegray-200 text-2xl pb-2 border-b border-bluegray-600">{coding.title}</dt>
-                      <dd className="mt-3 text-bluegray-400">{coding.description}</dd>
-                    </div>
-                  ))}
-                </dl>
-              </div>
-            </div>
           </div>
+
+          <div className="bg-bluegray-50 shadow-lg rounded-lg m-8">
+          <ul role="list" className=" grid grid-cols-3 gap-x-4 gap-y-8 lg:grid-cols-3 xl:gap-x-8 ">
+                {servicestack.map((service) => (
+                  <div key={service.source} className="relative flex h-36 p-4 sm:p-8 justify-center">
+                      <img src={service.source} alt="" className="object-scale-down" />
+                  </div>
+                ))}
+         </ul>
+              <p className="flex justify-end pb-4 pr-8 text-sm text-bluegray-600 italic">
+                * Not listed but still loved: Salesforce, Shopify, Google Workspace, SAP, Excel and Smartsheet.
+              </p>
+        </div>
+              <div className="relative mt-32 py-16">
+                   <div className="hidden absolute top-0 inset-x-0 h-1/2 bg-bluegray-300 lg:block" aria-hidden="true" />
+                   <div className="max-w-7xl mx-auto bg-bluegray-900 lg:bg-transparent lg:px-8">
+                     <div className="lg:grid lg:grid-cols-12">
+                       <div className="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent">
+                         <div className="absolute inset-x-0 h-1/2 bg-bluegray-300 lg:hidden" aria-hidden="true" />
+                         <div className="max-w-md mx-auto px-8 sm:max-w-3xl sm:px-8 lg:max-w-none lg:p-0">
+                           <div className="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
+                             <img
+                               className="object-cover object-center rounded-3xl shadow-2xl mt-4"
+                               src="https://images.unsplash.com/photo-1507207611509-ec012433ff52?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=934&q=80"
+                               alt=""
+                             />
+                           </div>
+                         </div>
+                       </div>
+
+                       <div className="relative bg-bluegray-900 lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center">
+
+                         <div className="relative max-w-md mx-auto py-12 px-8 space-y-6 sm:max-w-3xl sm:py-16 sm:px-8 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6">
+                           <h2 className="text-3xl font-bold text-bluegray-200" id="join-heading">
+                             Ready to get started?
+                           </h2>
+                           <p className="text-lg text-bluegray-200">
+                             Nothing would make us happier to brainstorm with you and see what Untether can offer your business or school.
+                           </p>
+                           <a
+                             className="block w-full py-3 px-5 text-center bg-yellow-400 rounded-full shadow-md text-xs font-medium text-bluegray-900 hover:bg-bluegray-900 hover:text-yellow-400 border-2 uppercase border-yellow-400 sm:inline-block sm:w-auto"
+                             href="/contact"
+                           >
+                             Get In Touch
+                           </a>
+                         </div>
+                       </div>
+
+                     </div>
+                   </div>
+                 </div>
 
     </div>
   );
