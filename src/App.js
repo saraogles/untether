@@ -523,8 +523,8 @@ const work = [
     href: 'https://www.swc.net/general',
   },
   {
-    client: 'Driven Locks',
-    caption: '3.9 MB',
+    client: 'Driven Security',
+    caption: 'Cloud Integration - etc',
     project: 'Driven',
     source:
     'clientpage/driven.jpg',
