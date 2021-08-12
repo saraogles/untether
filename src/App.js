@@ -216,7 +216,7 @@ const peoples = [
   },
   {
     name: 'Casie Barksdale',
-    blurb: 'Paradigm Representative',
+    blurb: "Basically superwoman, but she'd never admit it.",
     role: 'Director of Education Technology Services',
     email: 'casie@untetherllc.com',
     imageUrl:
@@ -227,7 +227,7 @@ const peoples = [
   },
   {
     name: 'Kyndal Barksdale',
-    blurb: 'Paradigm Representative',
+    blurb: 'Currently living life in orange and blue. War Eagle!',
     role: 'Data & Systems Configuration',
     email: 'jonathan@untetherllc.com',
     imageUrl:
@@ -237,7 +237,7 @@ const peoples = [
   },
   {
     name: 'Jason Davis',
-    blurb: 'Paradigm Representative',
+    blurb: "Absolved from the antics of the Athens office. ",
     role: 'Senior Consultant',
     email: 'jasondavis@untetherllc.com',
     imageUrl:
@@ -247,7 +247,7 @@ const peoples = [
   },
   {
     name: 'Kinjal Gandhi',
-    blurb: 'Paradigm Representative',
+    blurb: "When she's not coding, she's living the preschool mom life.",
     role: 'Senior Software Developer',
     email: 'kinjal@untetherllc.com',
     imageUrl:
@@ -257,7 +257,7 @@ const peoples = [
   },
   {
     name: 'Ty Heery',
-    blurb: 'Paradigm Representative',
+    blurb: "If the Braves are playing, you know where to find him.",
     role: 'Junior Programmer',
     email: 'jonathan@untetherllc.com',
     imageUrl:
@@ -267,7 +267,7 @@ const peoples = [
   },
   {
     name: 'Sara Ogles',
-    blurb: 'Paradigm Representative',
+    blurb: 'Probably covered in paint.',
     role: 'UX Designer & Product Manager',
     email: 'sara@untetherllc.com',
     imageUrl:
@@ -278,7 +278,7 @@ const peoples = [
 
   {
     name: 'Greg Willis',
-    blurb: 'Paradigm Representative',
+    blurb: 'Just an Alabama fan living in an Auburn world.',
     role: 'Senior Software Engineer',
     email: 'jonathan@untetherllc.com',
     imageUrl:
@@ -1262,7 +1262,7 @@ function OurTeam() {
                    key={person.email}
                    className="col-span-1 flex flex-col text-center bg-bluegray-50 rounded-lg shadow divide-y divide-bluegray-200"
                  >
-                   <div className="flex-1 flex flex-col p-8">
+                   <div className="flex-1 flex flex-col p-8 sm:p-4">
                      <img className="w-48 h-48 flex-shrink-0 mx-auto bg-bluegray-900 rounded-full" src={person.imageUrlsilly} alt="" />
                      <img className="z-0 mx-auto w-48 h-48 flex-shrink-0 bg-bluegray-900 rounded-full -mt-48 hover:opacity-0" src={person.imageUrl} alt="" />
                      <h3 className="mt-6 text-bluegray-900 text-sm font-medium">{person.name}</h3>
@@ -2102,7 +2102,7 @@ function Contact() {
             </p>
           </div>
           <div className="mt-12">
-            <form method="POST" className="sm:grid sm:grid-cols-1 sm:gap-y-6 sm:grid-cols-2 sm:gap-x-8" enctype="multipart/form-data" name="EmailForm">
+            <form action="https://api.contactform.dev/api/send/2056423256contact_us_website88" method="POST" className="sm:grid sm:grid-cols-1 sm:gap-y-6 sm:grid-cols-2 sm:gap-x-8" enctype="multipart/form-data" name="EmailForm">
               <div>
                 <label htmlFor="first-name" className="block text-sm font-medium text-bluegray-700">
                   First name
@@ -2110,7 +2110,7 @@ function Contact() {
                 <div className="mt-1 mb-3 sm:mb-0">
                   <input
                     type="text"
-                    name="first-name"
+                    name="name"
                     id="first-name"
                     autoComplete="given-name"
                     className="py-3 px-4 block w-full shadow-sm focus:ring-yellow-400 focus:border-yellow-400 border-bluegray-300 rounded-md"
