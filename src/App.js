@@ -74,14 +74,14 @@ href: '/ourwork',
 button: "Clients We've Helped",
 description: "We are as dedicated to your dreams as we are our own. We get excited about entrepreneurship and watching small businesses grow. We would love to be part of your story. We're here to help you find, develop and integrate technical efficiencies and automations so you can keep your dreams big.",
 icon: CursorClickIcon,
-imageUrl: 'team/jonathan.jpeg',
+imageUrl: 'team/jonathan.jpg',
 },
 {
 name: '". . . about training educators in techology"',
 href: '/education',
 button: 'More About Education',
 description: "Integrating technology in the classroom doesn't have to be daunting. We're here to help you take these new tools and add efficiency and easier access to knowledge in your classrooms everyday. Whether you're intimidated by the techology itself or the endless list of options, we are with you until technology makes your day better, not worse.",
-imageUrl: 'team/casie.jpeg',
+imageUrl: 'team/casie.jpg',
 },
 
 ]
@@ -96,28 +96,11 @@ const enterprise = [
 ]
 const education = [
   { name: 'Educator Services', href: '/education', icon: UserGroupIcon },
-  { name: 'Untethered Blog', href: '/blog', icon: GlobeAltIcon },
+  // { name: 'Untethered Blog', href: '/blog', icon: GlobeAltIcon },
   { name: 'In the Media', href: '/inthemedia', icon: BookmarkAltIcon },
   //{ name: 'Educator Portal', href: '#', icon: DesktopComputerIcon },
 ]
-const blogPosts = [
-  {
-    id: 1,
-    name: 'Boost your conversion rate',
-    href: '#',
-    preview: 'Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1558478551-1a378f63328e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2849&q=80',
-  },
-  {
-    id: 2,
-    name: 'How to use search engine optimization to drive traffic to your site',
-    href: '#',
-    preview: 'Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.',
-    imageUrl:
-      'https://images.unsplash.com/1/apple-gear-looking-pretty.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80',
-  },
-]
+
 const navigation = {
 
   enterprise: [
@@ -131,7 +114,7 @@ const navigation = {
   ],
   education: [
     { name: 'Educator Services', href: '/education' },
-    { name: 'Untethered Blog', href: '/blog' },
+  //  { name: 'Untethered Blog', href: '/blog' },
     { name: 'In The Media', href: '/inthemedia' },
   //  { name: 'Educator Portal', href: '#' },
   ],
@@ -210,9 +193,9 @@ const peoples = [
     role: 'Founder & CEO',
     email: 'jonathan@untetherllc.com',
     imageUrl:
-      '/team/jonathan.jpeg',
-    imageUrlsilly:
-      '/team/silly.png',
+      '/team/jonathan.jpg',
+    imageUrlpersonality:
+      '/team/jonathan_personality.jpg',
   },
   {
     name: 'Casie Barksdale',
@@ -220,9 +203,9 @@ const peoples = [
     role: 'Director of Education Technology Services',
     email: 'casie@untetherllc.com',
     imageUrl:
-      '/team/casie.jpeg',
-    imageUrlsilly:
-    '/team/silly.png',
+      '/team/casie.jpg',
+    imageUrlpersonality:
+    '/team/casie_personality.jpg',
 
   },
   {
@@ -231,39 +214,36 @@ const peoples = [
     role: 'Data & Systems Configuration',
     email: 'jonathan@untetherllc.com',
     imageUrl:
-    '/team/kyndal.jpeg',
-  imageUrlsilly:
-  '/team/silly.png',
+    'untetherballoon.png',
+  imageUrlpersonality:
+  '/untetherballoon.png',
   },
   {
     name: 'Jason Davis',
-    blurb: "Absolved from the antics of the Athens office. ",
+    blurb: "Absolved from the antics of the Athens office.",
     role: 'Senior Consultant',
     email: 'jasondavis@untetherllc.com',
-    imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
-    imageUrlsilly:
-    '/team/silly.png',
+    imageUrl: 'untetherballoon.png',
+    imageUrlpersonality:
+    'untetherballoon.png',
   },
   {
     name: 'Kinjal Gandhi',
     blurb: "When she's not coding, she's living the preschool mom life.",
-    role: 'Senior Software Developer',
+    role: 'Senior Software Engineer',
     email: 'kinjal@untetherllc.com',
-    imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
-    imageUrlsilly:
-    '/team/silly.png',
+    imageUrl: '/team/kinjal.jpg',
+    imageUrlpersonality:
+    '/team/kinjal_personality.jpg',
   },
   {
     name: 'Ty Heery',
     blurb: "If the Braves are playing, you know where to find him.",
     role: 'Junior Programmer',
     email: 'jonathan@untetherllc.com',
-    imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
-    imageUrlsilly:
-    '/team/silly.png',
+    imageUrl: '/team/ty.jpg',
+    imageUrlpersonality:
+    '/team/ty_personality.jpg',
   },
   {
     name: 'Sara Ogles',
@@ -271,24 +251,23 @@ const peoples = [
     role: 'UX Designer & Product Manager',
     email: 'sara@untetherllc.com',
     imageUrl:
-    '/team/sara.jpeg',
-  imageUrlsilly:
-  '/team/silly.png',
+    '/team/sara.jpg',
+  imageUrlpersonality:
+  '/team/sara_personality.jpg',
   },
 
   {
-    name: 'Greg Willis',
+    name: 'J. Greg Willis',
     blurb: 'Just an Alabama fan living in an Auburn world.',
     role: 'Senior Software Engineer',
     email: 'jonathan@untetherllc.com',
-    imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
-    imageUrlsilly:
-    '/team/silly.png',
+    imageUrl: '/team/greg.jpg',
+    imageUrlpersonality:
+    '/team/greg_personality.jpg',
   },
 
 
-  // More people...
+  // More people... (Images Cropped to square at least 1000x1000px)
 ]
 
 const culture = [
@@ -500,7 +479,7 @@ const work = [
   },
   {
     client: 'Oneonta City Schools',
-    caption: '3.9 MB',
+    caption: "Training on specific programs and services is important to make sure every penny spent within the school system is maximized. Some specific programs included in Oneonta's plan are Google for Education, Smore, Schoology, Screencastify, and Edpuzzle.",
     project: 'oneonta city schools',
     source:
     'clientpage/ohs.jpg',
@@ -523,8 +502,8 @@ const work = [
     href: 'https://www.swc.net/general',
   },
   {
-    client: 'Driven Security',
-    caption: 'Cloud Integration - etc',
+    client: 'Driven Locks',
+    caption: '3.9 MB',
     project: 'Driven',
     source:
     'clientpage/driven.jpg',
@@ -689,34 +668,7 @@ export default function BasicExample() {
                         </ul>
                       </div>
                     </nav>
-                    <div className="bg-bluegray-200 px-4 py-8 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
-                      <div>
-                        <h3 className="text-sm font-medium tracking-wide text-bluegray-500 uppercase">From the blog</h3>
-                        <ul className="mt-6 space-y-6">
-                          {blogPosts.map((post) => (
-                            <li key={post.id} className="flow-root">
-                              <a
-                                href={post.href}
-                                className="-m-3 p-3 flex rounded-lg hover:bg-bluegray-100 transition ease-in-out duration-150"
-                              >
-                                <div className="hidden sm:block flex-shrink-0">
-                                  <img className="w-32 h-20 object-cover rounded-md" src={post.imageUrl} alt="" />
-                                </div>
-                                <div className="min-w-0 flex-1 sm:ml-8">
-                                  <h4 className="text-base font-medium text-bluegray-900 truncate">{post.name}</h4>
-                                  <p className="mt-1 text-sm text-bluegray-500">{post.preview}</p>
-                                </div>
-                              </a>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                      <div className="mt-6 text-sm font-medium">
-                        <a href="#" className="text-lightblue-900 rounded-full p-2 hover:text-yellow-500  transition ease-in-out duration-150">
-                          View all posts <span aria-hidden="true">&rarr;</span>
-                        </a>
-                      </div>
-                    </div>
+                      <img className="object-cover " src="group/team_brick.jpg" alt="" />
                   </div>
                 </Popover.Panel>
               </Transition>
@@ -762,6 +714,12 @@ export default function BasicExample() {
           </Route>
           <Route path="/404">
             <NotFoundPage />
+          </Route>
+          <Route path="/success">
+            <SuccessPage />
+          </Route>
+          <Route path="/thanksforsubscribing">
+            <ThanksForSubscribing />
           </Route>
 
         </Switch>
@@ -1149,11 +1107,11 @@ function Home() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-4xl text-center">
                     {passionate.map((feature) => (
                     <div key={feature.name} className="pt-6">
-                      <div className="shadow-md flow-root bg-bluegray-200 rounded-sm px-8 sm:px-6">
+                      <div className="shadow-md flow-root bg-bluegray-100 rounded-sm px-8 sm:px-6">
                         <div className="mt-16 sm:mt-6 h-auto">
                           <div>
                             <span className="inline-flex items-center justify-center p-8 -mt-32">
-                              <img className=" flex-shrink-0 rounded-full" src={feature.imageUrl} alt=""/>
+                              <img className=" flex-shrink-0 rounded-full shadow" src={feature.imageUrl} alt=""/>
                             </span>
                           </div>
                           <div className="flex flex-wrap justify-center place-content-evenly h-auto my-8">
@@ -1184,8 +1142,8 @@ function Home() {
                        <div className="max-w-md mx-auto px-8 sm:max-w-3xl sm:px-8 lg:max-w-none lg:p-0">
                          <div className="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
                            <img
-                             className="object-cover object-center rounded-3xl shadow-2xl mt-4"
-                             src="https://images.unsplash.com/photo-1507207611509-ec012433ff52?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=934&q=80"
+                             className="object-cover object-center rounded-3xl shadow-2xl"
+                             src="group/working_ty.jpg"
                              alt=""
                            />
                          </div>
@@ -1263,8 +1221,8 @@ function OurTeam() {
                    className="col-span-1 flex flex-col text-center bg-bluegray-50 rounded-lg shadow divide-y divide-bluegray-200"
                  >
                    <div className="flex-1 flex flex-col p-8 sm:p-4">
-                     <img className="w-48 h-48 flex-shrink-0 mx-auto bg-bluegray-900 rounded-full" src={person.imageUrlsilly} alt="" />
-                     <img className="z-0 mx-auto w-48 h-48 flex-shrink-0 bg-bluegray-900 rounded-full -mt-48 hover:opacity-0" src={person.imageUrl} alt="" />
+                     <img className="w-48 h-48 flex-shrink-0 mx-auto rounded-full" src={person.imageUrlpersonality} alt="" />
+                     <img className="z-0 mx-auto w-48 h-48 flex-shrink-0 rounded-full -mt-48 hover:opacity-0" src={person.imageUrl} alt="" />
                      <h3 className="mt-6 text-bluegray-900 text-sm font-medium">{person.name}</h3>
                      <dl className="mt-1 flex-grow flex flex-col justify-center">
                        <dt className="sr-only">Title</dt>
@@ -1358,6 +1316,45 @@ function OurTeam() {
 
       </div>
 
+
+      <div className="relative py-16">
+           <div className="hidden absolute top-0 inset-x-0 h-1/2 bg-bluegray-300 lg:block" aria-hidden="true" />
+           <div className="max-w-7xl mx-auto bg-bluegray-900 lg:bg-transparent lg:px-8">
+             <div className="lg:grid lg:grid-cols-12">
+               <div className="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent">
+                 <div className="absolute inset-x-0 h-1/2 bg-bluegray-300 lg:hidden" aria-hidden="true" />
+                 <div className="max-w-md mx-auto px-8 sm:max-w-3xl sm:px-8 lg:max-w-none lg:p-0">
+                   <div className="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
+                     <img
+                       className=" object-cover object-center rounded-3xl shadow-2xl "
+                       src="office.jpg"
+                       alt=""
+                     />
+                   </div>
+                 </div>
+               </div>
+
+               <div className="relative bg-bluegray-900 lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center">
+
+                 <div className="relative max-w-md mx-auto py-12 px-8 space-y-6 sm:max-w-3xl sm:py-16 sm:px-8 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6">
+                   <h2 className="text-3xl font-bold text-bluegray-200" id="join-heading">
+                     Want to work with us?
+                   </h2>
+                   <p className="text-lg text-bluegray-200">
+                     Nothing would make us happier to brainstorm with you and see what Untether can offer your business or school.
+                   </p>
+                   <a
+                     className="block w-full py-3 px-5 text-center bg-yellow-400 rounded-full shadow-md text-xs font-medium text-bluegray-900 hover:bg-bluegray-900 hover:text-yellow-400 border-2 uppercase border-yellow-400 sm:inline-block sm:w-auto"
+                     href="/contact"
+                   >
+                     Get In Touch
+                   </a>
+                 </div>
+               </div>
+
+             </div>
+           </div>
+         </div>
     </div>
 
 
@@ -1401,6 +1398,46 @@ clients we have helped
          </ul>
      </div>
 
+
+     <div className="relative py-16">
+          <div className="hidden absolute top-0 inset-x-0 h-1/2 bg-bluegray-300 lg:block" aria-hidden="true" />
+          <div className="max-w-7xl mx-auto bg-bluegray-900 lg:bg-transparent lg:px-8">
+            <div className="lg:grid lg:grid-cols-12">
+              <div className="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent">
+                <div className="absolute inset-x-0 h-1/2 bg-bluegray-300 lg:hidden" aria-hidden="true" />
+                <div className="max-w-md mx-auto px-8 sm:max-w-3xl sm:px-8 lg:max-w-none lg:p-0">
+                  <div className="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
+                    <img
+                      className="object-cover object-center rounded-3xl shadow-2xl "
+                      src="group/working_ty.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className="relative bg-bluegray-900 lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center">
+
+                <div className="relative max-w-md mx-auto py-12 px-8 space-y-6 sm:max-w-3xl sm:py-16 sm:px-8 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6">
+                  <h2 className="text-3xl font-bold text-bluegray-200" id="join-heading">
+                    Ready to get started?
+                  </h2>
+                  <p className="text-lg text-bluegray-200">
+                    Nothing would make us happier to brainstorm with you and see what Untether can offer your business or school.
+                  </p>
+                  <a
+                    className="block w-full py-3 px-5 text-center bg-yellow-400 rounded-full shadow-md text-xs font-medium text-bluegray-900 hover:bg-bluegray-900 hover:text-yellow-400 border-2 uppercase border-yellow-400 sm:inline-block sm:w-auto"
+                    href="/contact"
+                  >
+                    Get In Touch
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
     </div>
   );
 }
@@ -1432,12 +1469,12 @@ function Technologies() {
                     <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
                       <figure>
                         <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
+
                           <img
                             className="rounded-lg shadow-lg object-cover object-center"
-                            src="https://images.unsplash.com/photo-1546913199-55e06682967e?ixlib=rb-1.2.1&auto=format&fit=crop&crop=focalpoint&fp-x=.735&fp-y=.55&w=1184&h=1376&q=80"
-                            alt="Whitney leaning against a railing on a downtown street"
-                            width={1184}
-                            height={1376}
+                            src="group/mural_vertical.jpg"
+                            alt="Team Photo"
+
                           />
                         </div>
                       </figure>
@@ -1533,8 +1570,8 @@ function Technologies() {
                          <div className="max-w-md mx-auto px-8 sm:max-w-3xl sm:px-8 lg:max-w-none lg:p-0">
                            <div className="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
                              <img
-                               className="object-cover object-center rounded-3xl shadow-2xl mt-4"
-                               src="https://images.unsplash.com/photo-1507207611509-ec012433ff52?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=934&q=80"
+                               className="object-cover object-center rounded-3xl shadow-2xl "
+                               src="group/working_ty.jpg"
                                alt=""
                              />
                            </div>
@@ -1624,8 +1661,8 @@ function Services() {
                   <div className="h-full xl:relative xl:col-start-2">
                     <img
                       className="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0"
-                      src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
-                      alt="People working on laptops"
+                      src="group/working_jonathan.jpg"
+                      alt="People working"
                     />
                     <div
                       aria-hidden="true"
@@ -1658,6 +1695,46 @@ function Services() {
                 </div>
               </div>
             </div>
+
+            <div className="relative py-16">
+                 <div className="hidden absolute top-0 inset-x-0 h-1/2 bg-bluegray-300 lg:block" aria-hidden="true" />
+                 <div className="max-w-7xl mx-auto bg-bluegray-900 lg:bg-transparent lg:px-8">
+                   <div className="lg:grid lg:grid-cols-12">
+                     <div className="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent">
+                       <div className="absolute inset-x-0 h-1/2 bg-bluegray-300 lg:hidden" aria-hidden="true" />
+                       <div className="max-w-md mx-auto px-8 sm:max-w-3xl sm:px-8 lg:max-w-none lg:p-0">
+                         <div className="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
+                           <img
+                             className="object-cover object-center rounded-3xl shadow-2xl "
+                             src="group/working_ty.jpg"
+                             alt=""
+                           />
+                         </div>
+                       </div>
+                     </div>
+
+                     <div className="relative bg-bluegray-900 lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center">
+
+                       <div className="relative max-w-md mx-auto py-12 px-8 space-y-6 sm:max-w-3xl sm:py-16 sm:px-8 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6">
+                         <h2 className="text-3xl font-bold text-bluegray-200" id="join-heading">
+                           Ready to get started?
+                         </h2>
+                         <p className="text-lg text-bluegray-200">
+                           Nothing would make us happier to brainstorm with you and see what Untether can offer your business or school.
+                         </p>
+                         <a
+                           className="block w-full py-3 px-5 text-center bg-yellow-400 rounded-full shadow-md text-xs font-medium text-bluegray-900 hover:bg-bluegray-900 hover:text-yellow-400 border-2 uppercase border-yellow-400 sm:inline-block sm:w-auto"
+                           href="/contact"
+                         >
+                           Get In Touch
+                         </a>
+                       </div>
+                     </div>
+
+                   </div>
+                 </div>
+               </div>
+
 
     </div>
 
@@ -1701,7 +1778,7 @@ function Education() {
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-5/12">
           <img
             className="h-56 w-full rounded-l-full object-cover sm:h-72 md:h-96 lg:w-auto lg:h-1/6"
-            src="hourofcode.jpg"
+            src="media/hourofcode.jpg"
             alt=""
           />
         </div>
@@ -1949,12 +2026,15 @@ function Education() {
                             Enter your email below to receive a sample proposal and occassional free educational resources to keep you up to date with the latest educational technology.
                             </p>
                           </div>
-                          <form action="#" className="mt-12 sm:mx-auto sm:max-w-lg sm:flex">
+                          <form action="https://api.mailslurp.com/forms" className="mt-12 sm:mx-auto sm:max-w-lg sm:flex" method="post">
+                          <input type="hidden" name="_to" value="sara@untetherllc.com" />
+                          <input type="hidden" name="_redirectTo" value="http://localhost:3000/thanksforsubscribing" />
                             <div className="min-w-0 flex-1">
                               <label htmlFor="cta-email" className="sr-only">
                                 Email address
                               </label>
                               <input
+                                name="email"
                                 id="cta-email"
                                 type="email"
                                 className="block w-full border border-transparent rounded-md px-5 py-3 text-base text-emerald-900 placeholder-bluegray-300 shadow-sm focus:outline-none focus:border-transparent focus:ring-1 focus:ring-bluegray-50 focus:ring-offset-2 focus:ring-offset-emerald-400"
@@ -2006,7 +2086,7 @@ function Inthemedia() {
         <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
             <div  className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0">
-                <img className="w-full object-cover" src="podcast.jpg" alt="" />
+                <img className="w-full object-cover" src="media/podcast.jpg" alt="" />
               </div>
               <div className="flex-1 bg-bluegray-50 p-6 flex flex-col justify-between">
                 <div className="flex-1">
@@ -2016,7 +2096,7 @@ function Inthemedia() {
 
                     <p className="text-xl font-semibold text-gray-900">Politics and Moore Podcast</p>
                     <p className="mt-3 text-base text-gray-500">Untether is passionate about being a motivator in the community of entrepreneurship and we are so thankful to have come to mind when discussing business ownership.</p>
-                    <audio controls="controls" src="politicsandmoore.m4a" className="m-4"></audio>
+                    <audio controls="controls" src="media/politicsandmoore.m4a" className="m-4"></audio>
 
                 </div>
                 <div className="mt-6 flex items-center mx-auto">
@@ -2043,7 +2123,7 @@ function Inthemedia() {
             <div  className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0">
               <a href="https://www.enewscourier.com/news/javascript-is-a-girl-s-best-friend-tanner-introduces-students/article_105256a8-9f95-11e5-b9c5-d7d2f4a905e9.html">
-                <img className="w-full object-cover" src="hourofcode.jpg" alt="" />
+                <img className="w-full object-cover" src="media/hourofcode.jpg" alt="" />
               </a>
               </div>
               <div className="flex-1 bg-bluegray-50 p-6 flex flex-col justify-between">
@@ -2092,8 +2172,18 @@ function Contact() {
 
 
     return (
-      <div className="bg-bluegray-50 py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24">
-        <div className="relative max-w-xl mx-auto">
+      <div className=" bg-bluegray-50 py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24 grid md:grid-cols-2">
+
+
+      <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
+        <img
+          className="rounded-lg shadow-lg object-cover object-center"
+          src="office.jpg"
+          alt="Office Photo"  />
+      </div>
+
+
+      <div className="relative max-w-xl mx-8 my-16 md:my-auto">
 
           <div className="text-center">
             <h2 className="text-3xl font-extrabold tracking-tight text-lightblue-900 sm:text-4xl">Let's Work Together</h2>
@@ -2102,7 +2192,9 @@ function Contact() {
             </p>
           </div>
           <div className="mt-12">
-            <form action="https://api.contactform.dev/api/send/2056423256contact_us_website88" method="POST" className="sm:grid sm:grid-cols-1 sm:gap-y-6 sm:grid-cols-2 sm:gap-x-8" enctype="multipart/form-data" name="EmailForm">
+            <form action="https://api.mailslurp.com/forms" method="post" className="sm:grid sm:grid-cols-1 sm:gap-y-6 sm:grid-cols-2 sm:gap-x-8" enctype="multipart/form-data" name="EmailForm">
+            <input type="hidden" name="_to" value="sara@untetherllc.com" />
+            <input type="hidden" name="_redirectTo" value="https://localhost3000/success" />
               <div>
                 <label htmlFor="first-name" className="block text-sm font-medium text-bluegray-700">
                   First name
@@ -2270,5 +2362,65 @@ function NotFoundPage() {
         </div>
       </div>
 
+  );
+}
+
+function SuccessPage() {
+  return (
+
+    <div
+        className="min-h-screen bg-center"
+        style={{
+          backgroundImage: "url('/404background.jpg')",
+        }}
+      >
+        <div className="max-w-7xl mx-auto px-4 py-16 text-center sm:px-6 sm:py-24 lg:px-8 lg:py-48">
+          <p className="text-yellow-400 text-sm font-semibold text-black uppercase tracking-wide">success</p>
+          <h1 className="text-bluegray-50 mt-2 text-4xl font-extrabold tracking-tight sm:text-5xl">
+            Thanks for submitting your request!
+          </h1>
+          <p className="text-bluegray-50 mt-2 text-lg font-medium">
+            Someone will reach back out to you in 1-2 business days.
+          </p>
+          <div className="mt-6">
+            <a
+              href="/"
+              className="inline-flex justify-center items-center p-4 w-48 border-2 border-yellow-400 text-sm font-normal tracking-wider uppercase rounded-full text-bluegray-800 bg-yellow-400 hover:bg-transparent hover:text-yellow-400 hover:font-bold"
+            >
+              Fly back home
+            </a>
+          </div>
+        </div>
+      </div>
+  );
+}
+
+function ThanksForSubscribing() {
+  return (
+
+    <div
+        className="min-h-screen bg-center"
+        style={{
+          backgroundImage: "url('/404background.jpg')",
+        }}
+      >
+        <div className="max-w-7xl mx-auto px-4 py-16 text-center sm:px-6 sm:py-24 lg:px-8 lg:py-48">
+          <p className="text-yellow-400 text-sm font-semibold text-black uppercase tracking-wide">success</p>
+          <h1 className="text-bluegray-50 mt-2 text-4xl font-extrabold tracking-tight sm:text-5xl">
+            Thanks for subscribing to our Education Newsletter!
+          </h1>
+          <p className="text-bluegray-50 mt-2 text-lg font-medium">
+            You'll receive updates, tips and tricks to make digital initiatives a little bit easier.
+          </p>
+          <div className="mt-6">
+            <a
+              href="/"
+              className="inline-flex justify-center items-center p-4 w-48 border-2 border-yellow-400 text-sm font-normal tracking-wider uppercase rounded-full text-bluegray-800 bg-yellow-400 hover:bg-transparent hover:text-yellow-400 hover:font-bold"
+            >
+              Fly back home
+            </a>
+          </div>
+        </div>
+      </div>
   );
 }
