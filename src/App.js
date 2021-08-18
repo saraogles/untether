@@ -1761,20 +1761,22 @@ function Services() {
 function Education() {
   return (
     <div className="relative bg-bluegray-50 overflow-hidden">
-        <div className="max-w-7xl mx-auto">
+
+
+
+        <div className="max-w-7xl mx-auto bg-blue-500 lg:flex">
+
           <div className="relative z-10  sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-
-
             <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
               <div className="sm:text-center lg:text-left">
-                <h1 className="text-5xl tracking-loose font-extrabold text-bluegray-800 md:text-7xl ">
+                <h1 className="text-6xl tracking-loose font-extrabold text-bluegray-800 md:text-7xl ">
                   <span className="block xl:inline leading-tight">Using technology makes schools</span>{' '}
                   <span className="block text-emerald-500 xl:inline">better</span>
                 </h1>
                 <p className="mt-3 text-base text-bluegray-700 sm:mt-5 sm:text-lg sm:max-w-md sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                   Let's embolden students to develop the skills to learn and create with technology together.
                 </p>
-                <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                <div className="my-8 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div className="rounded-full shadow max-w-xs mx-auto sm:m-0">
                     <a
                       href="contact"
@@ -1783,22 +1785,24 @@ function Education() {
                       Get In Touch
                     </a>
                   </div>
-                  <div className="mt-3 sm:mt-0 sm:ml-3">
 
-                  </div>
                 </div>
               </div>
             </main>
           </div>
 
+          <div className="mr-8 mt-8 w-screen lg:max-w-xl">
+            <img
+              className="lg:rounded-full object-cover"
+              src="hourofcodesquare.jpg"
+              alt=""
+            />
+          </div>
+
         </div>
-        <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-5/12">
-          <img
-            className="h-56 w-full rounded-l-full object-cover sm:h-72 md:h-96 lg:w-auto lg:h-1/6"
-            src="media/hourofcode.jpg"
-            alt=""
-          />
-        </div>
+
+
+
 
 
         <div className="py-12 bg-bluegray-50">
