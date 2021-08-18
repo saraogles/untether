@@ -211,30 +211,22 @@ const peoples = [
 
   },
 
+
   {
     name: 'Kinjal Gandhi',
     blurb: "When she's not coding, she's living the preschool mom life.",
-    bio: "",
+    bio: "Kinjal has an aura around her that encourages advancement in every interaction. She considers herself an eternal student, despite having a Master's Degree in Computer Science. In the companies she's worked for, she had to acquire the skill to efficiently familiarize herself with their systems and infrastructure, which is a key asset in working with Untether's variety of clients. Her energetic attitude of growth, diversity and communication are always a welcome addition to any project. She is always looking to acquire new skills and try new things and is excited to instill that same passion into her daughter. When she's not working, you will probably find her at Yoga, Zumba, or exploring new places with her family.",
     role: 'Senior Software Engineer',
     email: 'kinjal@untetherllc.com',
     imageUrl: '/team/kinjal.jpg',
     imageUrlpersonality:
     '/team/kinjal_personality.jpg',
   },
-  {
-    name: 'Ty Heery',
-    blurb: "If the Braves are playing, you know where to find him.",
-    bio: "",
-    role: 'Junior Programmer',
-    email: 'jonathan@untetherllc.com',
-    imageUrl: '/team/ty.jpg',
-    imageUrlpersonality:
-    '/team/ty_personality.jpg',
-  },
+
   {
     name: 'Sara Ogles',
     blurb: 'Probably covered in paint.',
-    bio: "Sara has an eclectic, blended background which spans across both the design and tech spaces that transformed into a passion for product development in recent years. She began her career independently as a one-stop-shop for small business branding and websites. Spending a few more years in the commercial space, she recently ventured into a fully creative career path by opening her own art studio. She quickly realized that as much as she needs to create, she also needs business puzzles to solve. She is currently the swiss army knife of product, able to be both a direct contributor and have her product-minded head in the clouds.",
+    bio: "Sara has a blended background, which spans across both the design and tech spaces that have transformed into a passion for product development. She is currently the swiss army knife of product, able to be both a direct contributor and still have her product-minded head in the clouds. Her favorite projects are those that require her to learn something new. Complacent is not in her vocabulary; she is always striving to be better and to actively make things better for those around her. She began her career as a one-stop-shop for small business branding and website development and then moved on to work with agile teams. When she's not working for Untether, you can find her painting in her studio or at one of her children's sporting events.",
     role: 'UX Designer & Product Manager',
     email: 'sara@untetherllc.com',
     imageUrl:
@@ -254,6 +246,16 @@ const peoples = [
     '/team/greg_personality.jpg',
   },
   {
+    name: 'Jason Davis',
+    blurb: "Absolved from the antics of the Athens office.",
+    bio: "Jason serves Untether as a technical consultant and advisor. Early in his career he fell in love with the idea of procedural thinking and was able to apply those skills in both military contracting and ecommerce instances. He prioritizes a relationship with the client and is able to translate their concerns into technical solutions and efficiencies. He embraces change and is always excited to learn something new, which makes him an asset to everything Untether does. He graduated with an MBA with an emphasis on Information Systems. When he's not working, he's either watching his son play collegiate baseball or cheering on the Kentucky Wildcats.",
+    role: 'Senior Consultant',
+    email: 'jasondavis@untetherllc.com',
+    imageUrl: 'untetherballoonsmall.png',
+    imageUrlpersonality:
+    'untetherballoonsmall.png',
+  },
+  {
     name: 'Kyndal Barksdale',
     blurb: 'Currently living life in orange and blue. War Eagle!',
     bio: "",
@@ -265,15 +267,16 @@ const peoples = [
   '/untetherballoonsmall.png',
   },
   {
-    name: 'Jason Davis',
-    blurb: "Absolved from the antics of the Athens office.",
-    bio: "Jason serves Untether as a technical consultant and advisor. Early in his career he fell in love with the idea of procedural thinking and was able to apply those skills in both military contracting and ecommerce instances. He prioritizes a relationship with the client and is able to translate their concerns into technical solutions and efficiencies. He embraces change and is always excited to learn something new, which makes him an asset to everything Untether does. He graduated with an MBA with an emphasis on Information Systems. When he's not working, he's either watching his son play collegiate baseball or cheering on the Kentucky Wildcats.",
-    role: 'Senior Consultant',
-    email: 'jasondavis@untetherllc.com',
-    imageUrl: 'untetherballoonsmall.png',
+    name: 'Ty Heery',
+    blurb: "If the Braves are playing, you know where to find him.",
+    bio: "",
+    role: 'Junior Programmer',
+    email: 'jonathan@untetherllc.com',
+    imageUrl: '/team/ty.jpg',
     imageUrlpersonality:
-    'untetherballoonsmall.png',
+    '/team/ty_personality.jpg',
   },
+
 
 
   // More people... (Images Cropped to square at least 1000x1000px)
@@ -1224,26 +1227,26 @@ function OurTeam() {
 
 
 
-          <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
+          <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3  xl:mx-16">
                {peoples.map((person) => (
                  <li
                    key={person.email}
                    className="col-span-1 flex flex-col text-center bg-bluegray-50 rounded-lg shadow divide-y divide-bluegray-200"
                  >
                    <div className="flex-1 flex flex-col p-8 sm:p-4">
-                     <img className="w-48 h-48 flex-shrink-0 mx-auto rounded-full" src={person.imageUrlpersonality} alt="" />
-                     <img className="z-0 mx-auto w-48 h-48 flex-shrink-0 rounded-full -mt-48 hover:opacity-0" src={person.imageUrl} alt="" />
-                     <h3 className="mt-6 text-bluegray-900 text-sm font-medium">{person.name}</h3>
-                     <dl className="mt-1 flex-grow flex flex-col justify-center">
+                     <img className="w-56  h-56 md:w-72 md:h-72 flex-shrink-0 mx-auto rounded-full my-8 shadow" src={person.imageUrlpersonality} alt="" />
+                     <img className="z-0 mx-auto w-56 h-56 md:w-72 md:h-72 flex-shrink-0 rounded-full -mt-64 md:-mt-80 hover:opacity-0" src={person.imageUrl} alt="" />
+                     <h3 className="mt-6 text-lightblue-700 text-lg font-normal ">{person.name}</h3>
+                     <dl className="mt-1 flex-grow flex flex-col ">
                        <dt className="sr-only">Title</dt>
                        <dd className="text-bluegray-500 text-sm font-normal tracking-wide italic">{person.blurb}</dd>
                        <dt className="sr-only">Role</dt>
-                       <dd className="mt-3 ">
-                         <span className="text-yellow-400 text-sm font-medium uppercase">
+                       <dd className="py-2">
+                         <span className="text-yellow-400 text-md font-bold uppercase">
                            {person.role}
                          </span>
                        </dd>
-                       <dd className="m-4 text-left text-bluegray-700 text-sm font-normal tracking-wide ">{person.bio}</dd>
+                       <dd className="m-2 text-left text-bluegray-500 text-sm font-normal tracking-wide ">{person.bio}</dd>
                      </dl>
                    </div>
                    <div>
