@@ -190,6 +190,7 @@ const peoples = [
   {
     name: 'Jonathan Barksdale',
     blurb: 'Hooked on 4:30AM workouts.',
+    bio: "",
     role: 'Founder & CEO',
     email: 'jonathan@untetherllc.com',
     imageUrl:
@@ -200,6 +201,7 @@ const peoples = [
   {
     name: 'Casie Barksdale',
     blurb: "Basically superwoman, but she'd never admit it.",
+    bio: "",
     role: 'Director of Education Technology Services',
     email: 'casie@untetherllc.com',
     imageUrl:
@@ -208,28 +210,11 @@ const peoples = [
     '/team/casie_personality.jpg',
 
   },
-  {
-    name: 'Kyndal Barksdale',
-    blurb: 'Currently living life in orange and blue. War Eagle!',
-    role: 'Data & Systems Configuration',
-    email: 'jonathan@untetherllc.com',
-    imageUrl:
-    'untetherballoon.png',
-  imageUrlpersonality:
-  '/untetherballoon.png',
-  },
-  {
-    name: 'Jason Davis',
-    blurb: "Absolved from the antics of the Athens office.",
-    role: 'Senior Consultant',
-    email: 'jasondavis@untetherllc.com',
-    imageUrl: 'untetherballoon.png',
-    imageUrlpersonality:
-    'untetherballoon.png',
-  },
+
   {
     name: 'Kinjal Gandhi',
     blurb: "When she's not coding, she's living the preschool mom life.",
+    bio: "",
     role: 'Senior Software Engineer',
     email: 'kinjal@untetherllc.com',
     imageUrl: '/team/kinjal.jpg',
@@ -239,6 +224,7 @@ const peoples = [
   {
     name: 'Ty Heery',
     blurb: "If the Braves are playing, you know where to find him.",
+    bio: "",
     role: 'Junior Programmer',
     email: 'jonathan@untetherllc.com',
     imageUrl: '/team/ty.jpg',
@@ -248,6 +234,7 @@ const peoples = [
   {
     name: 'Sara Ogles',
     blurb: 'Probably covered in paint.',
+    bio: "",
     role: 'UX Designer & Product Manager',
     email: 'sara@untetherllc.com',
     imageUrl:
@@ -259,11 +246,33 @@ const peoples = [
   {
     name: 'J. Greg Willis',
     blurb: 'Just an Alabama fan living in an Auburn world.',
+    bio: "",
     role: 'Senior Software Engineer',
     email: 'jonathan@untetherllc.com',
     imageUrl: '/team/greg.jpg',
     imageUrlpersonality:
     '/team/greg_personality.jpg',
+  },
+  {
+    name: 'Kyndal Barksdale',
+    blurb: 'Currently living life in orange and blue. War Eagle!',
+    bio: "",
+    role: 'Data & Systems Configuration',
+    email: 'jonathan@untetherllc.com',
+    imageUrl:
+    'untetherballoonsmall.png',
+  imageUrlpersonality:
+  '/untetherballoonsmall.png',
+  },
+  {
+    name: 'Jason Davis',
+    blurb: "Absolved from the antics of the Athens office.",
+    bio: "",
+    role: 'Senior Consultant',
+    email: 'jasondavis@untetherllc.com',
+    imageUrl: 'untetherballoonsmall.png',
+    imageUrlpersonality:
+    'untetherballoonsmall.png',
   },
 
 
@@ -734,7 +743,7 @@ export default function BasicExample() {
               <div className="space-y-8 xl:col-span-1">
                 <img
                   className="h-32"
-                  src="untetherballoon.png"
+                  src="untetherballoonsmall.png"
                   alt="Untether"
                 />
                 <p className="text-bluegray-400 text-base">
@@ -827,7 +836,7 @@ function Home() {
         </div>
 
 
-        <div className="relative sm:pt-24 sm:pb-16 sm:inline-flex justify-center">
+        <div className="relative sm:pt-24 sm:pb-16 sm:inline-flex max-w-7xl">
 
           <div className="sm:hidden">
             <img className="flex justify-items-end max-w-full" src="untetherballoon.png" alt="" />
@@ -1183,8 +1192,8 @@ function OurTeam() {
   return (
 
     <div className="">
-
-          <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <div className="bg-bluegray-900">
+          <div className="max-w-7xl mx-auto pt-16 pb-24 px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h2 className="text-base font-semibold text-yellow-400 tracking-wide uppercase p-4">Meet Our Team</h2>
               <p className="mt-1 text-4xl font-extrabold text-bluegray-50 sm:text-5xl sm:tracking-tight lg:text-6xl mb-8">
@@ -1197,10 +1206,11 @@ function OurTeam() {
 
             </div>
           </div>
+          </div>
 
 
 
-      <div className="mt-6 bg-bluegray-100 relative shadow max-w-screen mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-16">
+      <div className=" bg-bluegray-100 relative shadow max-w-screen mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-16">
 
       <h2 className=" text-3xl font-normal uppercase text-lightblue-900 sm:tracking-wide  -mt-16 sm:-mt-20 lg:-mt-24 bg-bluegray-50 shadow rounded-full p-4 max-w-md m-auto">
       Our Aeronauts
@@ -1294,7 +1304,7 @@ function OurTeam() {
         </div>
       </div>
 
-      <div className=" mt-8 mb-8 p-8 m-auto bg-bluegray-100 w-screen">
+      <div className=" mt-8  p-8 m-auto bg-bluegray-100 w-screen">
 
         <div className=" grid grid-cols-1  sm:grid-cols-3 xl:grid-cols-6 max-w-7xl justify-items-center mx-auto">
           {stats.map((item)=>(
@@ -1367,7 +1377,7 @@ function Ourwork() {
     <div className="">
 
 
-
+    <div className="bg-bluegray-900">
     <div className=" max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
       <div className="text-center">
         <h2 className="text-base font-semibold text-yellow-400 tracking-wide uppercase p-4">See our work</h2>
@@ -1377,6 +1387,7 @@ clients we have helped
         <p className="max-w-xl mt-5 mx-auto text-xl text-bluegray-300 font-serif">
 "Untether is our go-to company for solving any of our integration needs. Their work produces a large ROI by eliminating manual tasks."        </p>
         <p className="italic text-bluegray-500 font-serif">- Brent Singley, Bella Vita, Inc.</p>
+      </div>
       </div>
    </div>
 
@@ -1445,7 +1456,7 @@ clients we have helped
 function Technologies() {
   return (
     <div className="">
-
+    <div className="bg-bluegray-900">
       <div className=" max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
 
         <div className="text-center">
@@ -1457,6 +1468,7 @@ function Technologies() {
             More about the tools we use and technical experience we've gained along the way
           </p>
         </div>
+      </div>
       </div>
 
         <div className="bg-bluegray-100 overflow-hidden">
@@ -1607,8 +1619,8 @@ function Technologies() {
 function Services() {
   return (
 
-    <div>
-
+    <div className="">
+    <div className="bg-bluegray-900">
       <div className=" max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-base font-semibold text-yellow-400 tracking-wide uppercase p-4">Services</h2>
@@ -1626,6 +1638,7 @@ function Services() {
 
 
         </div>
+      </div>
      </div>
 
     <div className="max-w-screen bg-bluegray-50">
