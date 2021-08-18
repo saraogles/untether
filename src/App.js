@@ -190,7 +190,7 @@ const peoples = [
   {
     name: 'Jonathan Barksdale',
     blurb: 'Hooked on 4:30AM workouts.',
-    bio: "",
+    bio: "Untether's Founder & CEO, Jonathan, embodies persistence and discipline in everything he does. As much time as he spends serving Untether's clients, he spends an equal amount laying the foundation for growth of the company. His passion for engineering goes back to graduating Summa Cum Laude in Electrical Engineering from the University of Alabama in Huntsville. He then ventured into radar countermeasure data analysis and eventually commercial software development, where he's happily been ever since. His favorite part about entrepreneurship is the challenge. He loves working everyday to build something sustainable, while solving very tangible problems for Untether's clients.",
     role: 'Founder & CEO',
     email: 'jonathan@untetherllc.com',
     imageUrl:
@@ -234,7 +234,7 @@ const peoples = [
   {
     name: 'Sara Ogles',
     blurb: 'Probably covered in paint.',
-    bio: "",
+    bio: "Sara has an eclectic, blended background which spans across both the design and tech spaces that transformed into a passion for product development in recent years. She began her career independently as a one-stop-shop for small business branding and websites. Spending a few more years in the commercial space, she recently ventured into a fully creative career path by opening her own art studio. She quickly realized that as much as she needs to create, she also needs business puzzles to solve. She is currently the swiss army knife of product, able to be both a direct contributor and have her product-minded head in the clouds.",
     role: 'UX Designer & Product Manager',
     email: 'sara@untetherllc.com',
     imageUrl:
@@ -246,7 +246,7 @@ const peoples = [
   {
     name: 'J. Greg Willis',
     blurb: 'Just an Alabama fan living in an Auburn world.',
-    bio: "",
+    bio: "Greg is uniquely equipped with the skill to approach problems holistically, with sustainability in mind, which he uses to serve Untether in his role of Principal Software Engineer. Not only does he bring critical thinking and problem solving to the table, he can also architect that solution to life. His interest in computer science first piqued with video games and before joining Untether, he managed a team of software engineers. His blend of technology and team leadership are an invaluable asset to our growing team. Greg has a BS in Computer Science and a MBA, both from the University of Alabama. Roll Tide! When not working, he enjoys working out, mountain biking, hiking, snow skiing, and spending time with his wife and family.",
     role: 'Senior Software Engineer',
     email: 'jonathan@untetherllc.com',
     imageUrl: '/team/greg.jpg',
@@ -267,7 +267,7 @@ const peoples = [
   {
     name: 'Jason Davis',
     blurb: "Absolved from the antics of the Athens office.",
-    bio: "",
+    bio: "Jason serves Untether as a technical consultant and advisor. Early in his career he fell in love with the idea of procedural thinking and was able to apply those skills in both military contracting and ecommerce instances. He prioritizes a relationship with the client and is able to translate their concerns into technical solutions and efficiencies. He embraces change and is always excited to learn something new, which makes him an asset to everything Untether does. He graduated with an MBA with an emphasis on Information Systems. When he's not working, he's either watching his son play collegiate baseball or cheering on the Kentucky Wildcats.",
     role: 'Senior Consultant',
     email: 'jasondavis@untetherllc.com',
     imageUrl: 'untetherballoonsmall.png',
@@ -480,7 +480,7 @@ const work = [
 
   {
     client: 'Blount County Schools',
-    caption: '3.9 MB',
+    caption: "Shifting to a culture of embracing technology is important when considering remote learning. Teachers now use technology in a purposeful way on a daily basis and students are actively embracing it.",
     project: 'Blount county schools',
     source:
     'clientpage/blountcounty.jpg',
@@ -512,7 +512,7 @@ const work = [
   },
   {
     client: 'Driven Locks',
-    caption: '3.9 MB',
+    caption: 'Untether is a development and integration partner to Driven, to facilitate video camera integration and other application development initiatives.',
     project: 'Driven',
     source:
     'clientpage/driven.jpg',
@@ -1243,6 +1243,7 @@ function OurTeam() {
                            {person.role}
                          </span>
                        </dd>
+                       <dd className="m-4 text-left text-bluegray-700 text-sm font-normal tracking-wide ">{person.bio}</dd>
                      </dl>
                    </div>
                    <div>
