@@ -839,7 +839,7 @@ function Home() {
         </div>
 
 
-        <div className="relative sm:pt-24 sm:pb-16 sm:inline-flex max-w-7xl">
+        <div className="relative sm:pt-24 sm:pb-16 sm:inline-flex 2xl:flex 2xl:m-auto max-w-7xl">
 
           <div className="sm:hidden">
             <img className="flex justify-items-end max-w-full" src="untetherballoon.png" alt="" />
@@ -889,7 +889,7 @@ function Home() {
 
 
 
-            <div className="relative mt-12 lg:mt-24 md:flex items-center max-w-7xl ml-16 mr-16">
+            <div className="relative mt-12 lg:mt-24 md:flex items-center max-w-7xl ml-16 mr-16 sm:ml-0 sm:mr-0">
 
 
               <div className="relative px-4 sm:px-16">
@@ -910,7 +910,7 @@ function Home() {
                 </div>
               </div>
 
-              <div className="mt-20 -mx-4 relative lg:mt-0" aria-hidden="true">
+              <div className="mt-20 mx-auto md:mr-16 relative lg:mt-0" aria-hidden="true">
 
                 <div className="absolute -right-24 mt-48">
                   <div className="lg:w-44 lg:h-44 bg-bluegray-900 rounded-full opacity-50">
@@ -1151,7 +1151,7 @@ function Home() {
                    <div className="lg:grid lg:grid-cols-12">
                      <div className="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent">
                        <div className="absolute inset-x-0 h-1/2 bg-bluegray-300 lg:hidden" aria-hidden="true" />
-                       <div className="max-w-md mx-auto px-8 sm:max-w-3xl sm:px-8 lg:max-w-none lg:p-0">
+                       <div className="max-w-md mx-auto px-8 sm:max-w-3xl sm:px-8 lg:max-w-none lg:p-0 pt-16 lg:pt-0">
                          <div className="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
                            <img
                              className="object-cover object-center rounded-3xl shadow-2xl"
@@ -1420,7 +1420,7 @@ clients we have helped
             <div className="lg:grid lg:grid-cols-12">
               <div className="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent">
                 <div className="absolute inset-x-0 h-1/2 bg-bluegray-300 lg:hidden" aria-hidden="true" />
-                <div className="max-w-md mx-auto px-8 sm:max-w-3xl sm:px-8 lg:max-w-none lg:p-0">
+                <div className="max-w-md mx-auto px-8 sm:max-w-3xl sm:px-8 lg:max-w-none lg:p-0 pt-16 lg:pt-0">
                   <div className="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
                     <img
                       className="object-cover object-center rounded-3xl shadow-2xl "
@@ -1583,7 +1583,7 @@ function Technologies() {
                      <div className="lg:grid lg:grid-cols-12">
                        <div className="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent">
                          <div className="absolute inset-x-0 h-1/2 bg-bluegray-300 lg:hidden" aria-hidden="true" />
-                         <div className="max-w-md mx-auto px-8 sm:max-w-3xl sm:px-8 lg:max-w-none lg:p-0">
+                         <div className="max-w-md mx-auto px-8 sm:max-w-3xl sm:px-8 lg:max-w-none lg:p-0 pt-16 lg:pt-0">
                            <div className="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
                              <img
                                className="object-cover object-center rounded-3xl shadow-2xl "
@@ -1646,7 +1646,7 @@ function Services() {
      </div>
 
     <div className="max-w-screen bg-bluegray-50">
-     <div className="py-8 max-w-7xl mx-auto overflow-hidden sm:grid sm:grid-cols-2  ">
+     <div className="py-8 max-w-7xl mx-auto overflow-hidden sm:grid sm:grid-cols-2">
            {serviceslist.map((serviceslist, serviceslistIdx) => (
              <div key={serviceslist.title}
                className={classNames( 'p-6 ')}>
@@ -1673,7 +1673,7 @@ function Services() {
       </div>
 
         <div className="relative bg-bluegray-900">
-              <div className="h-80 w-full absolute bottom-0 xl:inset-0 xl:h-full">
+              <div className="hidden xl:block h-80 w-full absolute bottom-0 xl:inset-0 xl:h-full">
                 <div className="h-full w-full xl:grid xl:grid-cols-2">
                   <div className="h-full xl:relative xl:col-start-2">
                     <img
@@ -1689,7 +1689,7 @@ function Services() {
                 </div>
               </div>
               <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-cols-2 xl:grid-flow-col-dense xl:gap-x-8">
-                <div className="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24">
+                <div className="relative pt-12 xl:pb-64 sm:pt-24 pb-16 xl:col-start-1 xl:pb-24">
                   <h2 className="text-sm font-semibold text-yellow-400 tracking-wide uppercase">Save time and money</h2>
                   <p className="mt-3 text-3xl font-extrabold text-bluegray-50">
                     Get actionable data that will help grow your business
@@ -1719,7 +1719,7 @@ function Services() {
                    <div className="lg:grid lg:grid-cols-12">
                      <div className="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent">
                        <div className="absolute inset-x-0 h-1/2 bg-bluegray-300 lg:hidden" aria-hidden="true" />
-                       <div className="max-w-md mx-auto px-8 sm:max-w-3xl sm:px-8 lg:max-w-none lg:p-0">
+                       <div className="max-w-md mx-auto px-8 sm:max-w-3xl sm:px-8 lg:max-w-none lg:p-0 pt-16 lg:pt-0">
                          <div className="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
                            <img
                              className="object-cover object-center rounded-3xl shadow-2xl "
@@ -1764,7 +1764,7 @@ function Education() {
 
 
 
-        <div className="max-w-7xl mx-auto bg-blue-500 lg:flex">
+        <div className="max-w-7xl mx-auto lg:flex lg:bg-blue-500">
 
           <div className="relative z-10  sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
             <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
@@ -1793,8 +1793,13 @@ function Education() {
 
           <div className="mr-8 mt-8 w-screen lg:max-w-xl">
             <img
-              className="lg:rounded-full object-cover"
+              className="hidden lg:block rounded-full object-cover text-center"
               src="hourofcodesquare.jpg"
+              alt=""
+            />
+            <img
+              className="lg:hidden objectPosition-crop height-300"
+              src="media/hourofcode.jpg"
               alt=""
             />
           </div>
@@ -2193,10 +2198,10 @@ function Contact() {
 
 
     return (
-      <div className=" bg-bluegray-50 py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24 grid md:grid-cols-2">
+      <div className=" bg-bluegray-50 py-16 px-4 overflow-hidden sm:px-6 lg:px-16 lg:py-24 grid md:grid-cols-2">
 
 
-      <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
+      <div className="aspect-w-12 mr-8 aspect-h-7 lg:aspect-none">
         <img
           className="rounded-lg shadow-lg object-cover object-center"
           src="office.jpg"
@@ -2204,7 +2209,7 @@ function Contact() {
       </div>
 
 
-      <div className="relative max-w-xl mx-8 my-16 md:my-auto">
+      <div className="relative ml-8 my-16 md:my-auto lg:mt-0">
 
           <div className="text-center">
             <h2 className="text-3xl font-extrabold tracking-tight text-lightblue-900 sm:text-4xl">Let's Work Together</h2>

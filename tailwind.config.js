@@ -27,6 +27,9 @@ module.exports = {
       'serif':['PT Serif Caption', 'ui-serif'],
     },
     extend: {
+      objectPosition: {
+          'crop':'0 -1000px',
+      },
       width: {
           '112': '28rem',
           '160': '40rem',
