@@ -210,8 +210,27 @@ const peoples = [
     '/team/casie_personality.jpg',
 
   },
-
-
+  {
+    name: 'Kyndal Barksdale',
+    blurb: 'Currently living life in orange and blue. War Eagle!',
+    bio: "",
+    role: 'Data & Systems Configuration',
+    email: 'jonathan@untetherllc.com',
+    imageUrl:
+    'untetherballoonsmall.png',
+  imageUrlpersonality:
+  '/untetherballoonsmall.png',
+  },
+  {
+    name: 'Jason Davis',
+    blurb: "Absolved from the antics of the Athens office.",
+    bio: "Jason serves Untether as a technical consultant and advisor. Early in his career he fell in love with the idea of procedural thinking and was able to apply those skills in both military contracting and ecommerce instances. He prioritizes building a relationship with each and every client and is able to translate their concerns into technical solutions and efficiencies. He embraces change and is always excited to learn something new, which makes him an asset to everything Untether does. He graduated with an MBA with an emphasis on Information Systems. When he's not working, he's either watching his son play collegiate baseball or cheering on the Kentucky Wildcats.",
+    role: 'Senior Consultant',
+    email: 'jasondavis@untetherllc.com',
+    imageUrl: '/team/jason.jpg',
+    imageUrlpersonality:
+    '/team/jason.jpg',
+  },
   {
     name: 'Kinjal Gandhi',
     blurb: "When she's not coding, she's living the preschool mom life.",
@@ -221,6 +240,16 @@ const peoples = [
     imageUrl: '/team/kinjal.jpg',
     imageUrlpersonality:
     '/team/kinjal_personality.jpg',
+  },
+  {
+    name: 'Ty Heery',
+    blurb: "If the Braves are playing, you know where to find him.",
+    bio: "Ty grew up around computers so it only made sense when Computer Science started calling his name. He is currently studying at Auburn University and serves Untether in research and development when he's not in school. He thrives on analytical thinking and making data-driven decisions. Never knowing anything other than the age of technology, Ty brings fearless familiarity to the table, always ready and willing to investigate the newest technologies.",
+    role: 'Junior Programmer',
+    email: 'jonathan@untetherllc.com',
+    imageUrl: '/team/ty.jpg',
+    imageUrlpersonality:
+    '/team/ty_personality.jpg',
   },
 
   {
@@ -245,37 +274,8 @@ const peoples = [
     imageUrlpersonality:
     '/team/greg_personality.jpg',
   },
-  {
-    name: 'Jason Davis',
-    blurb: "Absolved from the antics of the Athens office.",
-    bio: "Jason serves Untether as a technical consultant and advisor. Early in his career he fell in love with the idea of procedural thinking and was able to apply those skills in both military contracting and ecommerce instances. He prioritizes building a relationship with each and every client and is able to translate their concerns into technical solutions and efficiencies. He embraces change and is always excited to learn something new, which makes him an asset to everything Untether does. He graduated with an MBA with an emphasis on Information Systems. When he's not working, he's either watching his son play collegiate baseball or cheering on the Kentucky Wildcats.",
-    role: 'Senior Consultant',
-    email: 'jasondavis@untetherllc.com',
-    imageUrl: 'untetherballoonsmall.png',
-    imageUrlpersonality:
-    'untetherballoonsmall.png',
-  },
-  {
-    name: 'Kyndal Barksdale',
-    blurb: 'Currently living life in orange and blue. War Eagle!',
-    bio: "",
-    role: 'Data & Systems Configuration',
-    email: 'jonathan@untetherllc.com',
-    imageUrl:
-    'untetherballoonsmall.png',
-  imageUrlpersonality:
-  '/untetherballoonsmall.png',
-  },
-  {
-    name: 'Ty Heery',
-    blurb: "If the Braves are playing, you know where to find him.",
-    bio: "Ty grew up around computers so it only made sense when Computer Science started calling his name. He is currently studying at Auburn University and serves Untether in research and development when he's not in school. He thrives on analytical thinking and making data-driven decisions. Never knowing anything other than the age of technology, Ty brings fearless familiarity to the table, always ready and willing to investigate the newest technologies.",
-    role: 'Junior Programmer',
-    email: 'jonathan@untetherllc.com',
-    imageUrl: '/team/ty.jpg',
-    imageUrlpersonality:
-    '/team/ty_personality.jpg',
-  },
+
+
 
 
 
@@ -689,13 +689,6 @@ export default function BasicExample() {
         </Popover>
 
 
-        {/*
-          A <Switch> looks through all its children <Route>
-          elements and renders the first one whose path
-          matches the current URL. Use a <Switch> any time
-          you have multiple routes, but you want only one
-          of them to render at a time
-        */}
         <Switch>
           <Route exact path="/">
             <Home />
@@ -807,8 +800,7 @@ export default function BasicExample() {
   );
 }
 
-// You can think of these components as "pages"
-// in your app.
+
 
 function Home() {
   return (
@@ -1671,7 +1663,6 @@ function Services() {
            ))}
          </div>
       </div>
-
         <div className="relative bg-bluegray-900">
               <div className="hidden xl:block h-80 w-full absolute bottom-0 xl:inset-0 xl:h-full">
                 <div className="h-full w-full xl:grid xl:grid-cols-2">
@@ -1688,6 +1679,8 @@ function Services() {
                   </div>
                 </div>
               </div>
+
+
               <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-cols-2 xl:grid-flow-col-dense xl:gap-x-8">
                 <div className="relative pt-12 xl:pb-64 sm:pt-24 pb-16 xl:col-start-1 xl:pb-24">
                   <h2 className="text-sm font-semibold text-yellow-400 tracking-wide uppercase">Save time and money</h2>
@@ -1719,11 +1712,11 @@ function Services() {
                    <div className="lg:grid lg:grid-cols-12">
                      <div className="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent">
                        <div className="absolute inset-x-0 h-1/2 bg-bluegray-300 lg:hidden" aria-hidden="true" />
-                       <div className="max-w-md mx-auto px-8 sm:max-w-3xl sm:px-8 lg:max-w-none lg:p-0 pt-16 lg:pt-0">
+                       <div className="max-w-md mx-auto px-8 sm:max-w-3xl sm:px-8 lg:max-w-none lg:p-0">
                          <div className="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
                            <img
-                             className="object-cover object-center rounded-3xl shadow-2xl "
-                             src="group/working_ty.jpg"
+                             className=" object-cover object-center rounded-3xl shadow-2xl "
+                             src="office.jpg"
                              alt=""
                            />
                          </div>
@@ -1734,7 +1727,7 @@ function Services() {
 
                        <div className="relative max-w-md mx-auto py-12 px-8 space-y-6 sm:max-w-3xl sm:py-16 sm:px-8 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6">
                          <h2 className="text-3xl font-bold text-bluegray-200" id="join-heading">
-                           Ready to get started?
+                           Want to work with us?
                          </h2>
                          <p className="text-lg text-bluegray-200">
                            Nothing would make us happier to brainstorm with you and see what Untether can offer your business or school.
@@ -2448,5 +2441,49 @@ function ThanksForSubscribing() {
           </div>
         </div>
       </div>
+  );
+}
+
+
+function FooterOnly() {
+  return (
+    <div className="relative py-16">
+         <div className="hidden absolute top-0 inset-x-0 h-1/2 bg-bluegray-300 lg:block" aria-hidden="true" />
+         <div className="max-w-7xl mx-auto bg-bluegray-900 lg:bg-transparent lg:px-8">
+           <div className="lg:grid lg:grid-cols-12">
+             <div className="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent">
+               <div className="absolute inset-x-0 h-1/2 bg-bluegray-300 lg:hidden" aria-hidden="true" />
+               <div className="max-w-md mx-auto px-8 sm:max-w-3xl sm:px-8 lg:max-w-none lg:p-0">
+                 <div className="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
+                   <img
+                     className=" object-cover object-center rounded-3xl shadow-2xl "
+                     src="office.jpg"
+                     alt=""
+                   />
+                 </div>
+               </div>
+             </div>
+
+             <div className="relative bg-bluegray-900 lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center">
+
+               <div className="relative max-w-md mx-auto py-12 px-8 space-y-6 sm:max-w-3xl sm:py-16 sm:px-8 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6">
+                 <h2 className="text-3xl font-bold text-bluegray-200" id="join-heading">
+                   Want to work with us?
+                 </h2>
+                 <p className="text-lg text-bluegray-200">
+                   Nothing would make us happier to brainstorm with you and see what Untether can offer your business or school.
+                 </p>
+                 <a
+                   className="block w-full py-3 px-5 text-center bg-yellow-400 rounded-full shadow-md text-xs font-medium text-bluegray-900 hover:bg-bluegray-900 hover:text-yellow-400 border-2 uppercase border-yellow-400 sm:inline-block sm:w-auto"
+                   href="/contact"
+                 >
+                   Get In Touch
+                 </a>
+               </div>
+             </div>
+
+           </div>
+         </div>
+       </div>
   );
 }
