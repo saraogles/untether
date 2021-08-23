@@ -2191,10 +2191,10 @@ function Contact() {
 
 
     return (
-      <div className=" bg-bluegray-50 py-16 px-4 overflow-hidden sm:px-6 lg:px-16 lg:py-24 grid md:grid-cols-2">
+      <div className="bg-bluegray-50 py-16 px-4 overflow-hidden sm:px-6 lg:px-16 lg:py-24 grid md:grid-cols-2">
 
 
-      <div className="aspect-w-12 mr-8 aspect-h-7 lg:aspect-none">
+      <div className="aspect-w-12 md:mr-8 aspect-h-7 lg:aspect-none">
         <img
           className="rounded-lg shadow-lg object-cover object-center"
           src="office.jpg"
@@ -2202,7 +2202,7 @@ function Contact() {
       </div>
 
 
-      <div className="relative ml-8 my-16 md:my-auto lg:mt-0">
+      <div className="relative md:ml-8 my-16 md:my-auto lg:mt-0">
 
           <div className="text-center">
             <h2 className="text-3xl font-extrabold tracking-tight text-lightblue-900 sm:text-4xl">Let's Work Together</h2>
