@@ -215,7 +215,7 @@ const peoples = [
   {
     name: 'Kinjal Gandhi',
     blurb: "When she's not coding, she's living the preschool mom life.",
-    bio: "Kinjal has an aura around her that encourages advancement in every interaction. She considers herself an eternal student, despite having a Master's Degree in Computer Science. In the companies she's worked for, she had to acquire the skill to efficiently familiarize herself with their systems and infrastructure, which is a key asset in working with Untether's variety of clients. Her energetic attitude of growth, diversity and communication are always a welcome addition to any project. She is always looking to acquire new skills and try new things and is excited to instill that same passion into her daughter. When she's not working, you will probably find her at Yoga, Zumba, or exploring new places with her family.",
+    bio: "Kinjal has an aura around her that encourages advancement in every interaction. She considers herself an eternal student, despite having a Master's Degree in Computer Science. Throughout her career, Kinjal has had to efficiently familiarize herself with various systems and infrastructures, which proves to be a valuable asset in working with Untether’s variety of clients. Her energetic attitude of growth, diversity and communication are always a welcome addition to any project. She is always looking to acquire new skills and try new things and is excited to instill that same passion into her daughter. When she's not working, you will probably find her at Yoga, Zumba, or exploring new places with her family.",
     role: 'Senior Software Engineer',
     email: 'kinjal@untetherllc.com',
     imageUrl: '/team/kinjal.jpg',
@@ -226,7 +226,7 @@ const peoples = [
   {
     name: 'Sara Ogles',
     blurb: 'Probably covered in paint.',
-    bio: "Sara has a blended background, which spans across both the design and tech spaces that have transformed into a passion for product development. She is currently the swiss army knife of product, able to be both a direct contributor and still have her product-minded head in the clouds. Her favorite projects are those that require her to learn something new. Complacent is not in her vocabulary; she is always striving to be better and to actively make things better for those around her. She began her career as a one-stop-shop for small business branding and website development and then moved on to work with agile teams. When she's not working for Untether, you can find her painting in her studio or at one of her children's sporting events.",
+    bio: "Sara has a blended background, which spans across both the design and tech spaces and has transformed into a passion for product development. She is currently serving as the swiss army knife of product, able to be both a direct contributor and still have her product-minded head in the clouds. Her favorite projects are those that require her to learn something new. Complacent is not in her vocabulary; she is always striving to be better and to actively make things better for those around her. She began her career as a one-stop-shop for small business branding and website development and then moved on to work with agile teams. When she's not working for Untether, you can find her painting in her studio or doing the after school sports shuffle with her two kids.",
     role: 'UX Designer & Product Manager',
     email: 'sara@untetherllc.com',
     imageUrl:
@@ -238,7 +238,7 @@ const peoples = [
   {
     name: 'J. Greg Willis',
     blurb: 'Just an Alabama fan living in an Auburn world.',
-    bio: "Greg is uniquely equipped with the skill to approach problems holistically, with sustainability in mind, which he uses to serve Untether in his role of Principal Software Engineer. Not only does he bring critical thinking and problem solving to the table, he can also architect that solution to life. His interest in computer science first piqued with video games and before joining Untether, he managed a team of software engineers. His blend of technology and team leadership are an invaluable asset to our growing team. Greg has a BS in Computer Science and a MBA, both from the University of Alabama. Roll Tide! When not working, he enjoys working out, mountain biking, hiking, snow skiing, and spending time with his wife and family.",
+    bio: "Greg is uniquely equipped with the skill to approach problems holistically, with sustainability in mind, which he uses to serve Untether in his role of Senior Software Engineer. Not only does he bring critical thinking and problem solving to the table, he can also architect that solution to life. His interest in computer science first piqued with video games and before joining Untether, he managed a team of software engineers. His blend of technology and team leadership are an invaluable asset to our growing team. Greg has a BS in Computer Science and a MBA, both from the University of Alabama. Roll Tide! When not working, he enjoys working out, mountain biking, hiking, snow skiing, and spending time with his wife and family.",
     role: 'Senior Software Engineer',
     email: 'jonathan@untetherllc.com',
     imageUrl: '/team/greg.jpg',
@@ -248,7 +248,7 @@ const peoples = [
   {
     name: 'Jason Davis',
     blurb: "Absolved from the antics of the Athens office.",
-    bio: "Jason serves Untether as a technical consultant and advisor. Early in his career he fell in love with the idea of procedural thinking and was able to apply those skills in both military contracting and ecommerce instances. He prioritizes a relationship with the client and is able to translate their concerns into technical solutions and efficiencies. He embraces change and is always excited to learn something new, which makes him an asset to everything Untether does. He graduated with an MBA with an emphasis on Information Systems. When he's not working, he's either watching his son play collegiate baseball or cheering on the Kentucky Wildcats.",
+    bio: "Jason serves Untether as a technical consultant and advisor. Early in his career he fell in love with the idea of procedural thinking and was able to apply those skills in both military contracting and ecommerce instances. He prioritizes building a relationship with each and every client and is able to translate their concerns into technical solutions and efficiencies. He embraces change and is always excited to learn something new, which makes him an asset to everything Untether does. He graduated with an MBA with an emphasis on Information Systems. When he's not working, he's either watching his son play collegiate baseball or cheering on the Kentucky Wildcats.",
     role: 'Senior Consultant',
     email: 'jasondavis@untetherllc.com',
     imageUrl: 'untetherballoonsmall.png',
@@ -269,7 +269,7 @@ const peoples = [
   {
     name: 'Ty Heery',
     blurb: "If the Braves are playing, you know where to find him.",
-    bio: "",
+    bio: "Ty grew up around computers so it only made sense when Computer Science started calling his name. He is currently studying at Auburn University and serves Untether in research and development when he's not in school. He thrives on analytical thinking and making data-driven decisions. Never knowing anything other than the age of technology, Ty brings fearless familiarity to the table, always ready and willing to investigate the newest technologies.",
     role: 'Junior Programmer',
     email: 'jonathan@untetherllc.com',
     imageUrl: '/team/ty.jpg',
@@ -1764,7 +1764,7 @@ function Education() {
 
 
 
-        <div className="max-w-7xl mx-auto lg:flex lg:bg-blue-500">
+        <div className="max-w-7xl mx-auto lg:flex ">
 
           <div className="relative z-10  sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
             <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
@@ -2053,8 +2053,8 @@ function Education() {
                             </p>
                           </div>
                           <form action="https://api.mailslurp.com/forms" className="mt-12 sm:mx-auto sm:max-w-lg sm:flex" method="post">
-                          <input type="hidden" name="_to" value="sara@untetherllc.com" />
-                          <input type="hidden" name="_redirectTo" value="http://localhost:3000/thanksforsubscribing" />
+                          <input type="hidden" name="_to" value="admin@untetherllc.com" />
+                          <input type="hidden" name="_redirectTo" value="https://untetherllc.com/thanksforsubscribing" />
                             <div className="min-w-0 flex-1">
                               <label htmlFor="cta-email" className="sr-only">
                                 Email address
@@ -2219,8 +2219,8 @@ function Contact() {
           </div>
           <div className="mt-12">
             <form action="https://api.mailslurp.com/forms" method="post" className="sm:grid sm:grid-cols-1 sm:gap-y-6 sm:grid-cols-2 sm:gap-x-8" enctype="multipart/form-data" name="EmailForm">
-            <input type="hidden" name="_to" value="sara@untetherllc.com" />
-            <input type="hidden" name="_redirectTo" value="https://localhost3000/success" />
+            <input type="hidden" name="_to" value="admin@untetherllc.com" />
+            <input type="hidden" name="_redirectTo" value="https://untetherllc.com/success" />
               <div>
                 <label htmlFor="first-name" className="block text-sm font-medium text-bluegray-700">
                   First name
