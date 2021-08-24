@@ -201,7 +201,7 @@ const peoples = [
   {
     name: 'Casie Barksdale',
     blurb: "Basically superwoman, but she'd never admit it.",
-    bio: "",
+    bio: "Casie serves Unether in Instructional Techology Training. She spends her days traveling all over the state actively enabling educators to confidently integrate technology in their classrooms. Before Untether she was a teacher herself, and wasn't always passionate about technology in the classroom. Her first-hand experience in the field allows her to meet any teacher where they're at and give them the tools they need to add technology to their classroom. When she's not creating training plans for one of her schools, she's sharpening her own saw to stay familiar with the newest tools, working out at the closest Orange Theory, or reading on her back porch.",
     role: 'Director of Education Technology Services',
     email: 'casie@untetherllc.com',
     imageUrl:
@@ -213,13 +213,13 @@ const peoples = [
   {
     name: 'Kyndal Barksdale',
     blurb: 'Currently living life in orange and blue. War Eagle!',
-    bio: "",
+    bio: "Kyndal brings energy and positivity to everything she does and her work at Untether is no exception. She serves Untether in data organization and doesn't hesitate to take on other administrative duties when a need arises. She is currently working toward her degree in Industrial and Systems Engineering with a minor in Business at Auburn University. Her drive and work ethic was formed as an All-State volleyball player in high school, which she carries over in all other aspects of her life. When she's not working or studying, you can find her recharging at the lake or going for a leisurely run.",
     role: 'Data & Systems Configuration',
     email: 'jonathan@untetherllc.com',
     imageUrl:
-    'untetherballoonsmall.png',
+    '/team/kyndal.jpg',
   imageUrlpersonality:
-  '/untetherballoonsmall.png',
+  '/team/kyndal.jpg',
   },
   {
     name: 'Jason Davis',
@@ -445,10 +445,9 @@ const serviceslist = [
 ]
 
 const metrics = [
-  { id: 1, stat: '8K+', emphasis: 'Companies', rest: 'use laoreet amet lacus nibh integer quis.' },
-  { id: 2, stat: '25K+', emphasis: 'Countries around the globe', rest: 'lacus nibh integer quis.' },
-  { id: 3, stat: '98%', emphasis: 'Customer satisfaction', rest: 'laoreet amet lacus nibh integer quis.' },
-  { id: 4, stat: '12M+', emphasis: 'Issues resolved', rest: 'lacus nibh integer quis.' },
+  { id: 1, stat: '2011', emphasis: 'Marc Andreesseen', rest: "is quoted saying, 'software is 'eating the world. Software companies are poised to take over large swathes of the economy.'" },
+  { id: 2, stat: '2019', emphasis: 'Satya Nadella,', rest: "Microsoft's CEO, says that every company needs to start thinking and operating as a software driven company in order to be successful." },
+  { id: 3, stat: '2029', emphasis: 'Demand for Software Developers', rest: "is projected to have grown by 22%, according to the US Bureau of Labor Statistics." },
 ]
 
 //services
@@ -1137,44 +1136,8 @@ function Home() {
             </div>
 
 
-            <div className="relative py-16">
-                 <div className="hidden absolute top-0 inset-x-0 h-1/2 bg-bluegray-300 lg:block" aria-hidden="true" />
-                 <div className="max-w-7xl mx-auto bg-bluegray-900 lg:bg-transparent lg:px-8">
-                   <div className="lg:grid lg:grid-cols-12">
-                     <div className="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent">
-                       <div className="absolute inset-x-0 h-1/2 bg-bluegray-300 lg:hidden" aria-hidden="true" />
-                       <div className="max-w-md mx-auto px-8 sm:max-w-3xl sm:px-8 lg:max-w-none lg:p-0 pt-16 lg:pt-0">
-                         <div className="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
-                           <img
-                             className="object-cover object-center rounded-3xl shadow-2xl"
-                             src="group/working_ty.jpg"
-                             alt=""
-                           />
-                         </div>
-                       </div>
-                     </div>
+            <WorkWithUsWorking/>
 
-                     <div className="relative bg-bluegray-900 lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center">
-
-                       <div className="relative max-w-md mx-auto py-12 px-8 space-y-6 sm:max-w-3xl sm:py-16 sm:px-8 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6">
-                         <h2 className="text-3xl font-bold text-bluegray-200" id="join-heading">
-                           Ready to get started?
-                         </h2>
-                         <p className="text-lg text-bluegray-200">
-                           Nothing would make us happier to brainstorm with you and see what Untether can offer your business or school.
-                         </p>
-                         <a
-                           className="block w-full py-3 px-5 text-center bg-yellow-400 rounded-full shadow-md text-xs font-medium text-bluegray-900 hover:bg-bluegray-900 hover:text-yellow-400 border-2 uppercase border-yellow-400 sm:inline-block sm:w-auto"
-                           href="/contact"
-                         >
-                           Get In Touch
-                         </a>
-                       </div>
-                     </div>
-
-                   </div>
-                 </div>
-               </div>
 
       </main>
 
@@ -1323,44 +1286,8 @@ function OurTeam() {
       </div>
 
 
-      <div className="relative py-16">
-           <div className="hidden absolute top-0 inset-x-0 h-1/2 bg-bluegray-300 lg:block" aria-hidden="true" />
-           <div className="max-w-7xl mx-auto bg-bluegray-900 lg:bg-transparent lg:px-8">
-             <div className="lg:grid lg:grid-cols-12">
-               <div className="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent">
-                 <div className="absolute inset-x-0 h-1/2 bg-bluegray-300 lg:hidden" aria-hidden="true" />
-                 <div className="max-w-md mx-auto px-8 sm:max-w-3xl sm:px-8 lg:max-w-none lg:p-0">
-                   <div className="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
-                     <img
-                       className=" object-cover object-center rounded-3xl shadow-2xl "
-                       src="office.jpg"
-                       alt=""
-                     />
-                   </div>
-                 </div>
-               </div>
+      <WorkWithUsWorking/>
 
-               <div className="relative bg-bluegray-900 lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center">
-
-                 <div className="relative max-w-md mx-auto py-12 px-8 space-y-6 sm:max-w-3xl sm:py-16 sm:px-8 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6">
-                   <h2 className="text-3xl font-bold text-bluegray-200" id="join-heading">
-                     Want to work with us?
-                   </h2>
-                   <p className="text-lg text-bluegray-200">
-                     Nothing would make us happier to brainstorm with you and see what Untether can offer your business or school.
-                   </p>
-                   <a
-                     className="block w-full py-3 px-5 text-center bg-yellow-400 rounded-full shadow-md text-xs font-medium text-bluegray-900 hover:bg-bluegray-900 hover:text-yellow-400 border-2 uppercase border-yellow-400 sm:inline-block sm:w-auto"
-                     href="/contact"
-                   >
-                     Get In Touch
-                   </a>
-                 </div>
-               </div>
-
-             </div>
-           </div>
-         </div>
     </div>
 
 
@@ -1406,44 +1333,7 @@ clients we have helped
      </div>
 
 
-     <div className="relative py-16">
-          <div className="hidden absolute top-0 inset-x-0 h-1/2 bg-bluegray-300 lg:block" aria-hidden="true" />
-          <div className="max-w-7xl mx-auto bg-bluegray-900 lg:bg-transparent lg:px-8">
-            <div className="lg:grid lg:grid-cols-12">
-              <div className="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent">
-                <div className="absolute inset-x-0 h-1/2 bg-bluegray-300 lg:hidden" aria-hidden="true" />
-                <div className="max-w-md mx-auto px-8 sm:max-w-3xl sm:px-8 lg:max-w-none lg:p-0 pt-16 lg:pt-0">
-                  <div className="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
-                    <img
-                      className="object-cover object-center rounded-3xl shadow-2xl "
-                      src="group/working_ty.jpg"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div className="relative bg-bluegray-900 lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center">
-
-                <div className="relative max-w-md mx-auto py-12 px-8 space-y-6 sm:max-w-3xl sm:py-16 sm:px-8 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6">
-                  <h2 className="text-3xl font-bold text-bluegray-200" id="join-heading">
-                    Ready to get started?
-                  </h2>
-                  <p className="text-lg text-bluegray-200">
-                    Nothing would make us happier to brainstorm with you and see what Untether can offer your business or school.
-                  </p>
-                  <a
-                    className="block w-full py-3 px-5 text-center bg-yellow-400 rounded-full shadow-md text-xs font-medium text-bluegray-900 hover:bg-bluegray-900 hover:text-yellow-400 border-2 uppercase border-yellow-400 sm:inline-block sm:w-auto"
-                    href="/contact"
-                  >
-                    Get In Touch
-                  </a>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
+     <WorkWithUsWorking/>
 
     </div>
   );
@@ -1569,44 +1459,8 @@ function Technologies() {
                 * Not listed but still loved: Salesforce, Shopify, Google Workspace, SAP, Excel and Smartsheet.
               </p>
         </div>
-              <div className="relative mt-32 py-16">
-                   <div className="hidden absolute top-0 inset-x-0 h-1/2 bg-bluegray-300 lg:block" aria-hidden="true" />
-                   <div className="max-w-7xl mx-auto bg-bluegray-900 lg:bg-transparent lg:px-8">
-                     <div className="lg:grid lg:grid-cols-12">
-                       <div className="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent">
-                         <div className="absolute inset-x-0 h-1/2 bg-bluegray-300 lg:hidden" aria-hidden="true" />
-                         <div className="max-w-md mx-auto px-8 sm:max-w-3xl sm:px-8 lg:max-w-none lg:p-0 pt-16 lg:pt-0">
-                           <div className="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
-                             <img
-                               className="object-cover object-center rounded-3xl shadow-2xl "
-                               src="group/working_ty.jpg"
-                               alt=""
-                             />
-                           </div>
-                         </div>
-                       </div>
 
-                       <div className="relative bg-bluegray-900 lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center">
-
-                         <div className="relative max-w-md mx-auto py-12 px-8 space-y-6 sm:max-w-3xl sm:py-16 sm:px-8 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6">
-                           <h2 className="text-3xl font-bold text-bluegray-200" id="join-heading">
-                             Ready to get started?
-                           </h2>
-                           <p className="text-lg text-bluegray-200">
-                             Nothing would make us happier to brainstorm with you and see what Untether can offer your business or school.
-                           </p>
-                           <a
-                             className="block w-full py-3 px-5 text-center bg-yellow-400 rounded-full shadow-md text-xs font-medium text-bluegray-900 hover:bg-bluegray-900 hover:text-yellow-400 border-2 uppercase border-yellow-400 sm:inline-block sm:w-auto"
-                             href="/contact"
-                           >
-                             Get In Touch
-                           </a>
-                         </div>
-                       </div>
-
-                     </div>
-                   </div>
-                 </div>
+        <WorkWithUsWorking/>
 
     </div>
   );
@@ -1616,6 +1470,7 @@ function Services() {
   return (
 
     <div className="">
+
     <div className="bg-bluegray-900">
       <div className=" max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <div className="text-center">
@@ -1685,14 +1540,12 @@ function Services() {
                 <div className="relative pt-12 xl:pb-64 sm:pt-24 pb-16 xl:col-start-1 xl:pb-24">
                   <h2 className="text-sm font-semibold text-yellow-400 tracking-wide uppercase">Save time and money</h2>
                   <p className="mt-3 text-3xl font-extrabold text-bluegray-50">
-                    Get actionable data that will help grow your business
+                    Can you afford not to take action to help grow your business?
                   </p>
                   <p className="mt-5 text-lg text-bluegray-300">
-                    Rhoncus sagittis risus arcu erat lectus bibendum. Ut in adipiscing quis in viverra tristique sem. Ornare
-                    feugiat viverra eleifend fusce orci in quis amet. Sit in et vitae tortor, massa. Dapibus laoreet amet lacus
-                    nibh integer quis. Eu vulputate diam sit tellus quis at.
+                  With software efficiently written, customized, and tailored to your business needs, we can eliminate the unnecessary additional costs for your business.
                   </p>
-                  <div className="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2">
+                  <div className="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-3">
                     {metrics.map((item) => (
                       <p key={item.id}>
                         <span className="block text-2xl font-bold text-bluegray-50">{item.stat}</span>
@@ -1706,44 +1559,8 @@ function Services() {
               </div>
             </div>
 
-            <div className="relative py-16">
-                 <div className="hidden absolute top-0 inset-x-0 h-1/2 bg-bluegray-300 lg:block" aria-hidden="true" />
-                 <div className="max-w-7xl mx-auto bg-bluegray-900 lg:bg-transparent lg:px-8">
-                   <div className="lg:grid lg:grid-cols-12">
-                     <div className="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent">
-                       <div className="absolute inset-x-0 h-1/2 bg-bluegray-300 lg:hidden" aria-hidden="true" />
-                       <div className="max-w-md mx-auto px-8 sm:max-w-3xl sm:px-8 lg:max-w-none lg:p-0">
-                         <div className="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
-                           <img
-                             className=" object-cover object-center rounded-3xl shadow-2xl "
-                             src="office.jpg"
-                             alt=""
-                           />
-                         </div>
-                       </div>
-                     </div>
 
-                     <div className="relative bg-bluegray-900 lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center">
-
-                       <div className="relative max-w-md mx-auto py-12 px-8 space-y-6 sm:max-w-3xl sm:py-16 sm:px-8 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6">
-                         <h2 className="text-3xl font-bold text-bluegray-200" id="join-heading">
-                           Want to work with us?
-                         </h2>
-                         <p className="text-lg text-bluegray-200">
-                           Nothing would make us happier to brainstorm with you and see what Untether can offer your business or school.
-                         </p>
-                         <a
-                           className="block w-full py-3 px-5 text-center bg-yellow-400 rounded-full shadow-md text-xs font-medium text-bluegray-900 hover:bg-bluegray-900 hover:text-yellow-400 border-2 uppercase border-yellow-400 sm:inline-block sm:w-auto"
-                           href="/contact"
-                         >
-                           Get In Touch
-                         </a>
-                       </div>
-                     </div>
-
-                   </div>
-                 </div>
-               </div>
+               <WorkWithUs/>
 
 
     </div>
@@ -2052,7 +1869,7 @@ function Education() {
                               <label htmlFor="cta-email" className="sr-only">
                                 Email address
                               </label>
-                              <input
+                              <input required
                                 name="email"
                                 id="cta-email"
                                 type="email"
@@ -2179,6 +1996,8 @@ function Inthemedia() {
 
         </div>
       </div>
+
+
     </div>
   );
 }
@@ -2216,10 +2035,10 @@ function Contact() {
             <input type="hidden" name="_redirectTo" value="https://untetherllc.com/success" />
               <div>
                 <label htmlFor="first-name" className="block text-sm font-medium text-bluegray-700">
-                  First name
+                  First Name *
                 </label>
                 <div className="mt-1 mb-3 sm:mb-0">
-                  <input
+                  <input required
                     type="text"
                     name="name"
                     id="first-name"
@@ -2230,10 +2049,10 @@ function Contact() {
               </div>
               <div>
                 <label htmlFor="last-name" className="block text-sm font-medium text-bluegray-700">
-                  Last name
+                  Last Name *
                 </label>
                 <div className="mt-1 mb-3 sm:mb-0">
-                  <input
+                  <input required
                     type="text"
                     name="last-name"
                     id="last-name"
@@ -2258,10 +2077,10 @@ function Contact() {
               </div>
               <div className="sm:col-span-2">
                 <label htmlFor="email" className="block text-sm font-medium text-bluegray-700">
-                  Email
+                  Email *
                 </label>
                 <div className="mt-1 mb-3 sm:mb-0">
-                  <input
+                  <input required
                     id="email"
                     name="email"
                     type="email"
@@ -2301,10 +2120,10 @@ function Contact() {
               </div>
               <div className="sm:col-span-2">
                 <label htmlFor="message" className="block text-sm font-medium text-bluegray-700">
-                  Message
+                  Message *
                 </label>
                 <div className="mt-1">
-                  <textarea
+                  <textarea required
                     id="message"
                     name="message"
                     rows={4}
@@ -2441,11 +2260,15 @@ function ThanksForSubscribing() {
           </div>
         </div>
       </div>
+
   );
 }
 
 
-function FooterOnly() {
+
+
+
+function WorkWithUs() {
   return (
     <div className="relative py-16">
          <div className="hidden absolute top-0 inset-x-0 h-1/2 bg-bluegray-300 lg:block" aria-hidden="true" />
@@ -2469,6 +2292,49 @@ function FooterOnly() {
                <div className="relative max-w-md mx-auto py-12 px-8 space-y-6 sm:max-w-3xl sm:py-16 sm:px-8 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6">
                  <h2 className="text-3xl font-bold text-bluegray-200" id="join-heading">
                    Want to work with us?
+                 </h2>
+                 <p className="text-lg text-bluegray-200">
+                   Nothing would make us happier to brainstorm with you and see what Untether can offer your business or school.
+                 </p>
+                 <a
+                   className="block w-full py-3 px-5 text-center bg-yellow-400 rounded-full shadow-md text-xs font-medium text-bluegray-900 hover:bg-bluegray-900 hover:text-yellow-400 border-2 uppercase border-yellow-400 sm:inline-block sm:w-auto"
+                   href="/contact"
+                 >
+                   Get In Touch
+                 </a>
+               </div>
+             </div>
+
+           </div>
+         </div>
+       </div>
+  );
+}
+
+function WorkWithUsWorking() {
+  return (
+    <div className="relative py-16">
+         <div className="hidden absolute top-0 inset-x-0 h-1/2 bg-bluegray-300 lg:block" aria-hidden="true" />
+         <div className="max-w-7xl mx-auto bg-bluegray-900 lg:bg-transparent lg:px-8">
+           <div className="lg:grid lg:grid-cols-12">
+             <div className="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent">
+               <div className="absolute inset-x-0 h-1/2 bg-bluegray-300 lg:hidden" aria-hidden="true" />
+               <div className="max-w-md mx-auto px-8 sm:max-w-3xl sm:px-8 lg:max-w-none lg:p-0 pt-16 lg:pt-0">
+                 <div className="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
+                   <img
+                     className="object-cover object-center rounded-3xl shadow-2xl"
+                     src="group/working_ty.jpg"
+                     alt=""
+                   />
+                 </div>
+               </div>
+             </div>
+
+             <div className="relative bg-bluegray-900 lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center">
+
+               <div className="relative max-w-md mx-auto py-12 px-8 space-y-6 sm:max-w-3xl sm:py-16 sm:px-8 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6">
+                 <h2 className="text-3xl font-bold text-bluegray-200" id="join-heading">
+                   Ready to get started?
                  </h2>
                  <p className="text-lg text-bluegray-200">
                    Nothing would make us happier to brainstorm with you and see what Untether can offer your business or school.
