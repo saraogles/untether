@@ -803,7 +803,7 @@ export default function BasicExample() {
 
 function Home() {
   return (
-    <div className="">
+    <div className="font-sans">
 
 
 
