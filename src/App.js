@@ -1540,10 +1540,10 @@ function Services() {
                 <div className="relative pt-12 xl:pb-64 sm:pt-24 pb-16 xl:col-start-1 xl:pb-24">
                   <h2 className="text-sm font-semibold text-yellow-400 tracking-wide uppercase">Save time and money</h2>
                   <p className="mt-3 text-3xl font-extrabold text-bluegray-50">
-                    Can you afford not to take action to help grow your business?
+                    Can you afford to not take action to help grow your business in the digital age?
                   </p>
                   <p className="mt-5 text-lg text-bluegray-300">
-                  With software efficiently written, customized, and tailored to your business needs, we can eliminate the unnecessary additional costs for your business.
+                  With software efficiently written, customized, and tailored to your specific business needs, we can eliminate unnecessary additional costs and add automated efficiencies.
                   </p>
                   <div className="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-3">
                     {metrics.map((item) => (
