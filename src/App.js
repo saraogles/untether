@@ -1319,8 +1319,8 @@ clients we have helped
            {work.map((work) => (
              <li key={work.source} className="relative">
                <div className="group block w-full aspect-w-10 aspect-h-10 rounded-lg bg-gray-100 overflow-hidden">
-               <a href={work.href}>
-                 <img src={work.source} alt="" className="object-cover pointer-events-none " />
+               <a href={work.href} target="_blank">
+                 <img src={work.source} alt="" className="object-cover cursor-pointer" />
                </a>
                    <span className="sr-only">View details for {work.title}</span>
                    <p className="sr-only">{work.project}</p>
