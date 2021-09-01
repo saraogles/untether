@@ -8,6 +8,8 @@ import {
 import { Fragment } from 'react';
 import { useState } from 'react';
 
+import ReactGA from 'react-ga';
+
 import { Popover, Transition } from '@headlessui/react'
 import {
 BookmarkAltIcon,
@@ -21,11 +23,8 @@ OfficeBuildingIcon,
  NewspaperIcon,
  UserGroupIcon,
  CodeIcon,
- CameraIcon,
  AcademicCapIcon,
  CashIcon,
- ScaleIcon,
- LightningBoltIcon,
  AnnotationIcon,
  TrendingUpIcon,
  EmojiHappyIcon,
@@ -39,9 +38,25 @@ OfficeBuildingIcon,
 } from '@heroicons/react/outline'
 import {
   ChevronDownIcon,
-  MailIcon,
   CheckIcon,
 } from '@heroicons/react/solid'
+
+// Google Analytics
+
+const TRACKING_ID = "UA-284584412-1";
+ReactGA.initialize(TRACKING_ID);
+
+const RouteChangeTracker = ({ history }) => {
+
+    history.listen((location, action) => {
+        ReactGA.set({ page: location.pathname });
+        ReactGA.pageview(location.pathname);
+    });
+
+    return <div></div>;
+};
+
+//Google Analytics
 
 //homepage
 const features = [
@@ -588,7 +603,7 @@ return classes.filter(Boolean).join(' ')
 }
 
 
-export default function BasicExample() {
+export default function HomePageShell(RouteChangeTracker) {
   return (
     <Router>
       <div className="relative bg-gradient-to-tr from-bluegray-900 via-bluegray-800 to-lightblue-900 overflow-hidden">
@@ -1315,11 +1330,11 @@ clients we have helped
    </div>
 
    <div className="bg-bluegray-200 ">
-     <ul role="list" className=" grid justify-center mx-8 py-4 sm:mx-36 sm:py-16 grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8 ">
+     <ul className=" grid justify-center mx-8 py-4 sm:mx-36 sm:py-16 grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8 ">
            {work.map((work) => (
              <li key={work.source} className="relative">
                <div className="group block w-full aspect-w-10 aspect-h-10 rounded-lg bg-gray-100 overflow-hidden">
-               <a href={work.href} target="_blank">
+               <a href={work.href} target="_blank" rel="noreferrer">
                  <img src={work.source} alt="" className="object-cover cursor-pointer" />
                </a>
                    <span className="sr-only">View details for {work.title}</span>
@@ -1371,7 +1386,7 @@ function Technologies() {
                           <img
                             className="rounded-lg shadow-lg object-cover object-center"
                             src="group/mural_vertical.jpg"
-                            alt="Team Photo"
+                            alt="Team"
 
                           />
                         </div>
@@ -1428,7 +1443,7 @@ function Technologies() {
             </p>
       </div>
         <div className="bg-bluegray-50 shadow-lg rounded-lg m-8">
-          <ul role="list" className=" grid grid-cols-2 gap-x-4 gap-y-8 lg:grid-cols-5 xl:gap-x-8">
+          <ul className=" grid grid-cols-2 gap-x-4 gap-y-8 lg:grid-cols-5 xl:gap-x-8">
                 {techstack.map((tech) => (
                   <div key={tech.source} className="relative flex h-36 p-4 sm:p-8 justify-center">
                       <img src={tech.source} alt="" className="object-scale-down" />
@@ -1448,7 +1463,7 @@ function Technologies() {
           </div>
 
           <div className="bg-bluegray-50 shadow-lg rounded-lg m-8">
-          <ul role="list" className=" grid grid-cols-3 gap-x-4 gap-y-8 lg:grid-cols-3 xl:gap-x-8 ">
+          <ul className=" grid grid-cols-3 gap-x-4 gap-y-8 lg:grid-cols-3 xl:gap-x-8 ">
                 {servicestack.map((service) => (
                   <div key={service.source} className="relative flex h-36 p-4 sm:p-8 justify-center">
                       <img src={service.source} alt="" className="object-scale-down" />
@@ -2017,7 +2032,7 @@ function Contact() {
         <img
           className="rounded-lg shadow-lg object-cover object-center"
           src="office.jpg"
-          alt="Office Photo"  />
+          alt="Office"  />
       </div>
 
 
