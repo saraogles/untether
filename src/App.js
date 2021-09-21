@@ -249,7 +249,7 @@ const peoples = [
   {
     name: 'Kinjal Gandhi',
     blurb: "When she's not coding, she's living the preschool mom life.",
-    bio: "Kinjal has an aura around her that encourages advancement in every interaction. She considers herself an eternal student, despite having a Master's Degree in Computer Science. Throughout her career, Kinjal has had to efficiently familiarize herself with various systems and infrastructures, which proves to be a valuable asset in working with Untether’s variety of clients. Her energetic attitude of growth, diversity and communication are always a welcome addition to any project. She is always looking to acquire new skills and try new things and is excited to instill that same passion into her daughter. When she's not working, you will probably find her at Yoga, Zumba, or exploring new places with her family.",
+    bio: "Kinjal has an aura around her that encourages advancement in every interaction. She considers herself an eternal student, despite having a Master's Degree in Computer Science. Throughout her career, Kinjal has had to efficiently familiarize herself with various systems and infrastructures, which proves to be a valuable asset in working with Untether’s variety of clients. Her energetic attitude of growth, diversity and communication is always a welcome addition to any project. She is always looking to acquire new skills and try new things and is excited to instill that same passion into her daughter. When she's not working, you will probably find her at Yoga, Zumba, or exploring new places with her family.",
     role: 'Senior Software Engineer',
     email: 'kinjal@untetherllc.com',
     imageUrl: '/team/kinjal.jpg',
